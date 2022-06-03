@@ -1,0 +1,20 @@
+:root {
+  --primary-bg: #111111;
+  --primary-text: #ffffff;
+  --secondary-bg: #D30D60;
+  --secondary-text: #210060;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

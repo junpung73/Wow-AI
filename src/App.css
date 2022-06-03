@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  max-width: 1330px;
+}
+
+/* ------------Style Bootstrap-------------- */
+.nav-item {
+  transition: all .3s ease;
+}
+
+.navbar-contai>.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:active {
+  color: var(--primary-text);
+}
+
+.nav-link:focus {
+  color: var(--primary-text);
+}
+
+.dropdown-menu.show {
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  width: 8%;
+}
+
+.carousel-control-prev {
+  right: 20vh;
+  left: auto;
+}
+
+.carousel-control-next {
+  right: 10vh;
+}
+
+/* --------------Slide Home------------ */
+.carousel {
+  position: static;
+}
+
+.carousel-indicators .active {
+  background-color: var(--secondary-bg);
+}
+
+.carousel-caption {
+  text-align: right;
+  right: 10%;
+  left: 10%;
+  bottom: 0.25rem;
+}
+
+.slide-image {
+  height: 85vh;
+  object-fit: cover;
+}
+
+.btn-slide-home {
+  opacity: 1 !important;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 10px !important;
+}
+
+.btn-slide-section {
+  position: static;
+}
+
+.img-slide-content {
+  border-radius: 30px;
+  aspect-ratio: 1/1;
+}
+
+/* -------------------title--------------- */
+.title-content {
+  font-size: 57px !important;
+  font-weight: 600 !important;
+  padding: 4vh 0 4vh 0;
+  color: var(--secondary-bg);
+}
+
+.title-description {
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  padding: 2vh 0 1.5vh 0;
+  color: var(--primary-text);
+}
+
+.content-center {
+  width: 80%;
+  margin: 5vh auto;
+  justify-content: center;
+}
+
+/* ------------Table Home----------- */
+.td-home-right {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid var(--secondary-bg);
+}
+
+.td-home-left {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid var(--secondary-bg);
+  border-right: 2px solid var(--secondary-bg);
+}
+
+.td-home-left-last {
+  border-right: 2px solid var(--secondary-bg);
+}
+
+/* ---------------Btn--------------- */
+.btn {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-dark {
+  padding: 1.2vh 4vh;
+  border: 2px solid var(--secondary-bg);
+  color: var(--secondary-bg);
+  background-color: var(--primary-bg);
+}
+
+.btn-dark:hover {
+  color: var(--primary-text);
+  background-color: var(--secondary-bg);
+}
+
+.btn-light {
+  padding: 0.5vh 10vh;
+  color: var(--primary-bg);
+  background-color: var(--primary-text);
+}
+
+.btn-light:hover {
+  color: var(--primary-bg);
+  background-color: var(--primary-text);
+}
+
+.btn-control {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid var(--secondary-bg);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all .5s ease;
+  margin: 0 1rem;
+}
+
+.btn-control:hover {
+  color: var(--primary-text);
+  border-color: var(--secondary-text);
+  background-color: var(--secondary-text);
+}
+
+.btn-control:active {
+  color: var(--primary-text);
+  border-color: var(--secondary-text);
+  background-color: var(--secondary-text);
+}
+
+.btn-pagination {
+  color: #B8B8B8;
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 24px;
+  /* border: none; */
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.btn-pagination:hover {
+  color: var(--primary-text);
+}
+
+.arrowdown {
+  background: var(--primary-bg);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  border-radius: 15px;
+  border: 2px solid var(--primary-text);
+  padding: 1.5vh 2vh;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-control:focus {
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  border-color: var(--primary-text);
+  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+}
+
+@media only screen and (max-width: 1441px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1301px) {
+  .container {
+    max-width: 1100px;
+  }
+}
