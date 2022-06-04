@@ -1,6 +1,5 @@
-import { Box, styled } from '@mui/material'
+import { Box, Grid, styled } from '@mui/material'
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 
 const BoxStyled = styled(Box)({
     backgroundColor: "var(--secondary-text)",
@@ -17,8 +16,8 @@ const Management = () => {
     return (
         <div style={{ padding: "25vh 0" }}>
             <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>Our crowd management</h2>
-            <Row>
-                <Col sx={6}>
+            <Grid container spacing={2}>
+                <Grid item sx={12} lg={6}>
                     <img
                         src='/images/image36.png'
                         alt='management'
@@ -29,8 +28,8 @@ const Management = () => {
                             width: "100%"
                         }}
                     />
-                </Col>
-                <Col sx={6}>
+                </Grid>
+                <Grid item sx={12} lg={6}>
                     <div style={{ textAlign: "justify" }}>
                         The quality of AI data depends on the people who collect and annotate it. We make sure to support every single resource 24/7 so that they can deliver the highest-quality data.
                         <br />
@@ -56,8 +55,8 @@ const Management = () => {
                             Contact us now
                         </a>
                     </div>
-                </Col>
-            </Row>
+                </Grid>
+            </Grid>
         </div>
     )
 }

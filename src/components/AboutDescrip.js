@@ -40,7 +40,7 @@ const description = {
 
 const AboutDescrip = () => {
     return (
-        <Container style={{ margin: "30vh 0", maxWidth: '1330px' }}>
+        <Container style={{ margin: "30vh auto", maxWidth: '1330px' }}>
             <p>
                 Wow AI is a trusted partner that provides high-quality data for AI training in different
                 languages at a large scale. We are experienced professionals with a track record of success

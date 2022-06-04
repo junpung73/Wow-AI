@@ -3,7 +3,6 @@ import { Box, styled } from '@mui/material'
 
 const BoxStyled = styled(Box)({
     borderRadius: "30px",
-    margin: "4vh 1.5vh",
     aspectRatio: "1/1",
     display: "flex",
     flexDirection: "column",

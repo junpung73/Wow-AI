@@ -1,23 +1,22 @@
+import { Grid } from '@mui/material'
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 
 const AboutUs = () => {
     return (
         <div id='aboutus' style={{ height: "90vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "10vh 0" }}>
-            <Row>
-                <Col xs={7}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} xl={7}>
                     <iframe
-                        width="650"
-                        height="400"
+                        width="100%"
                         src="https://www.youtube.com/embed/fLkKFJ_mdD0"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
-                        style={{ borderRadius: "15px", border: "2px solid var(--secondary-bg)", padding: "8px" }}
+                        style={{ aspectRatio: '16/9', borderRadius: "15px", border: "2px solid var(--secondary-bg)", padding: "8px" }}
                     ></iframe>
-                </Col>
-                <Col xs={5} style={{ color: "var(--primary-text)" }}>
+                </Grid>
+                <Grid item xs={12} xl={5}>
                     <h5 className='title-content'>About Us</h5>
                     <div style={{ textAlign: "justify" }}>
                         Wow AI is
@@ -29,8 +28,8 @@ const AboutUs = () => {
                         <br />
                         Many companies have successfully built their AI models with us. So do you!
                     </div>
-                </Col>
-            </Row>
+                </Grid>
+            </Grid>
         </div>
 
     )

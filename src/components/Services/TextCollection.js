@@ -1,23 +1,27 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import BoxContent2 from './public-service/BoxContent2'
 import SlideContent from '../public/SlideContent'
 import TitleSection from './public-service/TitleSection'
+import { Grid } from '@mui/material'
 
 const TextCollection = ({ content }) => {
     return (
         <div>
             <TitleSection content={content} />
-            <Row>
-                <Col xs={8}>
+            <Grid container spacing={3}>
+                <Grid item xs={8}>
                     <SlideContent content={content} />
-                </Col>
-                <Col xs={4}>
-                    {content.boxst.map((content, index) => (
-                        <BoxContent2 key={index} content={content} />
-                    ))}
-                </Col>
-            </Row>
+                </Grid>
+                <Grid item xs={4}>
+                    <Grid container spacing={3}>
+                        {content.boxst.map((content, index) => (
+                            <Grid item xs={12}>
+                                <BoxContent2 key={index} content={content} />
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+            </Grid>
         </div>
     )
 }

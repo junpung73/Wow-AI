@@ -12,7 +12,6 @@ export default function Topic() {
             <Card sx={{
                 backgroundColor: 'var(--primary-bg)',
                 color: 'var(--primary-text)',
-                margin: '2.5%',
                 borderRadius: '30px'
             }}>
                 <CardActionArea>

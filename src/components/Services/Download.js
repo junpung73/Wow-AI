@@ -26,7 +26,7 @@ const Download = () => {
                 <img src='/images/Cloud-Download.png' alt='Cloud-Download' style={{ marginTop: "-30px" }} />
                 <span className='title-content'> Download Our Sample Datasets</span>
             </div>
-            <BoxStyled>
+            <BoxStyled> 
                 <div style={RowStyled}>
                     <h5 className='title-description'>Medical dataset</h5>
                     <div style={VerticalLine}></div>

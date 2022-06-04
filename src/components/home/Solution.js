@@ -1,10 +1,7 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import SlideContent from '../public/SlideContent'
 import solutions from '../../__mock__/solutions'
-
-
-console.log(solutions);
+import { Grid } from '@mui/material';
 
 const Solution = () => {
   return (
@@ -17,12 +14,12 @@ const Solution = () => {
           <a href='#solutions' className='btn btn-control'>Banking</a>
           <a href='#solutions' className='btn btn-control'>Manufacturing</a>
         </div>
-        <Row>
-          <Col xs={7}>
+        <Grid container spacing={2}>
+          <Grid item xs={7}>
             <SlideContent content={solutions[0]} />
-          </Col>
-          <Col xs={5}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          </Grid>
+          <Grid item xs={5}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <div style={{
                 backgroundColor: 'var(--secondary-bg)',
                 height: '22rem',
@@ -60,8 +57,8 @@ const Solution = () => {
                 </p>
               </div>
             </div>
-          </Col>
-        </Row>
+          </Grid>
+        </Grid>
     </div>
   )
 }
