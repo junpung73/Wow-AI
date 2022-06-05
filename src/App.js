@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Layouts/Footer';
-import Header from './components/Layouts/Header';
+import Header2 from './components/Layouts/Header2';
 import AboutUs from './pages/Company/AboutUs';
 import Contact from './pages/Company/Contact';
 import DetailBlog from './pages/DetailBlog';
@@ -16,8 +16,7 @@ import DataTranscription from './pages/Services/DataTranscription';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-
+      <Header2/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/data-transcription' element={<DataTranscription />} />

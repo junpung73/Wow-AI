@@ -96,8 +96,8 @@ const Header = () => {
         </div>
       </Container>
       <hr style={{ color: "var(--primary-text)", height: "2px", marginTop: "0" }} />
+      
       <Navbar expand="lg" variant="dark">
-
         <Container style={{width: "90%"}}>
           <Link to="/">
             <CardMediaStyled
