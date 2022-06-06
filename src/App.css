@@ -247,3 +247,8 @@
     right: 10vh;
   }
 }
+@media only screen and (max-width: 900px) {
+  .title-description {
+    padding: 0;
+  }
+}

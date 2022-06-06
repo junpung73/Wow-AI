@@ -14,6 +14,16 @@ const ContaiService = styled(Grid)(({ theme }) => ({
         padding: "0",
     },
 }))
+const TextStyled = styled('p')(({ theme }) => ({
+    [theme.breakpoints.down('sm')]: {
+        display: '-webkit-box',
+        WebkitBoxOrient: 'vertical',
+        WebkitLineClamp: '3',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+    },
+}))
+
 
 const TransServices = () => {
     return (
@@ -27,9 +37,9 @@ const TransServices = () => {
                 </Grid>
                 <Grid item xs={6}>
                     <BoxStyled style={{ backgroundColor: "var(--primary-text)", color: "var(--secondary-text)", padding: "10%" }}>
-                        <p>
+                        <TextStyled>
                             Audio transcription is the process of converting spoken language into written language. This is what we do best.
-                        </p>
+                        </TextStyled>
                     </BoxStyled>
                 </Grid>
                 <Grid item xs={6}>

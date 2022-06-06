@@ -67,6 +67,12 @@ const LinkInfo = {
         color: "var(--primary-text)",
     }
 }
+const DivStyled = styled('div')(({ theme }) => ({
+    marginBottom: '0.5rem',
+    [theme.breakpoints.down('md')]: {
+        marginBottom: '0',
+    },
+}))
 
 const Header2 = () => {
 
@@ -137,11 +143,11 @@ const Header2 = () => {
                                         </li>
                                     </ul>
                                 </NavDropdownStyled>
-                                <div style={{ marginBottom: '0.5rem' }}>
+                                <DivStyled>
                                     <LinkStyled to="/off-the-shelf">
                                         Off The Shelf data
                                     </LinkStyled>
-                                </div>
+                                </DivStyled>
                                 <div>
                                     <LinkStyled to="/resources">
                                         Resources
