@@ -13,18 +13,23 @@ const BoxStyled = styled(Box)({
     color: "var(--primary-text)",
 })
 
-const TitleStyled = {
-    fontSize: "32px",
-    fontWeight: "700",
-    padding: "1vh",
-}
+const TitleStyled = styled('h5')(({ theme }) => ({
+    fontSize: "var(--medium-text-3)",
+    fontWeight: "bold",
+    padding: "1vh 0",
+    [theme.breakpoints.down('md')]: {
+        fontSize: "var(--normal-text)",
+        fontWeight: "normal",
+        padding: "0",
+    },
+}))
 
 const BoxContent4 = ({ content }) => {
     return (
         <BoxStyled >
-            <h5 style={TitleStyled}>
+            <TitleStyled>
                 {content.title}
-            </h5>
+            </TitleStyled>
             {/* <p>
                 {content.description}
             </p> */}

@@ -6,7 +6,7 @@ const Resources = () => {
   return (
     <div>
       <img src='/images/Group39449.png' alt='background' style={{ height: '85%', width: '100%' }} />
-      <Container style={{ maxWidth: '1330px' }}>
+      <Container style={{ maxWidth: '90%' }}>
         <TopicList />
       </Container>
     </div>

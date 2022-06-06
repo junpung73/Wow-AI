@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom'
 const LinkStyled = styled(Link)({
     color: "var(--primary-text)",
     textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "400",
+    fontSize: "var(--normal-text)",
+    fontWeight: "lighter",
     transition: "all .3s ease",
     margin: "0 2vh 0 2vh",
     "&:hover": {
@@ -26,8 +26,8 @@ const LinkStyled = styled(Link)({
 const ItemLink = styled(Link)({
     color: "var(--secondary-text)",
     textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "400",
+    fontSize: "var(--normal-text)",
+    fontWeight: "lighter",
     whiteSpace: "nowrap",
     "&:hover": {
         color: "var(--secondary-text)",
@@ -38,8 +38,8 @@ const ItemLink = styled(Link)({
 const NavDropdownStyled = styled(NavDropdown)({
     color: "white",
     textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "400",
+    fontSize: "var(--normal-text)",
+    fontWeight: "lighter",
     zIndex: "100",
     "&:hover": {
         color: "white",
@@ -59,11 +59,10 @@ const CardMediaStyled = styled(CardMedia)({
 })
 const LinkInfo = {
     display: "flex",
-    fontSize: "16px",
+    fontSize: "var(--normal-text)",
     margin: "0 0 0 4vh",
     color: "var(--primary-text)",
     textDecoration: "none",
-    fontFamily: "Quicksand",
     "&:hover": {
         color: "var(--primary-text)",
     }
@@ -73,8 +72,8 @@ const Header2 = () => {
 
     return (
         <React.Fragment>
-            <Container className='header-info container' style={{ display: "flex", justifyContent: "space-between" }}>
-                <NavDropdown title="English">
+            <Container className='header-info container' style={{ maxWidth: "90%", display: "flex", justifyContent: "space-between" }}>
+                <NavDropdown title="English" style={{ zIndex: '1110' }}>
                     <ul style={{ marginBottom: "0" }}>
                         <li style={{ textDecoration: "none" }}>
                             <ItemLink to="/">English</ItemLink>
@@ -88,14 +87,14 @@ const Header2 = () => {
                     <Link to="#" style={LinkInfo}>
                         <FontAwesomeIcon icon={faLocationDot} style={{ marginTop: "0.2rem" }} />
                         &nbsp;
-                        <Typography display={{ xs: 'none', md: 'block' }}>
+                        <Typography display={{ xs: 'none', md: 'block' }} style={{ fontFamily: 'Quicksand' }}>
                             34th ST STE 1018, NY, USA
                         </Typography>
                     </Link>
                     <Link to="#" style={LinkInfo}>
                         <FontAwesomeIcon icon={faEnvelope} style={{ marginTop: "0.2rem" }} />
                         &nbsp;
-                        <Typography display={{ xs: 'none', md: 'block' }}>
+                        <Typography display={{ xs: 'none', md: 'block' }} style={{ fontFamily: 'Quicksand' }}>
                             contact@wow-ai.com
                         </Typography>
                     </Link>
@@ -103,10 +102,10 @@ const Header2 = () => {
             </Container>
             <hr style={{ color: "var(--primary-text)", height: "2px", marginTop: "0" }} />
 
-            <AppBar position="sticky" style={{backgroundColor: 'var(--primary-bg)'}}>
+            <AppBar position="sticky" style={{ backgroundColor: 'var(--primary-bg)' }}>
                 <Toolbar disableGutters>
                     <Navbar expand="lg" variant="dark" style={{ width: '100%' }}>
-                        <Container style={{ maxWidth: "1330px", display: 'flex', padding: '1rem 0' }}>
+                        <Container style={{ maxWidth: "90%", display: 'flex', padding: '1rem 0', justifyContent: 'space-between' }}>
                             <Link to="/">
                                 <CardMediaStyled
                                     component="img"
@@ -114,7 +113,7 @@ const Header2 = () => {
                                     style={{ width: "60%" }}
                                 />
                             </Link>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
                             <Navbar.Collapse id="basic-navbar-nav" className='navbar-contai'>
                                 <Nav className="me-auto">
 
@@ -138,11 +137,19 @@ const Header2 = () => {
                                         </li>
                                     </ul>
                                 </NavDropdownStyled>
-                                <LinkStyled to="/off-the-shelf">
-                                    Off The Shelf data
-                                </LinkStyled>
-                                <LinkStyled to="/resources">
-                                    Resources
+                                <div style={{ marginBottom: '0.5rem' }}>
+                                    <LinkStyled to="/off-the-shelf">
+                                        Off The Shelf data
+                                    </LinkStyled>
+                                </div>
+                                <div>
+                                    <LinkStyled to="/resources">
+                                        Resources
+                                    </LinkStyled>
+                                </div>
+
+                                <LinkStyled to="/join-our-talent-pool">
+                                    Join Our Talent Pool
                                 </LinkStyled>
                                 <NavDropdownStyled title="Company" id="basic-nav-dropdown">
                                     <ul style={{ marginBottom: "0" }}>
@@ -158,10 +165,8 @@ const Header2 = () => {
                                         </li>
                                     </ul>
                                 </NavDropdownStyled>
-                                <LinkStyled to="/join-our-talent-pool">
-                                    Join Our Talent Pool
-                                </LinkStyled>
                             </Navbar.Collapse>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         </Container>
                     </Navbar>
                 </Toolbar>

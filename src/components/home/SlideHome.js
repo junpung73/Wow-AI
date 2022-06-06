@@ -3,25 +3,33 @@ import React from 'react'
 import 'react-slideshow-image/dist/styles.css'
 
 const titleSlide = {
-    fontWeight: "600",
-    fontSize: "1.5rem",
+    fontWeight: "bold",
+    fontSize: "var(--medium-text-3)",
 }
 const LinkStyled = styled('a')({
     color: "var(--primary-text)",
     textDecoration: "none",
-    fontWeight: "600",
-    fontSize: "1.5rem",
+    fontWeight: "bold",
+    fontSize: "var(--medium-text-3)",
     borderBottom: "2px solid var(--primary-text)",
     "&:hover": {
         color: "var(--primary-text)",
     }
 })
+const Topic = styled('h5')(({ theme }) => ({
+    fontSize: "var(--medium-text-1)",
+    fontWeight: "bold",
+    paddingBottom: "30px",
+    [theme.breakpoints.down('md')]: {
+        fontSize: 'var(--medium-text-2)',
+    },
+}));
 
 const SlideHome = () => {
     return (
         <div className="slide-container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators" style={{"&:active": {backgroundColor: "var(--secondary-bg)"}}}>
+                <div class="carousel-indicators" style={{ "&:active": { backgroundColor: "var(--secondary-bg)" } }}>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="btn-slide-home active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn-slide-home" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn-slide-home" aria-label="Slide 3"></button>
@@ -50,17 +58,13 @@ const SlideHome = () => {
                     width: "100%"
                 }}>
                     <div style={{
-                        width: "1330px",
+                        width: "90%",
                         margin: "auto",
                     }}>
-                        <h5 style={{
-                            fontSize: "40px",
-                            fontWeight: "600",
-                            paddingBottom: "30px"
-                        }}>
+                        <Topic>
                             A trusted partner that provides high-quality data <br /> solutions for AI training at a large scale.
-                        </h5>
-                        <a className='btn btn-light' href='/'>Contact Us</a>
+                        </Topic>
+                        <a className='btn btn-light' href='/contact'>Contact Us</a>
 
                     </div>
                 </div>
@@ -79,7 +83,7 @@ const SlideHome = () => {
                     width: "100%"
                 }}>
                     <div style={{
-                        width: "1330px",
+                        width: "90%",
                         display: "flex",
                         justifyContent: "space-between",
                         margin: "auto",

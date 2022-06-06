@@ -89,15 +89,15 @@
 
 /* -------------------title--------------- */
 .title-content {
-  font-size: 57px !important;
-  font-weight: 600 !important;
+  font-size: var(--large-text) !important;
+  font-weight: bold !important;
   padding: 4vh 0 4vh 0;
   color: var(--secondary-bg);
 }
 
 .title-description {
-  font-size: 26px !important;
-  font-weight: 500 !important;
+  font-size: var(--medium-text-3) !important;
+  font-weight: bold !important;
   padding: 2vh 0 1.5vh 0;
   color: var(--primary-text);
 }
@@ -128,8 +128,8 @@
 
 /* ---------------Btn--------------- */
 .btn {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: var(--medium-text-3);
+  font-weight: bold;
   text-decoration: none;
   border-radius: 50px;
 }
@@ -160,13 +160,13 @@
 .btn-control {
   color: var(--primary-text);
   text-decoration: none;
-  font-size: 20px;
+  font-size: var(--medium-text-3);
   border: 2px solid var(--secondary-bg);
   border-radius: 15px;
-  padding: 1rem 2rem;
-  font-weight: 600;
+  padding: 1vh 2vh;
+  font-weight: bold;
   transition: all .5s ease;
-  margin: 0 1rem;
+  margin: 1vh;
 }
 
 .btn-control:hover {
@@ -185,7 +185,7 @@
   color: #B8B8B8;
   padding: 1rem;
   margin: 0 1rem;
-  font-size: 24px;
+  font-size: var(--medium-text-3);
   /* border: none; */
   text-decoration: none;
   transition: all .3s ease;
@@ -210,8 +210,8 @@
   border-radius: 15px;
   border: 2px solid var(--primary-text);
   padding: 1.5vh 2vh;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--normal-text);
+  font-weight: bold;
 }
 
 .form-control:focus {
@@ -230,5 +230,20 @@
 @media only screen and (max-width: 1301px) {
   .container {
     max-width: 1100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title-content {
+    font-size: var(--medium-text-2) !important;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    align-items: flex-end;
+    bottom: 15vh;
+  }
+  .carousel-control-next {
+    right: 2vh;
+  }
+  .carousel-control-prev {
+    right: 10vh;
   }
 }

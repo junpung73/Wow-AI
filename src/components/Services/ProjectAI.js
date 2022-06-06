@@ -10,42 +10,45 @@ const BoxStyled = styled(Box)({
     alignItems: "center",
     textAlign: "center",
 })
-const titleStyled = {
-    fontSize: "36px",
-    fontWeoght: "600",
+const titleStyled = styled('p')(({ theme }) => ({
+    fontSize: "var(--medium-text-2)",
+    fontWeoght: "bold",
     marginBottom: "0",
-}
+    [theme.breakpoints.down('md')]: {
+        fontSize: 'var(--normal-text)',
+    },
+}))
 
 const ProjectAI = () => {
     return (
         <div style={{ padding: "10vh 0" }}>
             <h2 className='title-content' style={{ textAlign: "center" }}>Jumpstart your AI projects <br /> with excellent-quality data </h2>
             <Grid container spacing={5}>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3}>
                     <BoxStyled>
                         <div>
-                            <p style={titleStyled}>100,000</p> Global <br /> Freelancers
+                            <titleStyled>100,000</titleStyled> Global <br /> Freelancers
                         </div>
                     </BoxStyled>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3}>
                     <BoxStyled>
                         <div>
-                            <p style={titleStyled}>120+</p> Languages
+                            <titleStyled>120+</titleStyled> Languages
                         </div>
                     </BoxStyled>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3}>
                     <BoxStyled>
                         <div>
-                            <p style={titleStyled}>247+</p> Support
+                            <titleStyled>247+</titleStyled> Support
                         </div>
                     </BoxStyled>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6} sm={3}>
                     <BoxStyled>
                         <div>
-                            <p style={titleStyled}>100%</p> Customer <br /> Satisfation
+                            <titleStyled>100%</titleStyled> Customer <br /> Satisfation
                         </div>
                     </BoxStyled>
                 </Grid>

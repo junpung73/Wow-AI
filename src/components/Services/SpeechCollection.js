@@ -9,16 +9,16 @@ const SpeechCollection = ({ content }) => {
         <div style={{ margin: "10vh 0" }}>
             <TitleSection content={content} />
             <Grid container spacing={3}>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <Grid container spacing={3}>
                         {content.boxst.map((content, index) => (
-                            <Grid item xs={12}>
+                            <Grid item xs={6} sm={12}>
                                 <BoxContent2 key={index} content={content} />
                             </Grid>
                         ))}
                     </Grid>
                 </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={12} sm={8}>
                     <SlideContent content={content} />
                 </Grid>
             </Grid>

@@ -8,13 +8,13 @@ const TextAudioSection = ({ content }) => {
         <div>
             <h2 className='title-content'>{content.title}</h2>
             <Grid container spacing={2}>
-                <Grid item xs={10}>
+                <Grid item xs={12} minWidth={10}>
                     <SlideContent content={content} />
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={12} minWidth={2}>
                     <Grid container spacing={2}>
                         {content.boxst.map((content, index) => (
-                            <Grid item xs={12}>
+                            <Grid item xs={6} sm={3} md={12}>
                                 <BoxContent4 key={index} content={content} />
                             </Grid>
                         ))}

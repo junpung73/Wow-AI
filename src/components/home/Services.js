@@ -16,9 +16,9 @@ const BoxContent = {
     paddingLeft: "20px",
 }
 
-const LinkStyled = styled(Link)({
-    fontSize: "22px",
-    fontWeight: "500",
+const LinkStyled = styled(Link)(({ theme }) => ({
+    fontSize: "var(--medium-text-3)",
+    fontWeight: "bold",
     color: "var(--secondary-bg)",
     textDecoration: "none",
     alignSelf: "flex-end",
@@ -26,8 +26,12 @@ const LinkStyled = styled(Link)({
     cursor: "pointer",
     "&:hover": {
         color: "var(--secondary-bg)",
-    }
-})
+    },
+    [theme.breakpoints.down('md')]: {
+        fontSize: 'var(--normal-text)',
+    },
+}))
+
 
 const Services = () => {
     return (
@@ -36,7 +40,7 @@ const Services = () => {
                 Services
             </div>
             <Grid container spacing={2}>
-                <Grid item xl={6} xs={12}>
+                <Grid item lg={6} xs={12}>
                     <BoxStyled>
                         <img
                             src='/images/Rectangle112.png'
@@ -48,7 +52,7 @@ const Services = () => {
                         />
                     </BoxStyled>
                 </Grid>
-                <Grid item xl={3} xs={6}>
+                <Grid item lg={3} xs={6}>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Data collection</h2>
                         <ul>
@@ -75,7 +79,7 @@ const Services = () => {
                         </LinkStyled>
                     </BoxStyled>
                 </Grid>
-                <Grid item xl={3} xs={6}>
+                <Grid item lg={3} xs={6}>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Data annotation</h2>
                         <ul>
@@ -93,6 +97,9 @@ const Services = () => {
                     </BoxStyled>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Tailor-made solution ?</h2>
+                            <br/>
+                            <br/>
+                            <br/>
                         <LinkStyled>
                             Share with us &nbsp;
                             <img src='/images/Vector9.png' alt='...' />

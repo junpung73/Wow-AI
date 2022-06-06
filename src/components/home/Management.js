@@ -1,7 +1,7 @@
 import { Box, Grid, styled } from '@mui/material'
 import React from 'react'
 
-const BoxStyled = styled(Box)({
+const BoxStyled = styled(Box)(({ theme }) => ({
     backgroundColor: "var(--secondary-text)",
     borderRadius: "30px",
     width: "22%",
@@ -10,7 +10,17 @@ const BoxStyled = styled(Box)({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-})
+    [theme.breakpoints.down('md')]: {
+        fontSize: '12px',
+        borderRadius: "15px",
+    },
+}))
+const ContentStyled = styled('div')(({ theme }) => ({
+    textAlign: "justify",
+    [theme.breakpoints.down('md')]: {
+        fontSize: 'var(--small-text)',
+    },
+}))
 
 const Management = () => {
     return (
@@ -30,12 +40,12 @@ const Management = () => {
                     />
                 </Grid>
                 <Grid item sx={12} lg={6}>
-                    <div style={{ textAlign: "justify" }}>
+                    <ContentStyled>
                         The quality of AI data depends on the people who collect and annotate it. We make sure to support every single resource 24/7 so that they can deliver the highest-quality data.
                         <br />
                         <br />
                         We build a close relationship with our global crowd through our unique way of management. Our crowd resources are our valuable assets.
-                    </div>
+                    </ContentStyled>
                     <div style={{ display: "flex", width: "100%", justifyContent: "space-between", margin: "2vh 0" }}>
                         <BoxStyled>
                             100,000 Global <br /> Freelancers
@@ -51,7 +61,7 @@ const Management = () => {
                         </BoxStyled>
                     </div>
                     <div style={{ display: "flex", justifyContent: "center" }}>
-                        <a href='/' className='btn btn-dark'>
+                        <a href='/contact' className='btn btn-dark'>
                             Contact us now
                         </a>
                     </div>

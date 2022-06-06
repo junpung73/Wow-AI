@@ -8,10 +8,16 @@ const BoxStyled = styled(Box)({
     justifyContent: "center",
     alignItems: "center",
 })
+const ContaiService = styled(Grid)(({ theme }) => ({
+    padding: "20vh",
+    [theme.breakpoints.down('sm')]: {
+        padding: "0",
+    },
+}))
 
 const TransServices = () => {
     return (
-        <div style={{ padding: "20vh" }}>
+        <ContaiService>
             <h2 className='title-content' style={{ textAlign: "center" }}>Transcription Services</h2>
             <Grid container spacing={2}>
                 <Grid item xs={6}>
@@ -37,7 +43,7 @@ const TransServices = () => {
                     </BoxStyled>
                 </Grid>
             </Grid>
-        </div>
+        </ContaiService>
     )
 }
 

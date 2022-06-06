@@ -12,7 +12,7 @@ const DataAnnotation = () => {
   return (
     <div>
       <HignQuality topic={topicservices[2]} />
-      <Container style={{maxWidth: '1330px'}}>
+      <Container style={{maxWidth: '90%'}}>
         <div className='arrowdown'>
           <img src='/images/scrollarrow.png' alt='scroll' />
         </div>

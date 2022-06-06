@@ -13,10 +13,15 @@ const Line = {
     marginTop: "3rem",
     opacity: "1",
 }
-const Icon = {
+const Icon = ({ theme }) => ({
     color: "var(--secondary-bg)",
     padding: "0.8rem",
-}
+    [theme.breakpoints.down('md')]: {
+        color: "var(--secondary-bg)",
+        padding: "0",
+    },
+})
+
 const VerticalLine = {
     borderLeft: "2px solid var(--secondary-bg)"
 }
