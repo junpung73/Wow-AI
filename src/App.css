@@ -12,10 +12,10 @@
 
 /* ------------Style Bootstrap-------------- */
 .nav-item {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.navbar-contai>.nav-item:hover {
+.navbar-contai > .nav-item:hover {
   transform: scale(1.05);
 }
 
@@ -89,25 +89,15 @@
 
 /* -------------------title--------------- */
 .title-content {
-<<<<<<< HEAD
-  font-size: 57px !important;
-  font-weight: 600 !important;
-=======
   font-size: var(--large-text) !important;
   font-weight: bold !important;
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
   padding: 4vh 0 4vh 0;
   color: var(--secondary-bg);
 }
 
 .title-description {
-<<<<<<< HEAD
-  font-size: 26px !important;
-  font-weight: 500 !important;
-=======
   font-size: var(--medium-text-3) !important;
   font-weight: bold !important;
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
   padding: 2vh 0 1.5vh 0;
   color: var(--primary-text);
 }
@@ -138,13 +128,8 @@
 
 /* ---------------Btn--------------- */
 .btn {
-<<<<<<< HEAD
-  font-size: 20px;
-  font-weight: 600;
-=======
   font-size: var(--medium-text-3);
   font-weight: bold;
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
   text-decoration: none;
   border-radius: 50px;
 }
@@ -175,23 +160,13 @@
 .btn-control {
   color: var(--primary-text);
   text-decoration: none;
-<<<<<<< HEAD
-  font-size: 20px;
-  border: 2px solid var(--secondary-bg);
-  border-radius: 15px;
-  padding: 1rem 2rem;
-  font-weight: 600;
-  transition: all .5s ease;
-  margin: 0 1rem;
-=======
   font-size: var(--medium-text-3);
   border: 2px solid var(--secondary-bg);
   border-radius: 15px;
   padding: 1vh 2vh;
   font-weight: bold;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   margin: 1vh;
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
 }
 
 .btn-control:hover {
@@ -207,17 +182,13 @@
 }
 
 .btn-pagination {
-  color: #B8B8B8;
+  color: #b8b8b8;
   padding: 1rem;
   margin: 0 1rem;
-<<<<<<< HEAD
-  font-size: 24px;
-=======
   font-size: var(--medium-text-3);
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
   /* border: none; */
   text-decoration: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-pagination:hover {
@@ -239,13 +210,8 @@
   border-radius: 15px;
   border: 2px solid var(--primary-text);
   padding: 1.5vh 2vh;
-<<<<<<< HEAD
-  font-size: 18px;
-  font-weight: 500;
-=======
   font-size: var(--normal-text);
   font-weight: bold;
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
 }
 
 .form-control:focus {
@@ -265,14 +231,13 @@
   .container {
     max-width: 1100px;
   }
-<<<<<<< HEAD
-=======
 }
 @media only screen and (max-width: 600px) {
   .title-content {
     font-size: var(--medium-text-2) !important;
   }
-  .carousel-control-next, .carousel-control-prev {
+  .carousel-control-next,
+  .carousel-control-prev {
     align-items: flex-end;
     bottom: 15vh;
   }
@@ -287,5 +252,4 @@
   .title-description {
     padding: 0;
   }
->>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
 }
