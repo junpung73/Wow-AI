@@ -14,6 +14,11 @@ export const Container = styled.div`
   @media only screen and (max-width: 1301px) {
     max-width: 1100px;
     width: 90%;
+    min-width: 320px;
+  }
+
+  button {
+    outline: none;
   }
 `;
 
@@ -39,6 +44,12 @@ export const Title = styled.div`
     border: 0;
     width: 525px;
     height: 55px;
+    box-shadow: 0 2px 1px var(--secondary-bg);
+
+    &:hover {
+      color: var(--secondary-text);
+      background-color: var(--secondary-bg);
+    }
   }
 `;
 
@@ -87,7 +98,12 @@ export const JoinButton = styled.button`
   border-radius: 50px;
   border-color: var(--secondary-bg);
   width: 400px;
+  height: 40px;
   margin-bottom: 50px;
+
+  &:hover {
+    background-color: var(--secondary-bg);
+  }
 `;
 
 export const CardItem = styled(Column)`
@@ -200,6 +216,10 @@ export const TalentButton = styled.button`
   width: fit-content;
   padding: 5px 80px;
   margin: 50px auto;
+
+  &:hover {
+    background-color: var(--secondary-text);
+  }
 `;
 
 export const BlogItem = styled(Card)`
