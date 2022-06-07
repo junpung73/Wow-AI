@@ -29,6 +29,7 @@ const JoinOurTalentPool = () => {
         flexDirection: "column",
       }}
     >
+      {/* Join our talent pool */}
       <Container>
         <Title>
           <h1 style={{ fontSize: "104px" }}>JOIN OUR TALENT POOL</h1>
@@ -40,6 +41,8 @@ const JoinOurTalentPool = () => {
           </BigImg>
         </Picture>
       </Container>
+
+      {/* Contributor */}
       <Container>
         <Column>
           <Row>
@@ -86,6 +89,8 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
+
+      {/* Examples Task */}
       <Container>
         <Column>
           <SubTitle>A Few Examples of Tasks You can do</SubTitle>
@@ -136,6 +141,8 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
+
+      {/* How it works */}
       <Container>
         <Column>
           <SubTitle style={{ textAlign: "center" }}>How it works</SubTitle>
@@ -171,6 +178,8 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
+
+      {/* Frequently asked questions */}
       <Container>
         <Column>
           <SubTitle>Frequently Asked Questions</SubTitle>
@@ -224,6 +233,8 @@ const JoinOurTalentPool = () => {
           </p>
         </Column>
       </Container>
+
+      {/* What do our project contributor say */}
       <Container>
         <Column>
           <SubTitle>What do our project contributors say?</SubTitle>
@@ -272,6 +283,8 @@ const JoinOurTalentPool = () => {
           <TalentButton>Join our talent</TalentButton>
         </Column>
       </Container>
+
+      {/* Blogs */}
       <Container>
         <Column>
           <SubTitle>Blogs</SubTitle>
