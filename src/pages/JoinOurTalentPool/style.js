@@ -56,7 +56,6 @@ export const Title = styled.div`
 export const Picture = styled.div`
   width: 50%;
   height: fit-content;
-  position: relative;
   display: flex;
   justify-content: flex-end;
 `;
@@ -65,6 +64,7 @@ export const BigImg = styled.div`
   aspect-ratio: 1;
   width: 90%;
   border-radius: 20px;
+  position: relative;
   background: url(${({ src }) => (src ? `${src}` : null)});
   background-position: center;
   background-repeat: no-repeat;
