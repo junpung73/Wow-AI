@@ -6,7 +6,7 @@ import AboutUs from "./pages/Company/AboutUs";
 import Contact from "./pages/Company/Contact";
 import DetailBlog from "./pages/DetailBlog";
 import Home from "./pages/Home";
-import JoinOurTalentPool from "./pages/JoinOurTalentPool";
+import JoinOurTalentPool from "./pages/JoinOurTalentPool/JoinOurTalentPool";
 import OffTheShelf from "./pages/OffTheShelf";
 import Resources from "./pages/Resources";
 import DataAnnotation from "./pages/Services/DataAnnotation";
