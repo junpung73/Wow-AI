@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import { Grid } from '@mui/material'
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
 import React from 'react'
 import Topic from './Topic'
 
@@ -13,6 +17,7 @@ const TopicList = () => {
                 <a href='#resources' className='btn-pagination'>Topic 5</a>
                 <a href='#resources' className='btn-pagination'>Topic 6</a>
             </div>
+<<<<<<< HEAD
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 <Topic />
                 <Topic />
@@ -21,6 +26,28 @@ const TopicList = () => {
                 <Topic />
                 <Topic />
             </div>
+=======
+            <Grid container spacing={2}>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+                <Grid item xs={6}>
+                    <Topic />
+                </Grid>
+            </Grid>
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
             <div style={{ display: 'flex', justifyContent: 'center', padding: '10vh 0' }}>
                 <a href='#resources' className='btn btn-dark'>Load more</a>
             </div>

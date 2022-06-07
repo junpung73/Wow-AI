@@ -15,7 +15,11 @@ const DataCollection = () => {
   return (
     <div>
       <HignQuality topic={topicservices[1]} />
+<<<<<<< HEAD
       <Container style={{ maxWidth: '1330px' }}>
+=======
+      <Container style={{ maxWidth: '90%' }}>
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
         <div className='arrowdown'>
           <img src='/images/scrollarrow.png' alt='scroll' />
         </div>

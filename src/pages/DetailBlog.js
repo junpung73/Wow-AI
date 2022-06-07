@@ -3,7 +3,11 @@ import { Container } from 'react-bootstrap'
 
 const DetailBlog = () => {
     return (
+<<<<<<< HEAD
         <Container style={{ maxWidth: '1330px' }}>
+=======
+        <Container style={{ maxWidth: '90%' }}>
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
             <img src='/images/Group73.png' alt='detail-blog' style={{ width: '100%' }} />
             <h2 className='title-content' style={{color: 'var(--primary-text)'}}>Surge of this virus is unpredictable in this era. Thoughts?</h2>
             <div style={{marginBottom: '20vh'}}>

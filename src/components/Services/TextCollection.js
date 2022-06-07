@@ -1,13 +1,21 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Col, Row } from 'react-bootstrap'
 import BoxContent2 from './public-service/BoxContent2'
 import SlideContent from '../public/SlideContent'
 import TitleSection from './public-service/TitleSection'
+=======
+import BoxContent2 from './public-service/BoxContent2'
+import SlideContent from '../public/SlideContent'
+import TitleSection from './public-service/TitleSection'
+import { Grid } from '@mui/material'
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
 
 const TextCollection = ({ content }) => {
     return (
         <div>
             <TitleSection content={content} />
+<<<<<<< HEAD
             <Row>
                 <Col xs={8}>
                     <SlideContent content={content} />
@@ -18,6 +26,22 @@ const TextCollection = ({ content }) => {
                     ))}
                 </Col>
             </Row>
+=======
+            <Grid container spacing={3}>
+                <Grid item xs={12} sm={8}>
+                    <SlideContent content={content} />
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                    <Grid container spacing={3}>
+                        {content.boxst.map((content, index) => (
+                            <Grid item xs={6} sm={12}>
+                                <BoxContent2 key={index} content={content} />
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+            </Grid>
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
         </div>
     )
 }

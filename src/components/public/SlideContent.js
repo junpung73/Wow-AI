@@ -3,12 +3,20 @@ import { Box } from '@mui/material'
 
 const SlideContent = ({ content }) => {
     return (
+<<<<<<< HEAD
         <div style={{width: "100%", padding: "4vh 2vh 0 2vh"}}>
+=======
+        <div style={{width: "100%"}}>
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
             <Box style={{
                 width: "100%",
                 border: "2px solid var(--secondary-bg)",
                 borderRadius: "30px",
+<<<<<<< HEAD
                 padding: "1vh"
+=======
+                padding: "1vh",
+>>>>>>> 8518c29557bf7c637a0ef938cf3493522591c4a2
             }}>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
