@@ -14,7 +14,7 @@ const ContainerStyled = styled(Container)(({ theme }) => ({
   maxWidth: "90%",
   padding: '0',
   [theme.breakpoints.up('xl')]: {
-    maxWidth: "80%",
+    maxWidth: "70%",
   },
 }));
 
