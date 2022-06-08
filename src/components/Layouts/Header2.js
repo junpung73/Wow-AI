@@ -68,9 +68,9 @@ const LinkInfo = {
     }
 }
 const DivStyled = styled('div')(({ theme }) => ({
-    marginBottom: '0.5rem',
+    marginBottom: '0',
     [theme.breakpoints.down('md')]: {
-        marginBottom: '0',
+        marginBottom: '0.5rem',
     },
 }))
 

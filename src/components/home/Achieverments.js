@@ -1,5 +1,6 @@
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { styled } from '@mui/material'
 import React from 'react'
 
 const Content = {
@@ -21,6 +22,19 @@ const Icon = ({ theme }) => ({
         padding: "0",
     },
 })
+const TitleStyled = styled('h2')(({ theme }) => ({
+    padding: "10rem 0",
+    [theme.breakpoints.down('sm')]: {
+        padding: "3rem 0",
+    },
+}))
+
+const DescripStyled = styled('div')(({ theme }) => ({
+    display: 'block',
+    [theme.breakpoints.down('sm')]: {
+        display: 'none',
+    },
+}))
 
 const VerticalLine = {
     borderLeft: "2px solid var(--secondary-bg)"
@@ -32,20 +46,20 @@ const Achieverments = () => {
             <div style={Content}>
                 <div>
                     <h2 className='title-description'>1. Audio Transcription</h2>
-                    <div style={{ display: "flex" }}>
+                    <DescripStyled>
                         <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
                         <span>14 000 audio hours <br /> in 14 languages</span>
-                    </div>
+                    </DescripStyled>
                 </div>
                 <div>
                     <hr style={Line} />
                 </div>
                 <div>
                     <h2 className='title-description'>2. Audio Recording</h2>
-                    <div style={{ display: "flex" }}>
+                    <DescripStyled>
                         <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
                         <span>12 000 recording audio <br /> hours in 6 languages</span>
-                    </div>
+                    </DescripStyled>
                 </div>
             </div>
             <div className='content-center' style={Content}>
@@ -53,7 +67,7 @@ const Achieverments = () => {
 
                 </div>
                 <div>
-                    <h2 className='title-content' style={{ padding: "10rem 0" }}>Achieverments</h2>
+                    <TitleStyled className='title-content'>Achieverments</TitleStyled>
                 </div>
                 <div style={VerticalLine}>
 
@@ -62,20 +76,20 @@ const Achieverments = () => {
             <div style={Content}>
                 <div>
                     <h2 className='title-description'>4. Automotive Video <br /> Annotation</h2>
-                    <div style={{ display: "flex" }}>
+                    <DescripStyled>
                         <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
                         <span>10 million frames</span>
-                    </div>
+                    </DescripStyled>
                 </div>
                 <div>
                     <hr style={Line} />
                 </div>
                 <div>
                     <h2 className='title-description'>3. Audio Annotation</h2>
-                    <div style={{ display: "flex" }}>
+                    <DescripStyled>
                         <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
                         <span>12 000 recording audio <br /> hours in 6 languages</span>
-                    </div>
+                    </DescripStyled>
                 </div>
             </div>
         </div>

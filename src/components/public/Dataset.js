@@ -11,8 +11,8 @@ const Picture = styled(Grid)(({ theme }) => ({
 
 const Dataset = () => {
   return (
-    <div style={{ padding: "20vh 0" }}>
-      <Container style={{ width: "90%", padding: "10vh 0" }}>
+    <div style={{ margin: "20vh 0" }}>
+      <Container style={{ width: "90%", paddingBottom: "10vh" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>
             <img
@@ -97,7 +97,7 @@ const Dataset = () => {
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
-                  rows="7"
+                  rows="5"
                 ></textarea>
               </Grid>
               <Grid item xs={12}>
