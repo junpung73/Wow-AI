@@ -102,7 +102,9 @@ const JoinOurTalentPool = () => {
           </p>
           <Row style={{ flex: "1" }}>
             <CardItem>
-              <img src="images/logo1.svg" />
+              <div>
+                <img src="images/logo1.svg" />
+              </div>
               <h3>+ Data collection</h3>
               <p>
                 Data collection projects involve the gathering of different
@@ -117,7 +119,9 @@ const JoinOurTalentPool = () => {
               </p>
             </CardItem>
             <CardItem>
-              <img src="images/logo2.svg"></img>
+              <div>
+                <img src="images/logo2.svg"></img>
+              </div>
               <h3>+ Data annotation</h3>
               <p>
                 You are expected to identify raw data (images, text files,
@@ -129,8 +133,9 @@ const JoinOurTalentPool = () => {
               </p>
             </CardItem>
             <CardItem>
-              <img src="images/logo3.svg"></img>
-
+              <div>
+                <img src="images/logo3.svg"></img>
+              </div>
               <h3>+ Transcription Data</h3>
               <p>
                 Transcribers will listen to audio files and write down what they
@@ -183,10 +188,9 @@ const JoinOurTalentPool = () => {
       <Container>
         <Column>
           <SubTitle>Frequently Asked Questions</SubTitle>
-          <img
-            style={{ width: "100%", margin: "30px 0" }}
-            src="images/video.png"
-          ></img>
+          <video style={{ width: "100%", margin: "30px 0" }} controls>
+            <source src="video/companyintro.mp4"></source>
+          </video>
           <h4>1. What is Wow AI?</h4>
           <p>
             Wow AI is a trusted and professional partner that provides

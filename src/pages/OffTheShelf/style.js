@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.div`
   max-width: 1330px;
   width: 90%;
-  padding: 100px 12px;
+  padding: 50px 12px;
   padding-bottom: 0;
   margin: auto;
   display: flex;
@@ -23,6 +23,10 @@ export const Wrapper = styled.div`
   button {
     outline: none;
   }
+
+  &:last-of-type {
+    margin-bottom: 100px;
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -38,6 +42,11 @@ export const SubContainer = styled.div`
   li {
     line-height: 2;
   }
+
+  @media (max-width: 548px) {
+    width: 100%;
+    align-items: center;
+  } ;
 `;
 
 export const Row = styled.div`
@@ -60,6 +69,7 @@ export const SelectButtonRow = styled(Row)`
 export const TableRow = styled(Row)`
   border: 2px solid white;
   border-bottom: 0;
+  height: 48px;
 
   p {
     flex: 1 1 20%;
@@ -102,6 +112,11 @@ export const SubscribeButton = styled.button`
   }
 `;
 
+export const SubmitButton = styled(SubscribeButton)`
+  margin: 20px auto;
+  margin-bottom: 0;
+`;
+
 export const ListItem = styled.div`
   display: flex;
   align-items: center;
@@ -135,12 +150,16 @@ export const Picture = styled.div`
   height: fit-content;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 548px) {
+    display: none;
+  } ;
 `;
 
 export const BigImg = styled.div`
   aspect-ratio: 7/12;
   position: relative;
-  width: 60%;
+  width: ${({ width }) => (width ? `${width}` : "60%")};
   border-radius: 20px;
   background: url(${({ src }) => (src ? `${src}` : null)});
   background-position: center;
@@ -161,8 +180,8 @@ export const SmallImg = styled(BigImg)`
 
 export const ContactUsButton = styled.button`
   background-color: #1e1e1e;
-  padding: 10px 0;
-  width: 60%;
+  padding: 10px 50px;
+  width: fit-content;
   position: absolute;
   color: white;
   font-size: 20px;
@@ -175,7 +194,7 @@ export const ContactUsButton = styled.button`
   gap: 10px;
   bottom: -5%;
   margin: auto;
-
+  white-space: nowrap;
   p {
     margin: 0;
   }
@@ -184,6 +203,12 @@ export const ContactUsButton = styled.button`
   svg {
     color: var(--secondary-bg);
   }
+
+  @media (max-width: 548px) {
+    font-size: 14px;
+    padding: 10px 15px;
+    bottom: -15%;
+  } ;
 `;
 
 export const SelectButton = styled.button`
@@ -265,4 +290,14 @@ export const PageSwitch = styled.span`
       color: white;
     }
   }
+`;
+
+export const InputForm = styled.input`
+  border: 1px solid white;
+  background-color: var(--primary-bg);
+  border-radius: 10px;
+  width: 100%;
+  height: 56px;
+  padding: 10px 20px;
+  color: white;
 `;

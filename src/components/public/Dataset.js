@@ -11,8 +11,8 @@ const Picture = styled(Grid)(({ theme }) => ({
 
 const Dataset = () => {
   return (
-    <div style={{ padding: "20vh 0" }}>
-      <Container style={{ width: "90%", padding: "10vh 0" }}>
+    <div style={{}}>
+      <Container style={{ width: "100%", padding: "10vh 0" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>
             <img

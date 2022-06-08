@@ -38,17 +38,16 @@ export const Title = styled.div`
   }
 
   button {
-    color: white;
-    background-color: var(--secondary-text);
+    color: var(--primary-text);
+    background-color: var(--secondary-bg);
     border-radius: 50px;
     border: 0;
     width: 525px;
     height: 55px;
-    box-shadow: 0 2px 1px var(--secondary-bg);
 
     &:hover {
       color: var(--secondary-text);
-      background-color: var(--secondary-bg);
+      background-color: white;
     }
   }
 `;
@@ -99,7 +98,8 @@ export const JoinButton = styled.button`
   border-color: var(--secondary-bg);
   width: 400px;
   height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 
   &:hover {
     background-color: var(--secondary-bg);
@@ -110,9 +110,16 @@ export const CardItem = styled(Column)`
   flex: 1 1 33%;
   margin: 0 30px;
 
-  > img {
+  div {
+    display: flex;
+    height: 100px;
+    aspect-ratio: 1;
     margin: 50px auto;
-    width: 100px;
+    justify-content: center;
+    /* > img {
+      margin: 50px auto;
+      width: 100px;
+    } */
   }
 
   &:first-of-type {
@@ -150,7 +157,8 @@ export const Card = styled(Column)`
   background-color: var(--secondary-text);
   padding: 50px 30px;
   margin: 20px;
-  height: 351px;
+  height: fit-content;
+  aspect-ratio: 1;
 
   &:first-of-type {
     margin-left: 0;
@@ -202,7 +210,7 @@ export const Quote = styled(Card)`
   color: var(--secondary-text);
   flex: 1 1 33%;
 
-  &:first-of-type {
+  &:hover {
     background-color: var(--secondary-text);
     color: white;
   }
