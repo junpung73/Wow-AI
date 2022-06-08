@@ -87,11 +87,28 @@
   aspect-ratio: 1/1;
 }
 
+.slick-prev, .slick-next{
+  display: none !important;
+}
+.slick-dots li button:before {
+  color: var(--primary-text);
+  opacity: 1;
+  content: "━";
+  font-size: 30px;
+}
+.slick-dots li {
+  margin: 0 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--secondary-bg);
+  opacity: 1;
+}
+
 /* -------------------title--------------- */
 .title-content {
   font-size: var(--large-text) !important;
   font-weight: bold !important;
-  padding: 4vh 0 4vh 0;
+  padding: 2vh 0;
   color: var(--secondary-bg);
 }
 

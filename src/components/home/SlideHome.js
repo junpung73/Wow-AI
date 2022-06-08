@@ -36,17 +36,26 @@ const SlideHome = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/slidehome/slide_1.jpg" class="slide-image d-block w-100" alt="Slide 1" />
+                        <video class="slide-image d-block w-100" width="100%" autoPlay muted loop>
+                            <source src="/videos/pexels-kindel-media-9029254.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slidehome/slide_2.jpg" class="slide-image d-block w-100" alt="Slide 2" />
+                        <video class="slide-image d-block w-100" width="100%" autoPlay muted loop>
+                            <source src="/videos/pexels-kindel-media-8979467.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slidehome/slide_3.jpg" class="slide-image d-block w-100" alt="Slide 3" />
+                        <video class="slide-image d-block w-100" width="100%" autoPlay muted loop>
+                            <source src="/videos/pexels-pavel-danilyuk-8084631.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
@@ -93,7 +102,6 @@ const SlideHome = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

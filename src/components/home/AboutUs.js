@@ -1,3 +1,4 @@
+import { CardMedia } from '@mui/material'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
@@ -5,19 +6,21 @@ const AboutUs = () => {
     return (
         <div id='aboutus' style={{ height: "90vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "10vh 0" }}>
             <Row>
-                <Col xs={7}>
-                    <iframe
-                        width="650"
-                        height="400"
-                        src="https://www.youtube.com/embed/fLkKFJ_mdD0"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        style={{ borderRadius: "15px", border: "2px solid var(--secondary-bg)", padding: "8px" }}
-                    ></iframe>
+                <Col xs={12} lg={7}>
+                    <CardMedia
+                        component="video"
+                        width="100%"
+                        style={{
+                            borderRadius: "15px",
+                            border: "2px solid var(--secondary-bg)",
+                            padding: "8px",
+                            aspectRatio: '16/9',
+                        }}
+                        image="/videos/pexels-pavel-danilyuk-8084506.mp4"
+                        controls loop
+                    />
                 </Col>
-                <Col xs={5} style={{ color: "var(--primary-text)" }}>
+                <Col xs={12} lg={5} style={{ color: "var(--primary-text)" }}>
                     <h5 className='title-content'>About Us</h5>
                     <div style={{ textAlign: "justify" }}>
                         Wow AI is

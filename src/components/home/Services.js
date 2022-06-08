@@ -28,10 +28,15 @@ const LinkStyled = styled(Link)(({ theme }) => ({
         color: "var(--secondary-bg)",
     },
     [theme.breakpoints.down('md')]: {
-        fontSize: 'var(--normal-text)',
+        display: 'none',
     },
 }))
-
+const UlStyled = styled('ul')(({ theme }) => ({
+    display: 'block',
+    [theme.breakpoints.down('sm')]: {
+        display: 'none',
+    },
+}))
 
 const Services = () => {
     return (
@@ -55,12 +60,12 @@ const Services = () => {
                 <Grid item lg={3} xs={6}>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Data collection</h2>
-                        <ul>
+                        <UlStyled>
                             <li>Text data collection</li>
                             <li>Image data collection</li>
                             <li>Speech data collection</li>
                             <li>Audio data collection</li>
-                        </ul>
+                        </UlStyled>
                         <LinkStyled>
                             Discover now &nbsp;
                             <img src='/images/Vector9.png' alt='...' />
@@ -68,11 +73,11 @@ const Services = () => {
                     </BoxStyled>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Transcription</h2>
-                        <ul>
+                        <UlStyled>
                             <li>Image Transcription</li>
                             <li>Audio Transcription</li>
                             <li>Tailor-made solution</li>
-                        </ul>
+                        </UlStyled>
                         <LinkStyled>
                             Learn more &nbsp;
                             <img src='/images/Vector9.png' alt='...' />
@@ -82,24 +87,21 @@ const Services = () => {
                 <Grid item lg={3} xs={6}>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Data annotation</h2>
-                        <ul>
+                        <UlStyled>
                             <li>Text data annotation</li>
                             <li>Image data annotation</li>
                             <li>Speech data annotation</li>
                             <li>Audio data annotation</li>
-                        </ul>
+                        </UlStyled>
                         <div style={{ display: "flex" }}>
                             <LinkStyled>
                                 Free <br /> Consultation &nbsp;
+                                <img src='/images/Vector9.png' alt='...' />
                             </LinkStyled>
-                            <img src='/images/Vector9.png' alt='...' style={{ marginTop: "20px", height: "20px" }} />
                         </div>
                     </BoxStyled>
                     <BoxStyled style={BoxContent}>
                         <h2 className='title-description'>+ Tailor-made solution ?</h2>
-                            <br/>
-                            <br/>
-                            <br/>
                         <LinkStyled>
                             Share with us &nbsp;
                             <img src='/images/Vector9.png' alt='...' />
