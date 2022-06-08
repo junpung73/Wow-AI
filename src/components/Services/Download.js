@@ -6,17 +6,33 @@ const BoxStyled = styled(Box)({
   borderRadius: "30px",
   width: "100%",
 });
-const VerticalLine = {
+const VerticalLine = styled('div')(({ theme }) => ({
   borderLeft: "2px solid var(--secondary-bg)",
   margin: "2vh 0",
-};
-const RowStyled = {
+  [theme.breakpoints.down("sm")]: {
+    display: 'none',
+  },
+}));
+const RowStyled = styled('div')(({ theme }) => ({
   display: "flex",
   justifyContent: "space-around",
   borderBottom: "2px solid var(--secondary-bg)",
   margin: "0 2vh",
   padding: "5vh 0",
-};
+  [theme.breakpoints.down("sm")]: {
+    padding: "2vh 0",
+  },
+}));
+const ImgStyled = styled('img')(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    width: '14px',
+  },
+}));
+const MedicalStyled = styled('div')(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    width: '30%',
+  },
+}));
 
 const Download = () => {
   return (
@@ -30,27 +46,27 @@ const Download = () => {
         <span className="title-content"> Download Our Sample Datasets</span>
       </div>
       <BoxStyled>
-        <div style={RowStyled}>
+        <RowStyled>
           <h5 className="title-description">Medical dataset</h5>
-          <div style={VerticalLine}></div>
+          <VerticalLine></VerticalLine>
           <h5 className="title-description">OCR dataset</h5>
-          <div style={VerticalLine}></div>
+          <VerticalLine></VerticalLine>
           <h5 className="title-description">Audio dataset</h5>
-        </div>
-        <div style={RowStyled}>
+        </RowStyled>
+        <RowStyled>
           <div>
-            <img src="/images/Group882.png" alt="Download" />
+            <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Imaging data </span>
           </div>
           <div>
-            <img src="/images/Group882.png" alt="Download" />
+            <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Imaging data </span>
           </div>
           <div>
-            <img src="/images/Group882.png" alt="Download" />
+            <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Audio data </span>
           </div>
-        </div>
+        </RowStyled>
         <div
           style={{
             display: "flex",
@@ -59,14 +75,14 @@ const Download = () => {
           }}
         >
           <div>
-            <img src="/images/Group882.png" alt="Download" />
+            <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Audio data </span>
           </div>
           <div>&emsp; &emsp; &emsp;</div>
-          <div>
-            <img src="/images/Group882.png" alt="Download" />
+          <MedicalStyled>
+            <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Medical Audio data </span>
-          </div>
+          </MedicalStyled>
         </div>
       </BoxStyled>
     </div>
