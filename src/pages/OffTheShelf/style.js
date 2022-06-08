@@ -59,11 +59,26 @@ export const Row = styled.div`
 export const SelectButtonGroup = styled(Row)`
   width: fit-content;
   gap: 20px;
+  justify-content: space-between;
+  @media (max-width: 568px) {
+    gap: 10px;
+    width: 100%;
+    &:last-of-type {
+      justify-content: flex-end;
+    }
+  }
 `;
 
 export const SelectButtonRow = styled(Row)`
   justify-content: space-between;
   margin-bottom: 30px;
+
+  @media (max-width: 568px) {
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+  }
 `;
 
 export const TableRow = styled(Row)`
@@ -94,6 +109,10 @@ export const TableRow = styled(Row)`
     p {
       color: white;
     }
+  }
+
+  @media (max-width: 568px) {
+    font-size: 12px;
   }
 `;
 
@@ -143,6 +162,9 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  @media (max-width: 528px) {
+    padding-left: 0 !important;
+  } ;
 `;
 
 export const Picture = styled.div`
@@ -151,7 +173,7 @@ export const Picture = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 548px) {
+  @media (max-width: 528px) {
     display: none;
   } ;
 `;
@@ -212,7 +234,8 @@ export const ContactUsButton = styled.button`
 `;
 
 export const SelectButton = styled.button`
-  width: 150px;
+  width: fit-content;
+  padding: 0 30px;
   background-color: var(--primary-bg);
   border: ${({ btName, dataset }) =>
     btName === dataset
@@ -225,6 +248,9 @@ export const SelectButton = styled.button`
   &:hover {
     color: white;
     border-color: white;
+  }
+  @media (max-width: 528px) {
+    padding: 0 15px;
   }
 `;
 
@@ -239,6 +265,10 @@ export const DropdownButton = styled.button`
   color: white;
   border: 2px solid white;
   background-color: transparent;
+
+  @media (max-width: 528px) {
+    width: 128px;
+  }
 `;
 
 export const DropdownMenu = styled.div`

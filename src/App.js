@@ -3,7 +3,7 @@ import "./App.css";
 import Footer from "./components/Layouts/Footer";
 import Header2 from "./components/Layouts/Header2";
 import AboutUs from "./pages/Company/AboutUs";
-import Contact from "./pages/Company/Contact";
+import Contact from "./pages/Company/Contact/Contact";
 import DetailBlog from "./pages/DetailBlog";
 import Home from "./pages/Home";
 import JoinOurTalentPool from "./pages/JoinOurTalentPool/JoinOurTalentPool";

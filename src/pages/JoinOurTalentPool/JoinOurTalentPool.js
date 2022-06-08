@@ -18,6 +18,8 @@ import {
   Carousel,
   TalentButton,
   BlogItem,
+  ConRow,
+  ConCol,
 } from "./style";
 
 const JoinOurTalentPool = () => {
@@ -32,7 +34,7 @@ const JoinOurTalentPool = () => {
       {/* Join our talent pool */}
       <Container>
         <Title>
-          <h1 style={{ fontSize: "104px" }}>JOIN OUR TALENT POOL</h1>
+          <h1>JOIN OUR TALENT POOL</h1>
           <button>SIGN UP NOW</button>
         </Title>
         <Picture>
@@ -45,14 +47,8 @@ const JoinOurTalentPool = () => {
       {/* Contributor */}
       <Container>
         <Column>
-          <Row>
-            <Column
-              style={{
-                border: "solid white",
-                borderWidth: "0 1px 1px 0",
-                padding: "50px",
-              }}
-            >
+          <ConRow>
+            <ConCol>
               <h3>Become our project contributors</h3>
               <h5 style={{ fontSize: "18px" }}>
                 Wow AI is a trusted and professional partner that provides
@@ -62,19 +58,13 @@ const JoinOurTalentPool = () => {
                 anywhere.
               </h5>
               <JoinButton>Join our crowdsourcing projects now!</JoinButton>
-            </Column>
-            <Column style={{ border: "solid white", borderWidth: "0 0 1px 0" }}>
+            </ConCol>
+            <ConCol style={{ borderTop: 0 }}>
               <img src="images/contributor1.svg"></img>
-            </Column>
-          </Row>
-          <Row>
-            <Column
-              style={{
-                border: "solid white",
-                borderWidth: "0 1px 0 0",
-                padding: "50px",
-              }}
-            >
+            </ConCol>
+          </ConRow>
+          <ConRow>
+            <ConCol style={{ borderBottom: 0 }}>
               <h3>Why become our project contributors?</h3>
               <h5>
                 Wow AI provides you with opportunities in supporting our clients
@@ -82,11 +72,11 @@ const JoinOurTalentPool = () => {
                 models. We welcome workers across the globe regardless of their
                 backgrounds and experience.
               </h5>
-            </Column>
-            <Column>
+            </ConCol>
+            <ConCol>
               <img src="images/contributor2.svg"></img>
-            </Column>
-          </Row>
+            </ConCol>
+          </ConRow>
         </Column>
       </Container>
 

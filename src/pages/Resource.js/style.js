@@ -44,6 +44,7 @@ export const WrapTopic = styled.div`
   justify-content: center;
   margin: 50px 0;
   gap: 20px;
+  white-space: nowrap;
 
   a {
     opacity: 0.6;
@@ -53,6 +54,12 @@ export const WrapTopic = styled.div`
     &:hover {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 528px) {
+    font-size: 12px;
+    gap: 0;
+    justify-content: space-between;
   }
 `;
 

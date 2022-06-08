@@ -6,7 +6,7 @@ export const Container = styled.div`
   max-width: 1330px;
   width: 90%;
   padding: 100px 12px;
-
+  justify-content: center;
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;
   }
@@ -25,6 +25,10 @@ export const Container = styled.div`
 export const SubTitle = styled.h1`
   margin-bottom: 40px;
   color: var(--secondary-bg);
+
+  @media (max-width: 528px) {
+    font-size: 25px;
+  }
 `;
 
 export const Title = styled.div`
@@ -35,6 +39,10 @@ export const Title = styled.div`
 
   h1 {
     margin-bottom: 50px;
+    font-size: 104px;
+    @media (max-width: 528px) {
+      font-size: 50px;
+    }
   }
 
   button {
@@ -42,13 +50,22 @@ export const Title = styled.div`
     background-color: var(--secondary-bg);
     border-radius: 50px;
     border: 0;
-    width: 525px;
+    width: fit-content;
+    padding: 0 180px;
     height: 55px;
+    white-space: nowrap;
 
     &:hover {
       color: var(--secondary-text);
       background-color: white;
     }
+    @media (max-width: 528px) {
+      padding: 0 70px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 528px) {
+    width: 100%;
   }
 `;
 
@@ -57,6 +74,10 @@ export const Picture = styled.div`
   height: fit-content;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 528px) {
+    display: none;
+  }
 `;
 
 export const BigImg = styled.div`
@@ -84,7 +105,6 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: justify;
-
   > img {
     margin: auto 70px;
     width: 125px;
@@ -116,10 +136,6 @@ export const CardItem = styled(Column)`
     aspect-ratio: 1;
     margin: 50px auto;
     justify-content: center;
-    /* > img {
-      margin: 50px auto;
-      width: 100px;
-    } */
   }
 
   &:first-of-type {
@@ -129,12 +145,55 @@ export const CardItem = styled(Column)`
   &:last-of-type {
     margin-right: 0;
   }
+  @media (max-width: 528px) {
+    margin: 0;
+  }
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  @media (max-width: 528px) {
+    flex-direction: column;
+  }
+`;
+
+export const ConRow = styled(Row)`
+  @media (max-width: 528px) {
+    flex-direction: column-reverse;
+    img {
+      margin: auto;
+    }
+  }
+`;
+
+export const ConCol = styled(Column)`
+  &:first-of-type {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    padding: 50px;
+    @media (max-width: 528px) {
+      /* border-width: 0; */
+      border: 0;
+    }
+  }
+
+  &:last-of-type {
+    border: solid white;
+    border-width: 1px 0 0 1px;
+    padding: 50px;
+    @media (max-width: 528px) {
+      /* border-width: 0; */
+      border: 0;
+    }
+  }
+
+  @media (max-width: 528px) {
+    border-width: 0;
+    border: 0;
+  }
 `;
 
 export const Carousel = styled(Row)`
@@ -166,6 +225,10 @@ export const Card = styled(Column)`
 
   &:last-of-type {
     margin-right: 0;
+  }
+  @media (max-width: 528px) {
+    margin: 10px 0;
+    width: 100%;
   }
 `;
 
