@@ -34,14 +34,14 @@ export default [
             {
                 color: 'var(--secondary-text)',
                 bgcolor: 'var(--primary-text)',
-                title: '',
-                description: '',
+                title: 'Monologue Speech Collection',
+                description: 'Collect data from individual speakers in the form of prepared, directed, or spontaneous speech. The speaker is chosen based on your specific requirements, such as age, gender, ethnicity, dialect, and language.',
             },
             {
                 color: 'var(--primary-text)',
                 bgcolor: 'var(--secondary-text)',
-                title: 'Document Dataset Collection',
-                description: "We can assist you with gathering all forms of crucial documents, such as a driver's license or a credit card, from various locations and languages in order to train machine learning models.",
+                title: 'Dialogue Speech Collection',
+                description: "Collect guided or spontaneous speech datasets/interactions between a Call Center Agent and a Caller or a Caller and a Bot depending on particular requirements or project specifications.",
             }
         ]
     },
