@@ -6,9 +6,9 @@ import { Grid } from "@mui/material";
 
 const TextCollection = ({ content }) => {
   return (
-    <div id={`${content.id}`} style={{padding: '10vh 0'}}>
-      <TitleSection content={content} />
-      <Grid container spacing={3}>
+    <div id={`${content.id}`} style={{padding: '10vh 30svh'}}>
+      <TitleSection content={content}/>
+      <Grid container spacing={3} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} sm={8}>
           <SlideContent content={content} />
         </Grid>
