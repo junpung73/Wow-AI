@@ -11,7 +11,7 @@ const TextAudioSection = ({ content }) => {
     setActive(index);
   };
   return (
-    <div>
+    <div style={{padding: '20vh 0'}}>
       <h2 className="title-content">{content.title}</h2>
       <Grid container spacing={2}>
         <Grid item xs={12} md={10}>

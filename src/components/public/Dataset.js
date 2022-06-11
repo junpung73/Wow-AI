@@ -11,7 +11,7 @@ const Picture = styled(Grid)(({ theme }) => ({
 
 const Dataset = () => {
   return (
-    <div style={{ margin: "20vh 0" }}>
+    <div style={{ margin: "20vh 10vh" }}>
       <div className="contain" style={{ paddingBottom: "10vh" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>
@@ -26,7 +26,6 @@ const Dataset = () => {
               style={{
                 fontSize: "var(--medium-text-2)",
                 fontWeight: "bold",
-                padding: "2vh 0 1.5vh 0",
               }}
             >
               Want to build your own
@@ -97,7 +96,7 @@ const Dataset = () => {
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
-                  rows="5"
+                  rows="3"
                 ></textarea>
               </Grid>
               <Grid item xs={12}>
@@ -105,7 +104,6 @@ const Dataset = () => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    paddingTop: "2vh",
                   }}
                 >
                   <button

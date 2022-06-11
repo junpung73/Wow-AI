@@ -39,7 +39,7 @@ const Box2 = styled('div')(({ theme }) => ({
 
 const Solution = () => {
   return (
-    <div id='solutions' style={{ padding: "10vh 0" }}>
+    <div id='solutions' style={{ padding: "10vh 20vh" }}>
       <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>AI solutions for your industry</h2>
       <div style={{ display: 'flex', justifyContent: 'center',flexWrap: 'wrap' }}>
         <a href='#solutions' className='btn btn-control'>Healthcare</a>
@@ -56,7 +56,7 @@ const Solution = () => {
         <Grid item xs={12} sm={6}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
             <Box1>
-              <h5 className='title-description'>Free Consultation</h5>
+              <h5 className='title-description' style={{padding: '0'}}>Free Consultation</h5>
             </Box1>
             <Box2>
               <h5 className='title-description' style={{ padding: '0' }}>Retail</h5>
