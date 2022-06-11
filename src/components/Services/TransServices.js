@@ -10,7 +10,7 @@ const BoxStyled = styled(Box)({
 });
 const ContaiService = styled(Grid)(({ theme }) => ({
   padding: "20vh",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     padding: "0",
   },
 }));

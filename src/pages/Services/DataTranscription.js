@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Dataset from "../../components/public/Dataset";
 import Download from "../../components/Services/Download";
 import HignQuality from "../../components/Services/public-service/HignQuality";
@@ -10,14 +9,14 @@ const DataTranscription = () => {
   return (
     <div>
       <HignQuality topic={topicservices[0]} />
-      <Container style={{ maxWidth: "90%" }}>
+      <div className="contain">
         <div className="arrowdown">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </div>
         <TransServices />
         <Download />
         <Dataset />
-      </Container>
+      </div>
     </div>
   );
 };

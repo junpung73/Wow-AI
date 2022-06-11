@@ -40,7 +40,7 @@ const Footer = () => {
       }}
     >
       <hr style={{ color: "white", height: "2px", margin: "0" }} />
-      <Container style={{ marginBottom: "5vh", maxWidth: "90%" }}>
+      <div className="contain" style={{ marginBottom: "5vh" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={4}>
             <Link to="/">
@@ -85,7 +85,7 @@ const Footer = () => {
             </ul>
           </InfoPage>
         </Grid>
-      </Container>
+      </div>
       <hr style={{ color: "white", height: "2px", margin: "0" }} />
       <Container>
         <Typography

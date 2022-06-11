@@ -9,13 +9,12 @@ import topicservices from "../../__mock__/topicservices";
 import sectionservices from "../../__mock__/collection";
 import SpeechCollection from "../../components/Services/SpeechCollection";
 import IllutrationSection from "../../components/Services/IllutrationSection";
-import { Container } from "react-bootstrap";
 
 const DataCollection = () => {
   return (
     <div>
       <HignQuality topic={topicservices[1]} />
-      <Container style={{ maxWidth: "90%" }}>
+      <div className="contain">
         <div className="arrowdown">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </div>
@@ -29,7 +28,7 @@ const DataCollection = () => {
         <IllutrationSection content={sectionservices[3]} />
         <Download />
         <Dataset />
-      </Container>
+      </div>
     </div>
   );
 };

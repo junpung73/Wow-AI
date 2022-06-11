@@ -15,14 +15,14 @@ const TitleStyled = styled("h5")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
   padding: "1vh 0",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     fontSize: "var(--normal-text)",
     padding: "0",
   },
 }));
 const Descrip = styled("p")(({ theme }) => ({
   fontSize: "var(--normal-text)",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     display: "none",
   },
 }));

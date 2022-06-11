@@ -5,7 +5,7 @@ import { Grid, styled } from '@mui/material';
 
 const Box1 = styled('div')(({ theme }) => ({
   backgroundColor: 'var(--secondary-bg)',
-  height: '30vw',
+  height: '20vw',
   aspectRatio: '1/1',
   borderRadius: '30px',
   paddingLeft: '4vh',
@@ -15,13 +15,14 @@ const Box1 = styled('div')(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     height: '70vw',
     fontSize: 'var(--normal-text)',
+    paddingTop: '20rem',
   },
 }))
 const Box2 = styled('div')(({ theme }) => ({
   position: 'absolute',
   marginBottom: '10vh',
   marginLeft: '8vh',
-  height: '30vw',
+  height: '20vw',
   backgroundColor: 'var(--secondary-text)',
   aspectRatio: '1/1',
   borderRadius: '30px',
@@ -35,13 +36,6 @@ const Box2 = styled('div')(({ theme }) => ({
     fontSize: 'var(--small-text)',
   },
 }))
-// const BtnControl = styled('div')(({ theme }) => ({
-//   display: 'flex',
-//   justifyContent: 'center',
-//   [theme.breakpoints.down('sm')]: {
-//     fle
-//   },
-// }))
 
 const Solution = () => {
   return (
@@ -56,10 +50,10 @@ const Solution = () => {
       </div>
       <br />
       <Grid container spacing={5}>
-        <Grid item sx={12} sm={7}>
+        <Grid item xs={12} sm={6}>
           <SlideContent content={solutions[0]} />
         </Grid>
-        <Grid item sx={12} sm={5}>
+        <Grid item xs={12} sm={6}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
             <Box1>
               <h5 className='title-description'>Free Consultation</h5>

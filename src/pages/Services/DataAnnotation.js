@@ -6,13 +6,12 @@ import HignQuality from "../../components/Services/public-service/HignQuality";
 import topicservices from "../../__mock__/topicservices";
 import annotation from "../../__mock__/annotation";
 import TextAudioSection from "../../components/annotation/TextAudioSection";
-import { Container } from "react-bootstrap";
 
 const DataAnnotation = () => {
   return (
     <div>
       <HignQuality topic={topicservices[2]} />
-      <Container style={{ maxWidth: "90%" }}>
+      <div className="contain">
         <div className="arrowdown">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </div>
@@ -22,7 +21,7 @@ const DataAnnotation = () => {
         <ImgVdSection content={annotation[3]} />
         <Download />
         <Dataset />
-      </Container>
+      </div>
     </div>
   );
 };
