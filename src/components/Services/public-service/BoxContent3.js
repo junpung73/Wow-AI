@@ -9,6 +9,13 @@ const BoxStyled = styled(Box)({
   justifyContent: "center",
   alignItems: "center",
   padding: "2%",
+  color: "var(--primary-text)",
+  backgroundColor: "var(--secondary-text)",
+  transition: 'all 0.5s ease',
+  '&:hover': {
+    color: "var(--secondary-text)",
+    backgroundColor: "var(--primary-text)",
+  }
 });
 
 const TitleStyled = styled("h5")(({ theme }) => ({
@@ -29,12 +36,7 @@ const Descrip = styled("p")(({ theme }) => ({
 
 const BoxContent3 = ({ content }) => {
   return (
-    <BoxStyled
-      style={{
-        backgroundColor: `${content.bgcolor}`,
-        color: `${content.color}`,
-      }}
-    >
+    <BoxStyled>
       <TitleStyled>{content.title}</TitleStyled>
       <Descrip>{content.description}</Descrip>
     </BoxStyled>

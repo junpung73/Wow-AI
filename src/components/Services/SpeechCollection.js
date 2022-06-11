@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 
 const SpeechCollection = ({ content }) => {
   return (
-    <div style={{ margin: "10vh 0" }}>
+    <div style={{ padding: "10vh 0" }} id='speech-collection'>
       <TitleSection content={content} />
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>

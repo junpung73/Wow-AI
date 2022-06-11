@@ -16,10 +16,25 @@ const DataAnnotation = () => {
           <img src="/images/scrollarrow.png" alt="scroll" />
         </div>
         <ImgVdSection content={annotation[0]} />
+        <div className="arrowdown">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </div>
         <TextAudioSection content={annotation[1]} />
+        <div className="arrowdown">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </div>
         <TextAudioSection content={annotation[2]} />
+        <div className="arrowdown">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </div>
         <ImgVdSection content={annotation[3]} />
+        <div className="arrowdown">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </div>
         <Download />
+        <div className="arrowdown">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </div>
         <Dataset />
       </div>
     </div>

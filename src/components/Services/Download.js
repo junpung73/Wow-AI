@@ -36,7 +36,7 @@ const MedicalStyled = styled('div')(({ theme }) => ({
 
 const Download = () => {
   return (
-    <div style={{ margin: "20vh 0" }}>
+    <div style={{ padding: "20vh 0" }} id='download'>
       <div style={{ marginBottom: "5vh" }}>
         <img
           src="/images/Cloud-Download.png"

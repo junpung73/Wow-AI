@@ -14,17 +14,29 @@ const Home = () => {
     <div>
       <SlideHome />
       <div className="contain">
-        <div className="arrowdown">
+        <a className="arrowdown" href="#aboutus">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <AboutUs />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#services">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <Services />
+        <a className="arrowdown" href="#achieverments">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Achieverments />
+        <a className="arrowdown" href="#why-choose">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <WhyChoose />
+        <a className="arrowdown" href="#solutions">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Solution />
+        <a className="arrowdown" href="#management">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Management />
       </div>
     </div>

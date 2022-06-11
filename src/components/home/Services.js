@@ -40,7 +40,7 @@ const UlStyled = styled('ul')(({ theme }) => ({
 
 const Services = () => {
     return (
-        <div style={{ padding: "10vh" }}>
+        <div id='services' style={{padding: '10vh 0'}}>
             <div className='title-content' style={{ textAlign: "center" }}>
                 Services
             </div>

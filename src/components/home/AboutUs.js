@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 
 const AboutUs = () => {
     return (
-        <div id='aboutus' style={{ height: "90vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "10vh 0" }}>
+        <div id='aboutus' style={{ height: "90vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Row>
                 <Col xs={12} lg={7}>
                     <CardMedia

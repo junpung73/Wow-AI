@@ -9,7 +9,7 @@ const BoxStyled = styled(Box)({
   alignItems: "center",
 });
 const ContaiService = styled('div')(({ theme }) => ({
-  padding: "20vh 50vh",
+  padding: "10vh 50vh",
   [theme.breakpoints.down("md")]: {
     padding: "0",
   },
@@ -26,7 +26,7 @@ const TextStyled = styled("p")(({ theme }) => ({
 
 const TransServices = () => {
   return (
-    <ContaiService>
+    <ContaiService id='trans-services'>
       <h2 className="title-content" style={{ textAlign: "center" }}>
         Transcription Services
       </h2>

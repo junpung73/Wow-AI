@@ -22,7 +22,7 @@ const TextTable = styled('td')(({ theme }) => ({
 
 const WhyChoose = () => {
     return (
-        <div style={{ padding: "10vh 0" }}>
+        <div style={{ padding: "10vh 0" }} id='why-choose'>
             <h2 className='title-content'>Why choose Wow AI</h2>
             <table style={{ borderCollapse: "collapse" }}>
                 <tr>

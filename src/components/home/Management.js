@@ -24,7 +24,7 @@ const ContentStyled = styled('div')(({ theme }) => ({
 
 const Management = () => {
     return (
-        <div style={{ padding: "25vh 0" }}>
+        <div style={{padding: '20vh 0'}} id='management'>
             <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>Our crowd management</h2>
             <Grid container spacing={2}>
                 <Grid item xs={12} lg={6}>
