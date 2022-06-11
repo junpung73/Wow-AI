@@ -19,7 +19,7 @@ const BoxStyled = styled(Box)(({ theme }) => ({
 const TitleStyled = styled("h5")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
-  padding: "1vh 0",
+  padding: "1vh",
   [theme.breakpoints.down("md")]: {
     fontSize: "var(--normal-text)",
     fontWeight: "normal",
@@ -37,6 +37,7 @@ const BoxDetail = styled(Box)(({ theme }) => ({
   marginLeft: '2rem',
   justifyContent: "center",
   alignItems: "center",
+  textAlign: 'justify',
   backgroundColor: "var(--primary-text)",
   color: "var(--secondary-text)",
   lineHeight: '18px',

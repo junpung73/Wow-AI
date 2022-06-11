@@ -4,6 +4,7 @@ import Download from "../../components/Services/Download";
 import HignQuality from "../../components/Services/public-service/HignQuality";
 import TransServices from "../../components/Services/TransServices";
 import topicservices from "../../__mock__/topicservices";
+import transervice from "../../__mock__/transervice";
 
 const DataTranscription = () => {
   return (
@@ -13,7 +14,7 @@ const DataTranscription = () => {
         <a className="arrowdown" href="#trans-services">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
-        <TransServices/>
+        <TransServices content={transervice}/>
         <a className="arrowdown" href="#download">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
