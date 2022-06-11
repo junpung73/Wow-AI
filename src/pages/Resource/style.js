@@ -2,8 +2,8 @@ import styled from "styled-components/macro";
 
 export const Wrapper = styled.div`
   max-width: 1330px;
-  width: 90%;
-  padding: 50px 12px;
+  width: 100%;
+  padding: 50px 15px;
   padding-bottom: 0;
   margin: auto;
   display: flex;
@@ -16,8 +16,6 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 1301px) {
     max-width: 1100px;
-    width: 90%;
-    min-width: 320px;
   }
 
   button {
@@ -56,7 +54,7 @@ export const WrapTopic = styled.div`
     }
   }
 
-  @media (max-width: 528px) {
+  @media (max-width: 700px) {
     font-size: 12px;
     gap: 0;
     justify-content: space-between;
@@ -66,10 +64,10 @@ export const WrapTopic = styled.div`
 export const Grid = styled.div`
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 
-  @media (max-width: 528px) {
+  @media (max-width: 769px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

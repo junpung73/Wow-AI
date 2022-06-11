@@ -7,6 +7,8 @@ import {
   Column,
   InputForm,
   SubmitButton,
+  FormRow,
+  FormCol,
 } from "./style";
 
 const Contact = () => {
@@ -18,7 +20,7 @@ const Contact = () => {
           <Picture>
             <BigImg src="images/image20.png" width="100%" />
           </Picture>
-          <Column style={{ padding: "30px 50px", paddingRight: "0" }}>
+          <Column>
             <h3>
               Want to build your own{" "}
               <span style={{ color: "var(--secondary-bg)" }}>data set</span>?
@@ -27,38 +29,38 @@ const Contact = () => {
               Contact us now to learn how we can collect a custom data set for
               your unique AI solution.
             </p>
-            <Row style={{ gap: "20px", margin: "10px 0" }}>
-              <Column>
+            <FormRow>
+              <FormCol>
                 <p>First Name *</p>
                 <InputForm></InputForm>
-              </Column>
-              <Column>
+              </FormCol>
+              <FormCol>
                 <p>Last Name *</p>
                 <InputForm></InputForm>
-              </Column>
-            </Row>
-            <Row style={{ margin: "10px 0" }}>
-              <Column>
+              </FormCol>
+            </FormRow>
+            <FormRow>
+              <FormCol>
                 <p>Email *</p>
                 <InputForm type="email"></InputForm>
-              </Column>
-            </Row>
-            <Row style={{ gap: "20px", margin: "10px 0" }}>
-              <Column>
+              </FormCol>
+            </FormRow>
+            <FormRow>
+              <FormCol>
                 <p>Telephone *</p>
                 <InputForm type="tel"></InputForm>
-              </Column>
-              <Column>
+              </FormCol>
+              <FormCol>
                 <p>Company *</p>
                 <InputForm></InputForm>
-              </Column>
-            </Row>
-            <Row style={{ gap: "20px", margin: "10px 0" }}>
-              <Column>
+              </FormCol>
+            </FormRow>
+            <FormRow>
+              <FormCol>
                 <p>Comment *</p>
                 <InputForm style={{ height: "100px" }}></InputForm>
-              </Column>
-            </Row>
+              </FormCol>
+            </FormRow>
             <SubmitButton>Submit</SubmitButton>
           </Column>
         </Row>

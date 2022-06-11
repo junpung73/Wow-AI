@@ -2,8 +2,8 @@ import styled from "styled-components/macro";
 
 export const Wrapper = styled.div`
   max-width: 1330px;
-  width: 90%;
-  padding: 50px 12px;
+  width: 100%;
+  padding: 50px 15px;
   padding-bottom: 0;
   margin: auto;
   display: flex;
@@ -16,10 +16,25 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 1301px) {
     max-width: 1100px;
-    width: 90%;
-    min-width: 320px;
   }
-
+  @media only screen and (max-width: 1201px) {
+    max-width: 1100px;
+  }
+  @media only screen and (max-width: 1112px) {
+    max-width: 1024px;
+  }
+  @media only screen and (max-width: 1100px) {
+    max-width: 980px;
+  }
+  @media only screen and (max-width: 1024px) {
+    max-width: 900px;
+  }
+  @media only screen and (max-width: 769px) {
+    max-width: 650px;
+  }
+  @media only screen and (max-width: 700px) {
+    max-width: 600px;
+  }
   button {
     outline: none;
   }
@@ -43,9 +58,8 @@ export const SubContainer = styled.div`
     line-height: 2;
   }
 
-  @media (max-width: 548px) {
+  @media (max-width: 769px) {
     width: 100%;
-    align-items: center;
   } ;
 `;
 
@@ -60,7 +74,7 @@ export const SelectButtonGroup = styled(Row)`
   width: fit-content;
   gap: 20px;
   justify-content: space-between;
-  @media (max-width: 568px) {
+  @media (max-width: 769px) {
     gap: 10px;
     width: 100%;
     &:last-of-type {
@@ -73,7 +87,7 @@ export const SelectButtonRow = styled(Row)`
   justify-content: space-between;
   margin-bottom: 30px;
 
-  @media (max-width: 568px) {
+  @media (max-width: 769px) {
     flex-direction: column;
     gap: 20px;
     white-space: nowrap;
@@ -156,15 +170,37 @@ export const ListItem = styled.div`
     height: 18px;
     margin-left: -24px;
   }
+
+  @media (max-width: 1100px) {
+    font-size: 14px;
+  }
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  @media (max-width: 528px) {
-    padding-left: 0 !important;
-  } ;
+`;
+
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 50px;
+  @media (max-width: 1301px) {
+    width: 70%;
+  }
+
+  @media (max-width: 1100px) {
+    width: 70%;
+  }
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+  @media (max-width: 769px) {
+    width: 100%;
+    padding-left: 0;
+  }
 `;
 
 export const Picture = styled.div`
@@ -173,7 +209,7 @@ export const Picture = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 528px) {
+  @media (max-width: 769px) {
     display: none;
   } ;
 `;
@@ -226,10 +262,13 @@ export const ContactUsButton = styled.button`
     color: var(--secondary-bg);
   }
 
-  @media (max-width: 548px) {
+  @media (max-width: 1100px) {
+    bottom: -15%;
+  }
+
+  @media (max-width: 769px) {
     font-size: 14px;
     padding: 10px 15px;
-    bottom: -15%;
   } ;
 `;
 
@@ -249,7 +288,7 @@ export const SelectButton = styled.button`
     color: white;
     border-color: white;
   }
-  @media (max-width: 528px) {
+  @media (max-width: 769px) {
     padding: 0 15px;
   }
 `;
@@ -266,7 +305,7 @@ export const DropdownButton = styled.button`
   border: 2px solid white;
   background-color: transparent;
 
-  @media (max-width: 528px) {
+  @media (max-width: 769px) {
     width: 128px;
   }
 `;
@@ -330,4 +369,14 @@ export const InputForm = styled.input`
   height: 56px;
   padding: 10px 20px;
   color: white;
+`;
+
+export const FormCol = styled(Column)`
+  padding-left: 0;
+  width: 100%;
+`;
+
+export const FormRow = styled(Row)`
+  gap: 20px;
+  margin: 10px 0;
 `;

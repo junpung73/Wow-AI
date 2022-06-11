@@ -1,5 +1,5 @@
 // import { style } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import * as io from "react-icons/io";
 import {
   Container,
@@ -20,9 +20,14 @@ import {
   BlogItem,
   ConRow,
   ConCol,
+  Grid,
+  View,
 } from "./style";
 
 const JoinOurTalentPool = () => {
+  const [quoteTranslate, setQuoteTranslate] = useState(0);
+  const [blogTranslate, setBlogTranslate] = useState(0);
+
   return (
     <div
       style={{
@@ -59,12 +64,12 @@ const JoinOurTalentPool = () => {
               </h5>
               <JoinButton>Join our crowdsourcing projects now!</JoinButton>
             </ConCol>
-            <ConCol style={{ borderTop: 0 }}>
+            <ConCol style={{ borderLeft: 0 }}>
               <img src="images/contributor1.svg"></img>
             </ConCol>
           </ConRow>
           <ConRow>
-            <ConCol style={{ borderBottom: 0 }}>
+            <ConCol style={{ border: 0 }}>
               <h3>Why become our project contributors?</h3>
               <h5>
                 Wow AI provides you with opportunities in supporting our clients
@@ -73,7 +78,7 @@ const JoinOurTalentPool = () => {
                 backgrounds and experience.
               </h5>
             </ConCol>
-            <ConCol>
+            <ConCol style={{ borderBottom: 0 }}>
               <img src="images/contributor2.svg"></img>
             </ConCol>
           </ConRow>
@@ -90,7 +95,7 @@ const JoinOurTalentPool = () => {
             frequently so that we can invite you join a suitable projects based
             on your information.
           </p>
-          <Row style={{ flex: "1" }}>
+          <ConRow style={{ border: 0 }}>
             <CardItem>
               <div>
                 <img src="images/logo1.svg" />
@@ -133,15 +138,15 @@ const JoinOurTalentPool = () => {
                 entails listening to an audio recording and convert it to text{" "}
               </p>
             </CardItem>
-          </Row>
+          </ConRow>
         </Column>
       </Container>
 
       {/* How it works */}
-      <Container>
+      <Container style={{ paddingBottom: "300px" }}>
         <Column>
           <SubTitle style={{ textAlign: "center" }}>How it works</SubTitle>
-          <Row>
+          <Grid>
             <Card>
               <h3>Step 1</h3>
               <p>
@@ -170,7 +175,7 @@ const JoinOurTalentPool = () => {
                 steps.
               </p>
             </Card>
-          </Row>
+          </Grid>
         </Column>
       </Container>
 
@@ -232,48 +237,60 @@ const JoinOurTalentPool = () => {
       <Container>
         <Column>
           <SubTitle>What do our project contributors say?</SubTitle>
-          <Carousel>
-            <NavigateButton>
+          <Row>
+            <NavigateButton
+              onClick={() => {
+                setQuoteTranslate(quoteTranslate + 100);
+              }}
+            >
               <div>
                 <io.IoIosArrowBack></io.IoIosArrowBack>
               </div>
             </NavigateButton>
-            <Quote>
-              <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
-              </p>
-              <Carousel>
-                <img src="images/avatar.svg"></img>
-                <p>Wow AI, Image Collector</p>
+            <View>
+              <Carousel translate={quoteTranslate}>
+                <Quote>
+                  <p>
+                    “This is a very independent job that is super flexible. You
+                    choose your own hours and take on multiple projects.”
+                  </p>
+                  <Carousel>
+                    <img src="images/avatar.svg"></img>
+                    <p>Wow AI, Image Collector</p>
+                  </Carousel>
+                </Quote>
+                <Quote>
+                  <p>
+                    “This is a very independent job that is super flexible. You
+                    choose your own hours and take on multiple projects.”
+                  </p>
+                  <Carousel>
+                    <img src="images/avatar.svg"></img>
+                    <p>Wow AI, Image Collector</p>
+                  </Carousel>
+                </Quote>
+                <Quote>
+                  <p>
+                    “This is a very independent job that is super flexible. You
+                    choose your own hours and take on multiple projects.”
+                  </p>
+                  <Carousel>
+                    <img src="images/avatar.svg"></img>
+                    <p>Wow AI, Image Collector</p>
+                  </Carousel>
+                </Quote>
               </Carousel>
-            </Quote>
-            <Quote>
-              <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
-              </p>
-              <Carousel>
-                <img src="images/avatar.svg"></img>
-                <p>Wow AI, Image Collector</p>
-              </Carousel>
-            </Quote>
-            <Quote>
-              <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
-              </p>
-              <Carousel>
-                <img src="images/avatar.svg"></img>
-                <p>Wow AI, Image Collector</p>
-              </Carousel>
-            </Quote>
-            <NavigateButton>
+            </View>
+            <NavigateButton
+              onClick={() => {
+                setQuoteTranslate(quoteTranslate - 100);
+              }}
+            >
               <div>
                 <io.IoIosArrowForward></io.IoIosArrowForward>
               </div>
             </NavigateButton>
-          </Carousel>
+          </Row>
           <TalentButton>Join our talent</TalentButton>
         </Column>
       </Container>
@@ -282,39 +299,51 @@ const JoinOurTalentPool = () => {
       <Container>
         <Column>
           <SubTitle>Blogs</SubTitle>
-          <Carousel>
-            <NavigateButton>
+          <Row>
+            <NavigateButton
+              onClick={() => {
+                setBlogTranslate(blogTranslate + 100);
+              }}
+            >
               <div>
                 <io.IoIosArrowBack></io.IoIosArrowBack>
               </div>
             </NavigateButton>
-            <BlogItem>
-              <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
-            </BlogItem>
-            <BlogItem>
-              <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
-            </BlogItem>
-            <BlogItem>
-              <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
-            </BlogItem>
-            <NavigateButton>
+            <View>
+              <Carousel translate={blogTranslate}>
+                <BlogItem>
+                  <img src="images/blogimg.svg"></img>
+                  <p>10-08-2021</p>
+                  <h6>
+                    Surge of this virus is unpredictable in this era. Thoughts?
+                  </h6>
+                </BlogItem>
+                <BlogItem>
+                  <img src="images/blogimg.svg"></img>
+                  <p>10-08-2021</p>
+                  <h6>
+                    Surge of this virus is unpredictable in this era. Thoughts?
+                  </h6>
+                </BlogItem>
+                <BlogItem>
+                  <img src="images/blogimg.svg"></img>
+                  <p>10-08-2021</p>
+                  <h6>
+                    Surge of this virus is unpredictable in this era. Thoughts?
+                  </h6>
+                </BlogItem>
+              </Carousel>
+            </View>
+            <NavigateButton
+              onClick={() => {
+                setBlogTranslate(blogTranslate - 100);
+              }}
+            >
               <div>
                 <io.IoIosArrowForward></io.IoIosArrowForward>
               </div>
             </NavigateButton>
-          </Carousel>
+          </Row>
         </Column>
       </Container>
     </div>
