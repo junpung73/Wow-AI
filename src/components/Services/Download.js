@@ -23,12 +23,16 @@ const RowStyled = styled('div')(({ theme }) => ({
     padding: "2vh 0",
   },
 }));
+const LinkStyle = {
+  color: 'var(--primary-text)',
+  textDecoration: 'none',
+}
 const ImgStyled = styled('img')(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     width: '14px',
   },
 }));
-const MedicalStyled = styled('div')(({ theme }) => ({
+const MedicalStyled = styled('a')(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     width: '30%',
   },
@@ -54,18 +58,18 @@ const Download = () => {
           <h5 className="title-description">Audio dataset</h5>
         </RowStyled>
         <RowStyled>
-          <div>
+          <a href="#download" style={LinkStyle}>
             <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Imaging data </span>
-          </div>
-          <div>
+          </a>
+          <a href="#download" style={LinkStyle}>
             <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Imaging data </span>
-          </div>
-          <div>
+          </a>
+          <a href="#download" style={LinkStyle}>
             <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Audio data </span>
-          </div>
+          </a>
         </RowStyled>
         <div
           style={{
@@ -74,12 +78,12 @@ const Download = () => {
             padding: "5vh 0",
           }}
         >
-          <div>
+          <a href="#download" style={LinkStyle}>
             <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Audio data </span>
-          </div>
+          </a>
           <div>&emsp; &emsp; &emsp;</div>
-          <MedicalStyled>
+          <MedicalStyled href="#download" style={LinkStyle}>
             <ImgStyled src="/images/Group882.png" alt="Download" />
             <span> Medical Audio data </span>
           </MedicalStyled>

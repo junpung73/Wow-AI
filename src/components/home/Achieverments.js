@@ -40,9 +40,16 @@ const VerticalLine = {
     borderLeft: "2px solid var(--secondary-bg)"
 }
 
+const Contain = styled('div')(({ theme }) => ({
+    padding: '10vh',
+    [theme.breakpoints.down('md')]: {
+        padding: '0',
+    },
+}))
+
 const Achieverments = () => {
     return (
-        <div style={{padding: '10vh'}} id='achieverments'>
+        <Contain id='achieverments'>
             <div style={Content}>
                 <div>
                     <h2 className='title-description'>1. Audio Transcription</h2>
@@ -92,7 +99,7 @@ const Achieverments = () => {
                     </DescripStyled>
                 </div>
             </div>
-        </div>
+        </Contain>
     )
 }
 

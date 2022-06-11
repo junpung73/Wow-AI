@@ -6,7 +6,7 @@ import BoxContent4 from "./public_anno/BoxContent4";
 
 const BoxContain = styled("div")(({ theme }) => ({
   padding: '0 15vh',
-  [theme.breakpoints.down("xl")]: {
+  [theme.breakpoints.down("lg")]: {
     padding: '0',
   },
 }));

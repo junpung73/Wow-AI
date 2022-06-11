@@ -13,11 +13,9 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: 'pointer',
-  [theme.breakpoints.down("xl")]: {
-    width: '100%',
-  },
   [theme.breakpoints.down("sm")]: {
     borderRadius: "15px",
+    width: '100%',
   },
 }));
 
