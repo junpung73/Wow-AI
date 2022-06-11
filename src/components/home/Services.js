@@ -6,7 +6,7 @@ const BoxStyled = styled(Box)({
     borderRadius: "15px",
     padding: "10px",
     aspectRatio: "1/1",
-    width: "100%",
+    width: "98%",
     display: "flex",
     flexWrap: "wrap",
     margin: '1rem',
@@ -51,7 +51,7 @@ const Services = () => {
                             src='/images/Rectangle112.png'
                             alt='Services'
                             style={{
-                                width: "99%",
+                                width: "100%",
                                 borderRadius: "15px",
                             }}
                         />

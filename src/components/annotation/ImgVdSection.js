@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { Grid } from "@mui/material";
 import React from "react";
 import SlideContent from "../public/SlideContent";
 import BoxContent5 from "./public_anno/BoxContent5";
 
 const ImgVdSection = ({ content }) => {
+  const [active, setActive] = useState(null);
+
+  const handleClickShowBox = (index) => {
+    setActive(index);
+  };
   return (
     <div>
       <h2 className="title-content">{content.title}</h2>
@@ -13,11 +19,14 @@ const ImgVdSection = ({ content }) => {
         </Grid>
         <Grid item xs={12} md={2}>
           <Grid container spacing={2}>
-            {content.boxst.map((content, index) => (
-              <Grid item xs={6} sm={3} md={12}>
-                <BoxContent5 key={index} content={content} />
-              </Grid>
-            ))}
+            {content.boxst.map((content, index) => {
+              const isActive = active === index;
+              return (
+                <Grid key={index} item xs={6} sm={3} md={12}>
+                  <BoxContent5 index={index} isActive={isActive} handleClickShowBox={handleClickShowBox} content={content} />
+                </Grid>
+              )
+            })}
           </Grid>
         </Grid>
       </Grid>
