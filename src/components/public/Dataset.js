@@ -7,10 +7,16 @@ const Picture = styled(Grid)(({ theme }) => ({
     display: "none",
   },
 }));
+const Contain = styled('div')(({ theme }) => ({
+  padding: "10vh",
+  [theme.breakpoints.down("md")]: {
+    padding: "0",
+  },
+}));
 
 const Dataset = () => {
   return (
-    <div style={{ padding: "10vh 10vh" }} id='dataset'>
+    <Contain id='dataset'>
       <div className="contain" style={{ paddingBottom: "10vh" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>
@@ -118,7 +124,7 @@ const Dataset = () => {
           </Grid>
         </Grid>
       </div>
-    </div>
+    </Contain>
   );
 };
 

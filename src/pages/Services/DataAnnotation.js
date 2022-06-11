@@ -12,29 +12,29 @@ const DataAnnotation = () => {
     <div>
       <HignQuality topic={topicservices[2]} />
       <div className="contain">
-        <div className="arrowdown">
+        <a className="arrowdown" href="#image-annotation">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <ImgVdSection content={annotation[0]} />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#text-annotation">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <TextAudioSection content={annotation[1]} />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#audio-annotation">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <TextAudioSection content={annotation[2]} />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#video-annotation">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <ImgVdSection content={annotation[3]} />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#download">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <Download />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#dataset">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <Dataset />
       </div>
     </div>

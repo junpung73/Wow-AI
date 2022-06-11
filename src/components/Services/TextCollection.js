@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 
 const TextCollection = ({ content }) => {
   return (
-    <div id='text-collection' style={{padding: '10vh 0'}}>
+    <div id={`${content.id}`} style={{padding: '10vh 0'}}>
       <TitleSection content={content} />
       <Grid container spacing={3}>
         <Grid item xs={12} sm={8}>

@@ -5,24 +5,24 @@ import { Grid, styled } from '@mui/material';
 
 const Box1 = styled('div')(({ theme }) => ({
   backgroundColor: 'var(--secondary-bg)',
-  height: '20vw',
+  height: '20rem',
   aspectRatio: '1/1',
   borderRadius: '30px',
   paddingLeft: '4vh',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-end',
+
   [theme.breakpoints.down('sm')]: {
-    height: '70vw',
+    height: '16rem',
     fontSize: 'var(--normal-text)',
-    paddingTop: '20rem',
   },
 }))
 const Box2 = styled('div')(({ theme }) => ({
   position: 'absolute',
   marginBottom: '10vh',
   marginLeft: '8vh',
-  height: '20vw',
+  height: '20rem',
   backgroundColor: 'var(--secondary-text)',
   aspectRatio: '1/1',
   borderRadius: '30px',
@@ -32,14 +32,20 @@ const Box2 = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'left',
   [theme.breakpoints.down('sm')]: {
-    height: '70vw',
+    height: '16rem',
     fontSize: 'var(--small-text)',
+  },
+}))
+const Contain = styled('div')(({ theme }) => ({
+  padding: "10vh 20vh",
+  [theme.breakpoints.down('lg')]: {
+    padding: "10vh 0"
   },
 }))
 
 const Solution = () => {
   return (
-    <div id='solutions' style={{ padding: "10vh 20vh" }}>
+    <Contain id='solutions'>
       <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>AI solutions for your industry</h2>
       <div style={{ display: 'flex', justifyContent: 'center',flexWrap: 'wrap' }}>
         <a href='#solutions' className='btn btn-control'>Healthcare</a>
@@ -72,7 +78,7 @@ const Solution = () => {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </Contain>
   )
 }
 

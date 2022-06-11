@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default [
     {
-        id: uuidv4(),
+        id: 'image-annotation',
         title: 'Image data annotation',
         img1: '/images/annotation/SemanticSegmentation5.png',
         img2: '/images/annotation/Named-entityrecognition2.png',
@@ -31,7 +31,7 @@ export default [
         ]
     },
     {
-        id: uuidv4(),
+        id: 'text-annotation',
         title: 'Text data annotation ',
         img1: '/images/annotation/Named-entityrecognition2.png',
         img2: '/images/annotation/SemanticSegmentation4.png',
@@ -56,7 +56,7 @@ export default [
         ]
     },
     {
-        id: uuidv4(),
+        id: 'audio-annotation',
         title: 'Audio data annotation',
         img1: '/images/annotation/SoundLabeling2.png',
         img2: '/images/annotation/Named-entityrecognition2.png',
@@ -81,7 +81,7 @@ export default [
         ]
     },
     {
-        id: uuidv4(),
+        id: 'video-annotation',
         title: 'Video data annotation',
         img1: '/images/annotation/SemanticSegmentation4.png',
         img2: '/images/annotation/SemanticSegmentation5.png',

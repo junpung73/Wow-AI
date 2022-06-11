@@ -4,6 +4,7 @@ import { Box, styled } from "@mui/material";
 const BoxStyled = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   aspectRatio: "1/1",
+  width: '74%',
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -12,6 +13,9 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: 'pointer',
+  [theme.breakpoints.down("xl")]: {
+    width: '100%',
+  },
   [theme.breakpoints.down("sm")]: {
     borderRadius: "15px",
   },
@@ -29,7 +33,7 @@ const TitleStyled = styled("h5")(({ theme }) => ({
 }));
 const BoxDetail = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
-  height: '13rem',
+  height: '12rem',
   aspectRatio: "1/1",
   display: "flex",
   position: 'absolute',

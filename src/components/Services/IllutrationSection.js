@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 
 const IllutrationSection = ({ content }) => {
   return (
-    <div style={{padding: '10vh 0'}} id='image-collection'>
+    <div style={{padding: '10vh 0'}} id={`${content.id}`}>
       <TitleSection content={content} />
       <Grid container spacing={2}>
         <Grid item xs={12} sm={9}>

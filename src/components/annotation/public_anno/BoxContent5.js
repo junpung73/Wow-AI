@@ -28,7 +28,7 @@ const TitleStyled = styled("h5")(({ theme }) => ({
 }));
 const BoxDetail = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
-  height: '13rem',
+  height: '12rem',
   aspectRatio: "1/1",
   display: "flex",
   position: 'absolute',
