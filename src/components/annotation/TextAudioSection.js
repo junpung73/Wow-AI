@@ -27,7 +27,7 @@ const TextAudioSection = ({ content }) => {
   };
   return (
     <div style={{ padding: '10vh 0' }} id={`${content.id}`}>
-      <h2 className="title-content">{content.title}</h2>
+      <h2 className="title-content" style={{ display: 'flex', justifyContent: 'center'}}>{content.title}</h2>
       <BoxContain>
         <Grid container spacing={2}>
           <Grid item xs={12} md={10}>
