@@ -8,7 +8,7 @@ const BoxStyled = styled(Box)({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  padding: "10%",
+  padding: "5%",
   color: "var(--primary-text)",
   backgroundColor: "var(--secondary-text)",
   transition: 'all 0.5s ease',

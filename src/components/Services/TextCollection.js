@@ -2,11 +2,18 @@ import React from "react";
 import BoxContent2 from "./public-service/BoxContent2";
 import SlideContent from "../public/SlideContent";
 import TitleSection from "./public-service/TitleSection";
-import { Grid } from "@mui/material";
+import { Grid, styled } from "@mui/material";
+
+const BoxContain = styled('div')(({theme}) => ({
+  padding: '5vh 30vh',
+  [theme.breakpoints.down("lg")]: {
+    padding: '0',
+  },
+}))
 
 const TextCollection = ({ content }) => {
   return (
-    <div id={`${content.id}`} style={{padding: '10vh 30svh'}}>
+    <div id={`${content.id}`} style={{padding: '10vh 30vh'}}>
       <TitleSection content={content}/>
       <Grid container spacing={3} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} sm={8}>
@@ -21,7 +28,7 @@ const TextCollection = ({ content }) => {
             ))}
           </Grid>
         </Grid>
-      </Grid>
+      </BoxContain>
     </div>
   );
 };

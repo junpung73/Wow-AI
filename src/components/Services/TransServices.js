@@ -7,7 +7,25 @@ const BoxStyled = styled(Box)({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+
 });
+
+const BoxDetail = styled(Box)({
+  borderRadius: "30px",
+  aspectRatio: "1/1",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "var(--secondary-text)",
+  color: "var(--primary-text)",
+  padding: "10%",
+  transition: 'all .5s ease',
+  '&:hover': {
+    backgroundColor: "var(--primary-text)",
+    color: "var(--secondary-text) !important",
+  }
+});
+
 const ContaiService = styled('div')(({ theme }) => ({
   padding: "10vh 50vh",
   [theme.breakpoints.down("md")]: {
@@ -21,6 +39,14 @@ const TextStyled = styled("p")(({ theme }) => ({
     WebkitLineClamp: "3",
     overflow: "hidden",
     textOverflow: "ellipsis",
+  },
+}));
+const TitleStyled = styled("h5")(({ theme }) => ({
+  fontSize: "var(--medium-text-3)",
+  fontWeight: "bold",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "var(--normal-text)",
+    padding: "0",
   },
 }));
 
@@ -41,18 +67,12 @@ const TransServices = () => {
           </BoxStyled>
         </Grid>
         <Grid item xs={6}>
-          <BoxStyled
-            style={{
-              backgroundColor: "var(--primary-text)",
-              color: "var(--secondary-text)",
-              padding: "10%",
-            }}
-          >
+          <BoxDetail>
             <TextStyled>
               Audio transcription is the process of converting spoken language
               into written language. This is what we do best.
             </TextStyled>
-          </BoxStyled>
+          </BoxDetail>
         </Grid>
         <Grid item xs={6}>
           <BoxStyled>
@@ -64,15 +84,9 @@ const TransServices = () => {
           </BoxStyled>
         </Grid>
         <Grid item xs={6}>
-          <BoxStyled
-            style={{
-              backgroundColor: "var(--secondary-text)",
-              color: "var(--primary-text)",
-              padding: "10%",
-            }}
-          >
-            <h5 className="title-description">Image Transcription</h5>
-          </BoxStyled>
+          <BoxDetail>
+            <TitleStyled>Image Transcription</TitleStyled>
+          </BoxDetail>
         </Grid>
       </Grid>
     </ContaiService>
