@@ -1,15 +1,23 @@
 import { useState } from 'react';
 import { Grid, styled } from "@mui/material";
 import React from "react";
-import SlideContent from "../public/SlideContent";
 import BoxContent4 from "./public_anno/BoxContent4";
+import Slider from "react-slick";
 
 const BoxContain = styled("div")(({ theme }) => ({
-  padding: '0 15vh',
+  padding: '0 10vh',
   [theme.breakpoints.down("lg")]: {
     padding: '0',
   },
 }));
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 const TextAudioSection = ({ content }) => {
   const [active, setActive] = useState(null);
@@ -22,10 +30,27 @@ const TextAudioSection = ({ content }) => {
       <h2 className="title-content">{content.title}</h2>
       <BoxContain>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={9}>
-            <SlideContent content={content} />
+          <Grid item xs={12} md={10}>
+            <div style={{ paddingBottom: '40px' }}>
+              <Slider {...settings} style={{
+                width: "100%",
+                border: "2px solid var(--secondary-bg)",
+                borderRadius: "30px",
+                padding: "1vh",
+              }}>
+                <div>
+                  <img src={content.img1} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}}  />
+                </div>
+                <div>
+                  <img src={content.img2} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}} />
+                </div>
+                <div>
+                  <img src={content.img3} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}} />
+                </div>
+              </Slider>
+            </div>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={2}>
             <Grid container spacing={2}>
               {content.boxst.map((content, index) => {
                 const isActive = active === index;

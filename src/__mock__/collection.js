@@ -13,13 +13,13 @@ export default [
                 color: 'var(--secondary-text)',
                 bgcolor: 'var(--primary-text)',
                 title: 'Receipt Dataset Collection',
-                description: 'We assist you in collecting various forms of invoices such as online invoices, shopping invoices, cab receipts, hotel bills, and other types of invoices from all over the world and in the languages required.',
+                description: 'We assist you in collecting various forms of invoices such as online invoices, shopping invoices, cab receipts, hotel bills, and other.',
             },
             {
                 color: 'var(--primary-text)',
                 bgcolor: 'var(--secondary-text)',
                 title: 'Document Dataset Collection',
-                description: "We can assist you with gathering all forms of crucial documents, such as a driver's license or a credit card, from various locations and languages in order to train machine learning models.",
+                description: "We can assist you with gathering all forms of crucial documents, such as a driver's license or a credit card, from various locations.",
             }
         ],
     },
@@ -33,11 +33,11 @@ export default [
         boxst: [
             {
                 title: 'Monologue Speech Collection',
-                description: 'Collect data from individual speakers in the form of prepared, directed, or spontaneous speech. The speaker is chosen based on your specific requirements, such as age, gender, ethnicity, dialect, and language.',
+                description: 'Collect data from individual speakers in the form of prepared, directed, or spontaneous speech. The speaker is chosen based on your.',
             },
             {
                 title: 'Dialogue Speech Collection',
-                description: "Collect guided or spontaneous speech datasets/interactions between a Call Center Agent and a Caller or a Caller and a Bot depending on particular requirements or project specifications.",
+                description: "Collect guided or spontaneous speech datasets/interactions between a Call Center Agent and a Caller or a Caller and a Bot depending.",
             }
         ]
     },
@@ -59,7 +59,7 @@ export default [
             },
             {
                 title: 'Facial Dataset Collection',
-                description: 'We provide a collection of facial picture datasets that include facial characteristics, perspectives, and emotions from people of all different ethnicities, ages,  and genders.',
+                description: 'We provide a collection of facial picture datasets that include facial characteristics, perspectives, and emotions from people.',
             },
         ]
     },
@@ -73,7 +73,7 @@ export default [
         boxst: [
             {
                 title: 'Human Posture Video Dataset Collection',
-                description: 'We provide video datasets of diverse human postures like walking, sitting, sleeping, etc. in various lighting circumstances and in ages ranging.',
+                description: 'We provide video datasets of diverse human postures like walking, sitting, sleeping, etc. in various lighting circumstances ranging.',
             },
             {
                 title: 'CCTV/Surveillance Video Dataset',

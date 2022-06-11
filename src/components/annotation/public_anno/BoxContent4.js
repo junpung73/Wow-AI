@@ -4,7 +4,6 @@ import { Box, styled } from "@mui/material";
 const BoxStyled = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   aspectRatio: "1/1",
-  width: '74%',
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -15,7 +14,6 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   cursor: 'pointer',
   [theme.breakpoints.down("sm")]: {
     borderRadius: "15px",
-    width: '100%',
   },
 }));
 
