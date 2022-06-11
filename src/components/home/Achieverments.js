@@ -42,7 +42,7 @@ const VerticalLine = {
 
 const Achieverments = () => {
     return (
-        <div style={{ padding: "20vh 0" }}>
+        <div style={{ padding: "10vh" }}>
             <div style={Content}>
                 <div>
                     <h2 className='title-description'>1. Audio Transcription</h2>

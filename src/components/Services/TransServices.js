@@ -8,8 +8,8 @@ const BoxStyled = styled(Box)({
   justifyContent: "center",
   alignItems: "center",
 });
-const ContaiService = styled(Grid)(({ theme }) => ({
-  padding: "20vh",
+const ContaiService = styled('div')(({ theme }) => ({
+  padding: "20vh 50vh",
   [theme.breakpoints.down("md")]: {
     padding: "0",
   },
