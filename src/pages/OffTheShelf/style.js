@@ -1,5 +1,12 @@
 import styled from "styled-components/macro";
 
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+`;
+
 export const Wrapper = styled.div`
   max-width: 1330px;
   width: 100%;
@@ -9,6 +16,7 @@ export const Wrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  scroll-snap-align: start;
 
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;

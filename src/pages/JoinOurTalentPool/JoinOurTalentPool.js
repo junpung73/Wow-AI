@@ -22,6 +22,7 @@ import {
   ConCol,
   Grid,
   View,
+  Wrapper,
 } from "./style";
 
 const JoinOurTalentPool = () => {
@@ -29,13 +30,7 @@ const JoinOurTalentPool = () => {
   const [blogTranslate, setBlogTranslate] = useState(0);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
+    <Wrapper>
       {/* Join our talent pool */}
       <Container>
         <Title>
@@ -346,7 +341,7 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
-    </div>
+    </Wrapper>
   );
 };
 

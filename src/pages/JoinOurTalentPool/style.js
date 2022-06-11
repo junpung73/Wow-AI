@@ -7,6 +7,8 @@ export const Container = styled.div`
   width: 100%;
   padding: 100px 12px;
   justify-content: center;
+  scroll-snap-align: start;
+
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;
   }
@@ -338,12 +340,18 @@ export const NavigateButton = styled.button`
 
   &:first-of-type {
     left: 0;
-    margin-left: -30px;
+    margin-left: -80px;
+    @media (max-width: 769px) {
+      margin-left: -30px;
+    }
   }
 
   &:last-of-type {
     right: 0;
-    margin-right: -30px;
+    margin-right: -80px;
+    @media (max-width: 769px) {
+      margin-right: -30px;
+    }
   }
 
   div {
@@ -442,4 +450,16 @@ export const Grid = styled.div`
   @media (max-width: 769px) {
     grid-template-columns: 1fr;
   }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 `;

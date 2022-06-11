@@ -1,6 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import TopicList from "../../components/resources/TopicList";
 import {
   Wrapper,
   Column,
@@ -8,16 +6,21 @@ import {
   Grid,
   Item,
   LoadMoreButton,
+  Container,
 } from "./style";
 
 const Resources = () => {
   return (
-    <div>
-      <img
-        src="/images/Group39449.png"
-        alt="background"
-        style={{ height: "85%", width: "100%" }}
-      />
+    <Container>
+      <Wrapper
+        style={{ width: "100%", margin: 0, padding: 0, maxWidth: "100%" }}
+      >
+        <img
+          src="/images/Group39449.png"
+          alt="background"
+          style={{ height: "100%", width: "100%" }}
+        />
+      </Wrapper>
       <Wrapper>
         <Column>
           <h1 style={{ color: "var(--secondary-bg)", textAlign: "center" }}>
@@ -79,7 +82,7 @@ const Resources = () => {
           <LoadMoreButton>Load More</LoadMoreButton>
         </Column>
       </Wrapper>
-    </div>
+    </Container>
   );
 };
 

@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  scroll-snap-align: start;
 
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;
@@ -131,4 +132,12 @@ export const SubscribeButton = styled.button`
 export const SubmitButton = styled(SubscribeButton)`
   margin: 20px auto;
   margin-bottom: 0;
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 `;
