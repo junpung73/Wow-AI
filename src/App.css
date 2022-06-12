@@ -305,3 +305,15 @@
     padding: 0;
   }
 }
+
+.view-scroll {
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section-scroll {
+  scroll-snap-align: start;
+}
