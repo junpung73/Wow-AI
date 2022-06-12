@@ -66,10 +66,7 @@ const SlideHome = () => {
                     display: "flex",
                     width: "100%"
                 }}>
-                    <div style={{
-                        width: "90%",
-                        margin: "auto",
-                    }}>
+                    <div className='contain'>
                         <Topic>
                             A trusted partner that provides high-quality data <br /> solutions for AI training at a large scale.
                         </Topic>
@@ -91,12 +88,14 @@ const SlideHome = () => {
                     display: "flex",
                     width: "100%"
                 }}>
-                    <div style={{
-                        width: "90%",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        margin: "auto",
-                    }}>
+                    <div
+                        className='contain'
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            margin: "auto",
+                        }}
+                    >
                         <LinkStyled href='#aboutus' >Scroll Down</LinkStyled>
                         <h5 style={titleSlide}>02 &ensp; | &ensp; 01</h5>
                     </div>

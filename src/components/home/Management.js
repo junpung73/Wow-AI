@@ -24,10 +24,10 @@ const ContentStyled = styled('div')(({ theme }) => ({
 
 const Management = () => {
     return (
-        <div style={{ padding: "25vh 0" }}>
+        <div style={{padding: '20vh 0'}} id='management'>
             <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>Our crowd management</h2>
             <Grid container spacing={2}>
-                <Grid item sx={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                     <img
                         src='/images/image36.png'
                         alt='management'
@@ -39,7 +39,7 @@ const Management = () => {
                         }}
                     />
                 </Grid>
-                <Grid item sx={12} lg={6}>
+                <Grid item xs={12} lg={6}>
                     <ContentStyled>
                         The quality of AI data depends on the people who collect and annotate it. We make sure to support every single resource 24/7 so that they can deliver the highest-quality data.
                         <br />

@@ -6,8 +6,15 @@
   color: #61dafb;
 }
 
-.container {
+.contain {
   max-width: 1330px;
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* ------------Style Bootstrap-------------- */
@@ -15,7 +22,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-contai > .nav-item:hover {
+.navbar-contai>.nav-item:hover {
   transform: scale(1.05);
 }
 
@@ -91,15 +98,18 @@
 .slick-next {
   display: none !important;
 }
+
 .slick-dots li button:before {
   color: var(--primary-text);
   opacity: 1;
   content: "━";
   font-size: 30px;
 }
+
 .slick-dots li {
   margin: 0 10px;
 }
+
 .slick-dots li.slick-active button:before {
   color: var(--secondary-bg);
   opacity: 1;
@@ -216,7 +226,7 @@
 .arrowdown {
   background: var(--primary-bg);
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,13 +250,13 @@
 }
 
 @media only screen and (max-width: 1441px) {
-  .container {
+  .contain {
     max-width: 1200px;
   }
 }
 
 @media only screen and (max-width: 1301px) {
-  .container {
+  .contain {
     max-width: 1100px;
   }
 }
@@ -288,22 +298,58 @@
   .title-content {
     font-size: var(--medium-text-2) !important;
   }
+}
+
+@media only screen and (max-width: 1112px) {
+  .contain {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .contain {
+    max-width: 980px;
+  }
+
   .carousel-control-next,
   .carousel-control-prev {
     align-items: flex-end;
     bottom: 15vh;
   }
+
   .carousel-control-next {
     right: 2vh;
   }
+
   .carousel-control-prev {
     right: 10vh;
   }
 }
+
+@media only screen and (max-width: 769px) {
+  .contain {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contain {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-content {
+    font-size: var(--medium-text-2) !important;
+  }
+
+}
+
 @media only screen and (max-width: 900px) {
   .title-description {
     padding: 0;
   }
+<<<<<<< HEAD
 }
 
 .view-scroll {
@@ -317,3 +363,6 @@
 .section-scroll {
   scroll-snap-align: start;
 }
+=======
+}
+>>>>>>> 8b2f3b883a3b946ae75c9bb3686f87d942bc301e

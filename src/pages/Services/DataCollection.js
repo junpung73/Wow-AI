@@ -9,27 +9,41 @@ import topicservices from "../../__mock__/topicservices";
 import sectionservices from "../../__mock__/collection";
 import SpeechCollection from "../../components/Services/SpeechCollection";
 import IllutrationSection from "../../components/Services/IllutrationSection";
-import { Container } from "react-bootstrap";
 
 const DataCollection = () => {
   return (
     <div>
       <HignQuality topic={topicservices[1]} />
-      <Container style={{ maxWidth: "90%" }}>
-        <div className="arrowdown">
+      <div className="contain">
+        <a className="arrowdown" href="#project-ai">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <ProjectAI />
-        <div className="arrowdown">
+        <a className="arrowdown" href="#text-collection">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
+        </a>
         <TextCollection content={sectionservices[0]} />
+        <a className="arrowdown" href="#speech-collection">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <SpeechCollection content={sectionservices[1]} />
+        <a className="arrowdown" href="#image-collection">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <IllutrationSection content={sectionservices[2]} />
+        <a className="arrowdown" href="#video-collection">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <IllutrationSection content={sectionservices[3]} />
+        <a className="arrowdown" href="#download">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Download />
+        <a className="arrowdown" href="#dataset">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Dataset />
-      </Container>
+      </div>
     </div>
   );
 };

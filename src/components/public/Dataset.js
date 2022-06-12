@@ -1,6 +1,5 @@
 import { Grid, styled } from "@mui/material";
 import React from "react";
-import { Container } from "react-bootstrap";
 
 const Picture = styled(Grid)(({ theme }) => ({
   display: "block",
@@ -8,11 +7,17 @@ const Picture = styled(Grid)(({ theme }) => ({
     display: "none",
   },
 }));
+const Contain = styled('div')(({ theme }) => ({
+  padding: "10vh",
+  [theme.breakpoints.down("md")]: {
+    padding: "0",
+  },
+}));
 
 const Dataset = () => {
   return (
-    <div style={{ margin: "20vh 0" }}>
-      <Container style={{ width: "90%", paddingBottom: "10vh" }}>
+    <Contain id='dataset'>
+      <div className="contain" style={{ paddingBottom: "10vh" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>
             <img
@@ -26,7 +31,6 @@ const Dataset = () => {
               style={{
                 fontSize: "var(--medium-text-2)",
                 fontWeight: "bold",
-                padding: "2vh 0 1.5vh 0",
               }}
             >
               Want to build your own
@@ -97,7 +101,7 @@ const Dataset = () => {
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
-                  rows="5"
+                  rows="3"
                 ></textarea>
               </Grid>
               <Grid item xs={12}>
@@ -105,7 +109,6 @@ const Dataset = () => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    paddingTop: "2vh",
                   }}
                 >
                   <button
@@ -120,8 +123,8 @@ const Dataset = () => {
             </Grid>
           </Grid>
         </Grid>
-      </Container>
-    </div>
+      </div>
+    </Contain>
   );
 };
 

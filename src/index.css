@@ -3,12 +3,12 @@
   --primary-text: #ffffff;
   --secondary-bg: #d30d60;
   --secondary-text: #210060;
-  --large-text: 57px;
-  --medium-text-1: 42px;
+  --large-text: 56px;
+  --medium-text-1: 40px;
   --medium-text-2: 36px;
-  --medium-text-3: 20px;
-  --normal-text: 18px;
-  --small-text: 16px;
+  --medium-text-3: 18px;
+  --normal-text: 14px;
+  --small-text: 12px;
 }
 
 body {

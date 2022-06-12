@@ -1,23 +1,29 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Dataset from "../../components/public/Dataset";
 import Download from "../../components/Services/Download";
 import HignQuality from "../../components/Services/public-service/HignQuality";
 import TransServices from "../../components/Services/TransServices";
 import topicservices from "../../__mock__/topicservices";
+import transervice from "../../__mock__/transervice";
 
 const DataTranscription = () => {
   return (
     <div>
       <HignQuality topic={topicservices[0]} />
-      <Container style={{ maxWidth: "90%" }}>
-        <div className="arrowdown">
+      <div className="contain">
+        <a className="arrowdown" href="#trans-services">
           <img src="/images/scrollarrow.png" alt="scroll" />
-        </div>
-        <TransServices />
+        </a>
+        <TransServices content={transervice}/>
+        <a className="arrowdown" href="#download">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Download />
+        <a className="arrowdown" href="#dataset">
+          <img src="/images/scrollarrow.png" alt="scroll" />
+        </a>
         <Dataset />
-      </Container>
+      </div>
     </div>
   );
 };

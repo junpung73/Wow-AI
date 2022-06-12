@@ -5,15 +5,16 @@ import { Grid, styled } from '@mui/material';
 
 const Box1 = styled('div')(({ theme }) => ({
   backgroundColor: 'var(--secondary-bg)',
-  height: '30vw',
+  height: '20rem',
   aspectRatio: '1/1',
   borderRadius: '30px',
   paddingLeft: '4vh',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-end',
+
   [theme.breakpoints.down('sm')]: {
-    height: '70vw',
+    height: '16rem',
     fontSize: 'var(--normal-text)',
   },
 }))
@@ -21,7 +22,7 @@ const Box2 = styled('div')(({ theme }) => ({
   position: 'absolute',
   marginBottom: '10vh',
   marginLeft: '8vh',
-  height: '30vw',
+  height: '20rem',
   backgroundColor: 'var(--secondary-text)',
   aspectRatio: '1/1',
   borderRadius: '30px',
@@ -31,21 +32,20 @@ const Box2 = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'left',
   [theme.breakpoints.down('sm')]: {
-    height: '70vw',
+    height: '16rem',
     fontSize: 'var(--small-text)',
   },
 }))
-// const BtnControl = styled('div')(({ theme }) => ({
-//   display: 'flex',
-//   justifyContent: 'center',
-//   [theme.breakpoints.down('sm')]: {
-//     fle
-//   },
-// }))
+const Contain = styled('div')(({ theme }) => ({
+  padding: "10vh 20vh",
+  [theme.breakpoints.down('lg')]: {
+    padding: "10vh 0"
+  },
+}))
 
 const Solution = () => {
   return (
-    <div id='solutions' style={{ padding: "10vh 0" }}>
+    <Contain id='solutions'>
       <h2 className='title-content' style={{ display: "flex", justifyContent: "center" }}>AI solutions for your industry</h2>
       <div style={{ display: 'flex', justifyContent: 'center',flexWrap: 'wrap' }}>
         <a href='#solutions' className='btn btn-control'>Healthcare</a>
@@ -56,13 +56,13 @@ const Solution = () => {
       </div>
       <br />
       <Grid container spacing={5}>
-        <Grid item sx={12} sm={7}>
+        <Grid item xs={12} sm={6}>
           <SlideContent content={solutions[0]} />
         </Grid>
-        <Grid item sx={12} sm={5}>
+        <Grid item xs={12} sm={6}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
             <Box1>
-              <h5 className='title-description'>Free Consultation</h5>
+              <h5 className='title-description' style={{padding: '0'}}>Free Consultation</h5>
             </Box1>
             <Box2>
               <h5 className='title-description' style={{ padding: '0' }}>Retail</h5>
@@ -78,7 +78,7 @@ const Solution = () => {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </Contain>
   )
 }
 
