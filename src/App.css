@@ -87,7 +87,8 @@
   aspect-ratio: 1/1;
 }
 
-.slick-prev, .slick-next{
+.slick-prev,
+.slick-next {
   display: none !important;
 }
 .slick-dots li button:before {
@@ -249,6 +250,40 @@
     max-width: 1100px;
   }
 }
+
+@media only screen and (max-width: 1201px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    max-width: 980px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container {
+    max-width: 650px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .title-content {
     font-size: var(--medium-text-2) !important;

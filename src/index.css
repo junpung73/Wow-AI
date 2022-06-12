@@ -1,7 +1,7 @@
 :root {
   --primary-bg: #111111;
   --primary-text: #ffffff;
-  --secondary-bg: #D30D60;
+  --secondary-bg: #d30d60;
   --secondary-text: #210060;
   --large-text: 57px;
   --medium-text-1: 42px;
@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-text);
@@ -21,6 +21,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
