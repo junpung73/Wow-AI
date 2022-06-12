@@ -9,11 +9,15 @@ import {
   SubmitButton,
   FormRow,
   FormCol,
+  Container,
 } from "./style";
+import Header from "../../../components/Layouts/Header";
+import Footer from "../../../components/Layouts/Footer";
 
 const Contact = () => {
   return (
-    <div>
+    <Container>
+      <Header />
       {/* <Dataset /> */}
       <Wrapper>
         <Row>
@@ -80,7 +84,8 @@ const Contact = () => {
           Email: contact@wow-ai.com
         </h5>
       </div>
-    </div>
+      <Footer />
+    </Container>
   );
 };
 

@@ -25,12 +25,16 @@ import {
   Wrapper,
 } from "./style";
 
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
+
 const JoinOurTalentPool = () => {
   const [quoteTranslate, setQuoteTranslate] = useState(0);
   const [blogTranslate, setBlogTranslate] = useState(0);
 
   return (
-    <div>
+    <Wrapper>
+      <Header />
       {/* Join our talent pool */}
       <Container>
         <Title>
@@ -175,11 +179,14 @@ const JoinOurTalentPool = () => {
       </Container>
 
       {/* Frequently asked questions */}
-      <Container>
+      <Container style={{ scrollSnapAlign: "start" }}>
         <Column>
           <SubTitle>Frequently Asked Questions</SubTitle>
-          <video style={{ width: "100%", margin: "30px 0" }} controls>
-            <source src="video/companyintro.mp4"></source>
+          <video
+            style={{ width: "100%", margin: "30px 0", borderRadius: "20px" }}
+            controls
+          >
+            <source src="videos/target_transfer.mp4"></source>
           </video>
           <h4>1. What is Wow AI?</h4>
           <p>
@@ -341,7 +348,8 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
-    </div>
+      <Footer />
+    </Wrapper>
   );
 };
 

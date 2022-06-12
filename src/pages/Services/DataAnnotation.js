@@ -6,10 +6,13 @@ import HignQuality from "../../components/Services/public-service/HignQuality";
 import topicservices from "../../__mock__/topicservices";
 import annotation from "../../__mock__/annotation";
 import TextAudioSection from "../../components/annotation/TextAudioSection";
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
 
 const DataAnnotation = () => {
   return (
     <div>
+      <Header />
       <HignQuality topic={topicservices[2]} />
       <div className="contain">
         <a className="arrowdown" href="#image-annotation">
@@ -37,6 +40,7 @@ const DataAnnotation = () => {
         </a>
         <Dataset />
       </div>
+      <Footer />
     </div>
   );
 };

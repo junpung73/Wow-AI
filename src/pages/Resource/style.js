@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 export const Wrapper = styled.div`
   max-width: 1330px;
   width: 100%;
-  padding: 50px 15px;
+  padding: 100px 15px;
   padding-bottom: 0;
   margin: auto;
   display: flex;
@@ -41,7 +41,8 @@ export const WrapTopic = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 50px 0;
+  margin: 20px 0;
+  margin-bottom: 30px;
   gap: 20px;
   white-space: nowrap;
 
@@ -115,10 +116,19 @@ export const LoadMoreButton = styled.button`
   color: var(--secondary-bg);
   width: fit-content;
   padding: 5px 50px;
-  margin: 50px auto;
+  margin: 20px auto;
+  margin-bottom: 50px;
 
   &:hover {
     background-color: var(--secondary-bg);
     color: white;
   }
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 `;

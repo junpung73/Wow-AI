@@ -361,3 +361,13 @@
 .section-scroll {
   scroll-snap-align: start;
 }
+
+.left-line {
+  border-left: 2px solid var(--secondary-bg);
+  margin: 3vh -1vh 8vh;
+}
+@media (max-width: 769px) {
+  .left-line {
+    margin: 2vh -1vh 8vh;
+  }
+}

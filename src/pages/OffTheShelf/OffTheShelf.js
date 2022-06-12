@@ -24,14 +24,18 @@ import {
   FormCol,
   FormRow,
   Col,
+  Container,
 } from "./style";
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
 
 const OffTheShelf = () => {
   const [datasetSelect, setDatasetSelect] = useState("audio");
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <div>
+    <Container>
+      <Header />
       <Wrapper>
         <SubContainer>
           <h2>Off-the-Shelf (OTS) AI Training Datasets</h2>
@@ -244,7 +248,8 @@ const OffTheShelf = () => {
           </Col>
         </Row>
       </Wrapper>
-    </div>
+      <Footer />
+    </Container>
   );
 };
 

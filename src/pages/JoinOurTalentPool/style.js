@@ -7,8 +7,9 @@ export const Container = styled.div`
   width: 100%;
   padding: 100px 12px;
   justify-content: center;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   margin: auto;
+  margin-top: 64px;
 
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;
@@ -159,6 +160,7 @@ export const Column = styled.div`
 export const JoinButton = styled.button`
   background-color: var(--primary-bg);
   color: white;
+  border: 2px solid;
   border-radius: 50px;
   border-color: var(--secondary-bg);
   width: 400px;
@@ -458,9 +460,9 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
 
-  /* width: 100%;
+  width: 100%;
   height: 100vh;
 
   overflow-y: scroll;
-  scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 `;

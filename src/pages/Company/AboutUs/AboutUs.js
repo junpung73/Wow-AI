@@ -1,13 +1,19 @@
 import React from "react";
 import AboutDescrip from "../../../components/AboutDescrip";
 import { Topic } from "./style";
+import Header from "../../../components/Layouts/Header";
+import Footer from "../../../components/Layouts/Footer";
 
 const AboutUs = () => {
   return (
-    <div>
+    <>
+      <Header />
       <Topic>wow AI LLC</Topic>
-      <AboutDescrip />
-    </div>
+      <div className="container">
+        <AboutDescrip />
+      </div>
+      <Footer />
+    </>
   );
 };
 

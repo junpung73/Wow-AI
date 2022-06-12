@@ -133,3 +133,11 @@ export const SubmitButton = styled(SubscribeButton)`
   margin: 20px auto;
   margin-bottom: 0;
 `;
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+`;

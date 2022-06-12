@@ -13,10 +13,12 @@ export const Wrapper = styled.div`
   padding: 50px 15px;
   padding-bottom: 0;
   margin: auto;
+  margin-top: 64px;
+  margin-bottom: 100px;
   display: flex;
   position: relative;
   justify-content: center;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 
   @media only screen and (max-width: 1441px) {
     max-width: 1200px;

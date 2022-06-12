@@ -8,10 +8,13 @@ import {
   LoadMoreButton,
   Container,
 } from "./style";
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
 
 const Resources = () => {
   return (
-    <div>
+    <Container>
+      <Header />
       <Wrapper
         style={{ width: "100%", margin: 0, padding: 0, maxWidth: "100%" }}
       >
@@ -82,7 +85,8 @@ const Resources = () => {
           <LoadMoreButton>Load More</LoadMoreButton>
         </Column>
       </Wrapper>
-    </div>
+      <Footer />
+    </Container>
   );
 };
 

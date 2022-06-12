@@ -16,7 +16,6 @@ import DataTranscription from "./pages/Services/DataTranscription";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/data-transcription" element={<DataTranscription />} />
@@ -29,8 +28,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail-blog" element={<DetailBlog />} />
       </Routes>
-
-      <Footer />
     </BrowserRouter>
   );
 }
