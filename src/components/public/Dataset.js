@@ -7,7 +7,7 @@ const Picture = styled(Grid)(({ theme }) => ({
     display: "none",
   },
 }));
-const Contain = styled('div')(({ theme }) => ({
+const Contain = styled("div")(({ theme }) => ({
   padding: "10vh",
   [theme.breakpoints.down("md")]: {
     padding: "0",
@@ -16,7 +16,7 @@ const Contain = styled('div')(({ theme }) => ({
 
 const Dataset = () => {
   return (
-    <Contain id='dataset'>
+    <Contain className="section-scroll" id="dataset">
       <div className="contain" style={{ paddingBottom: "10vh" }}>
         <Grid container spacing={2}>
           <Picture item xs={5}>

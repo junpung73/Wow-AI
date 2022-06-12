@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Grid, styled } from "@mui/material";
 import React from "react";
 import BoxContent4 from "./public_anno/BoxContent4";
 import Slider from "react-slick";
 
 const BoxContain = styled("div")(({ theme }) => ({
-  padding: '0 10vh',
+  padding: "0 10vh",
   [theme.breakpoints.down("lg")]: {
-    padding: '0',
+    padding: "0",
   },
 }));
 
@@ -16,7 +16,7 @@ const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 const TextAudioSection = ({ content }) => {
@@ -26,26 +26,53 @@ const TextAudioSection = ({ content }) => {
     setActive(index);
   };
   return (
-    <div style={{ padding: '10vh 0' }} id={`${content.id}`}>
-      <h2 className="title-content" style={{ display: 'flex', justifyContent: 'center'}}>{content.title}</h2>
+    <div
+      className="section-scroll"
+      style={{ padding: "10vh 0" }}
+      id={`${content.id}`}
+    >
+      <h2
+        className="title-content"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        {content.title}
+      </h2>
       <BoxContain>
         <Grid container spacing={2}>
           <Grid item xs={12} md={10}>
-            <div style={{ paddingBottom: '40px' }}>
-              <Slider {...settings} style={{
-                width: "100%",
-                border: "2px solid var(--secondary-bg)",
-                borderRadius: "30px",
-                padding: "1vh",
-              }}>
+            <div style={{ paddingBottom: "40px" }}>
+              <Slider
+                {...settings}
+                style={{
+                  width: "100%",
+                  border: "2px solid var(--secondary-bg)",
+                  borderRadius: "30px",
+                  padding: "1vh",
+                }}
+              >
                 <div>
-                  <img src={content.img1} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}}  />
+                  <img
+                    src={content.img1}
+                    class="img-slide-content d-block w-100"
+                    alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
+                  />
                 </div>
                 <div>
-                  <img src={content.img2} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}} />
+                  <img
+                    src={content.img2}
+                    class="img-slide-content d-block w-100"
+                    alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
+                  />
                 </div>
                 <div>
-                  <img src={content.img3} class="img-slide-content d-block w-100" alt="slide1" style={{aspectRatio: '24/19'}} />
+                  <img
+                    src={content.img3}
+                    class="img-slide-content d-block w-100"
+                    alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
+                  />
                 </div>
               </Slider>
             </div>
@@ -56,9 +83,14 @@ const TextAudioSection = ({ content }) => {
                 const isActive = active === index;
                 return (
                   <Grid key={index} item xs={6} sm={3} md={12}>
-                    <BoxContent4 index={index} isActive={isActive} handleClickShowBox={handleClickShowBox} content={content} />
+                    <BoxContent4
+                      index={index}
+                      isActive={isActive}
+                      handleClickShowBox={handleClickShowBox}
+                      content={content}
+                    />
                   </Grid>
-                )
+                );
               })}
             </Grid>
           </Grid>

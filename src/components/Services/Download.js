@@ -6,14 +6,14 @@ const BoxStyled = styled(Box)({
   borderRadius: "30px",
   width: "100%",
 });
-const VerticalLine = styled('div')(({ theme }) => ({
+const VerticalLine = styled("div")(({ theme }) => ({
   borderLeft: "2px solid var(--secondary-bg)",
   margin: "2vh 0",
   [theme.breakpoints.down("sm")]: {
-    display: 'none',
+    display: "none",
   },
 }));
-const RowStyled = styled('div')(({ theme }) => ({
+const RowStyled = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "space-around",
   borderBottom: "2px solid var(--secondary-bg)",
@@ -24,23 +24,23 @@ const RowStyled = styled('div')(({ theme }) => ({
   },
 }));
 const LinkStyle = {
-  color: 'var(--primary-text)',
-  textDecoration: 'none',
-}
-const ImgStyled = styled('img')(({ theme }) => ({
+  color: "var(--primary-text)",
+  textDecoration: "none",
+};
+const ImgStyled = styled("img")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    width: '14px',
+    width: "14px",
   },
 }));
-const MedicalStyled = styled('a')(({ theme }) => ({
+const MedicalStyled = styled("a")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    width: '30%',
+    width: "30%",
   },
 }));
 
 const Download = () => {
   return (
-    <div style={{ padding: "20vh 0" }} id='download'>
+    <div className="section-scroll" style={{ padding: "20vh 0" }} id="download">
       <div style={{ marginBottom: "5vh" }}>
         <img
           src="/images/Cloud-Download.png"

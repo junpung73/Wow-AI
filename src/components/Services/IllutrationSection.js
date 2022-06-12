@@ -4,12 +4,12 @@ import SlideContent from "../public/SlideContent";
 import TitleSection from "./public-service/TitleSection";
 import { Grid, styled } from "@mui/material";
 
-const BoxContain = styled('div')(({ theme }) => ({
-  padding: '5vh 10rem',
+const BoxContain = styled("div")(({ theme }) => ({
+  padding: "5vh 10rem",
   [theme.breakpoints.down("lg")]: {
-    padding: '0',
+    padding: "0",
   },
-}))
+}));
 
 const IllutrationSection = ({ content }) => {
   const [active, setActive] = useState(null);
@@ -18,7 +18,11 @@ const IllutrationSection = ({ content }) => {
     setActive(index);
   };
   return (
-    <div style={{ padding: '10vh 0' }} id={`${content.id}`}>
+    <div
+      className="section-scroll"
+      style={{ padding: "10vh 0" }}
+      id={`${content.id}`}
+    >
       <TitleSection content={content} />
       <BoxContain>
         <Grid container spacing={2}>
@@ -30,11 +34,16 @@ const IllutrationSection = ({ content }) => {
               {content.boxst.map((content, index) => {
                 const isActive = active === index;
                 return (
-                <Grid key={index} item xs={6} sm={12}>
-                  <BoxContent3 index={index} isActive={isActive} handleClickShowBox={handleClickShowBox} content={content} />
-                </Grid>
-              )
-            })}
+                  <Grid key={index} item xs={6} sm={12}>
+                    <BoxContent3
+                      index={index}
+                      isActive={isActive}
+                      handleClickShowBox={handleClickShowBox}
+                      content={content}
+                    />
+                  </Grid>
+                );
+              })}
             </Grid>
           </Grid>
         </Grid>

@@ -4,12 +4,12 @@ import SlideContent from "../public/SlideContent";
 import TitleSection from "./public-service/TitleSection";
 import { Grid, styled } from "@mui/material";
 
-const BoxContain = styled('div')(({ theme }) => ({
-  padding: '5vh 10rem',
+const BoxContain = styled("div")(({ theme }) => ({
+  padding: "5vh 10rem",
   [theme.breakpoints.down("lg")]: {
-    padding: '0',
+    padding: "0",
   },
-}))
+}));
 
 const TextCollection = ({ content }) => {
   const [active, setActive] = useState(null);
@@ -18,7 +18,11 @@ const TextCollection = ({ content }) => {
     setActive(index);
   };
   return (
-    <div id={`${content.id}`} style={{ padding: '10vh 0' }}>
+    <div
+      id={`${content.id}`}
+      style={{ padding: "10vh 0" }}
+      className="section-scroll"
+    >
       <TitleSection content={content} />
       <BoxContain>
         <Grid container spacing={3}>
@@ -31,9 +35,14 @@ const TextCollection = ({ content }) => {
                 const isActive = active === index;
                 return (
                   <Grid item key={index} xs={6} sm={12}>
-                    <BoxContent2 index={index} isActive={isActive} handleClickShowBox={handleClickShowBox} content={content} />
+                    <BoxContent2
+                      index={index}
+                      isActive={isActive}
+                      handleClickShowBox={handleClickShowBox}
+                      content={content}
+                    />
                   </Grid>
-                )
+                );
               })}
             </Grid>
           </Grid>

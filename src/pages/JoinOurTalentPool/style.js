@@ -466,3 +466,19 @@ export const Wrapper = styled.div`
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 `;
+
+export const AskRow = styled(Row)`
+  gap: 50px;
+
+  @media (max-width: 769px) {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+`;
+
+export const AskCol = styled(Column)`
+  width: 150%;
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+`;

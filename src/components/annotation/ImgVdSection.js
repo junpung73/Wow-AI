@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Grid, styled } from "@mui/material";
 import React from "react";
 import SlideContent from "../public/SlideContent";
 import BoxContent5 from "./public_anno/BoxContent5";
 
 const BoxContain = styled("div")(({ theme }) => ({
-  padding: '0 10vh',
+  padding: "0 10vh",
   [theme.breakpoints.down("xl")]: {
-    padding: '0',
+    padding: "0",
   },
 }));
 
@@ -18,8 +18,17 @@ const ImgVdSection = ({ content }) => {
     setActive(index);
   };
   return (
-    <div style={{ padding: '10vh 0' }} id={`${content.id}`}>
-      <h2 className="title-content" style={{ display: 'flex', justifyContent: 'center'}}>{content.title}</h2>
+    <div
+      className="section-scroll"
+      style={{ padding: "10vh 0" }}
+      id={`${content.id}`}
+    >
+      <h2
+        className="title-content"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        {content.title}
+      </h2>
       <BoxContain>
         <Grid container spacing={2}>
           <Grid item xs={12} md={10}>
@@ -31,9 +40,14 @@ const ImgVdSection = ({ content }) => {
                 const isActive = active === index;
                 return (
                   <Grid key={index} item xs={6} sm={3} md={12}>
-                    <BoxContent5 index={index} isActive={isActive} handleClickShowBox={handleClickShowBox} content={content} />
+                    <BoxContent5
+                      index={index}
+                      isActive={isActive}
+                      handleClickShowBox={handleClickShowBox}
+                      content={content}
+                    />
                   </Grid>
-                )
+                );
               })}
             </Grid>
           </Grid>

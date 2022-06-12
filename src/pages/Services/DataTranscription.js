@@ -5,16 +5,18 @@ import HignQuality from "../../components/Services/public-service/HignQuality";
 import TransServices from "../../components/Services/TransServices";
 import topicservices from "../../__mock__/topicservices";
 import transervice from "../../__mock__/transervice";
-
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
 const DataTranscription = () => {
   return (
-    <div>
+    <div className="view-scroll">
+      <Header />
       <HignQuality topic={topicservices[0]} />
       <div className="contain">
         <a className="arrowdown" href="#trans-services">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
-        <TransServices content={transervice}/>
+        <TransServices content={transervice} />
         <a className="arrowdown" href="#download">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
@@ -24,6 +26,7 @@ const DataTranscription = () => {
         </a>
         <Dataset />
       </div>
+      <Footer />
     </div>
   );
 };
