@@ -22,7 +22,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-contai>.nav-item:hover {
+.navbar-contai > .nav-item:hover {
   transform: scale(1.05);
 }
 
@@ -342,14 +342,12 @@
   .title-content {
     font-size: var(--medium-text-2) !important;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
   .title-description {
     padding: 0;
   }
-<<<<<<< HEAD
 }
 
 .view-scroll {
@@ -363,6 +361,3 @@
 .section-scroll {
   scroll-snap-align: start;
 }
-=======
-}
->>>>>>> 8b2f3b883a3b946ae75c9bb3686f87d942bc301e
