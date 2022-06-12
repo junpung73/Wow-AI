@@ -10,7 +10,7 @@ import sectionservices from "../../__mock__/collection";
 import SpeechCollection from "../../components/Services/SpeechCollection";
 import IllutrationSection from "../../components/Services/IllutrationSection";
 
-import Header from "../../components/Layouts/Header";
+import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
 
 const DataCollection = () => {

@@ -6,7 +6,7 @@ import HignQuality from "../../components/Services/public-service/HignQuality";
 import topicservices from "../../__mock__/topicservices";
 import annotation from "../../__mock__/annotation";
 import TextAudioSection from "../../components/annotation/TextAudioSection";
-import Header from "../../components/Layouts/Header";
+import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
 
 const DataAnnotation = () => {

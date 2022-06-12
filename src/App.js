@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Layouts/Footer";
-import Header from "./components/Layouts/Header";
 import Contact from "./pages/Company/Contact/Contact";
 import AboutUs from "./pages/Company/AboutUs/AboutUs";
 import DetailBlog from "./pages/DetailBlog";

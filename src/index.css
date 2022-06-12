@@ -9,10 +9,10 @@
   --medium-text-3: 18px;
   --normal-text: 14px;
   --small-text: 12px;
+}
 
-  /* overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  height: 100vh; */
+html {
+  overflow-y: hidden;
 }
 
 body {
@@ -22,6 +22,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-text);
   background-color: var(--primary-bg);
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 code {

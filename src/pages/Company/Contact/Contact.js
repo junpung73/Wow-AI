@@ -11,7 +11,7 @@ import {
   FormCol,
   Container,
 } from "./style";
-import Header from "../../../components/Layouts/Header";
+import Header from "../../../components/Layouts/Header/Header";
 import Footer from "../../../components/Layouts/Footer";
 
 const Contact = () => {

@@ -7,11 +7,13 @@ import Services from "../components/home/Services";
 import SlideHome from "../components/home/SlideHome";
 import Solution from "../components/home/Solution";
 import WhyChoose from "../components/home/WhyChoose";
-
+import Header from "../components/Layouts/Header/Header";
+import Footer from "../components/Layouts/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="view-scroll">
+      <Header />
       <SlideHome />
       <div className="contain">
         <a className="arrowdown" href="#aboutus">
@@ -39,6 +41,7 @@ const Home = () => {
         </a>
         <Management />
       </div>
+      <Footer />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import HignQuality from "../../components/Services/public-service/HignQuality";
 import TransServices from "../../components/Services/TransServices";
 import topicservices from "../../__mock__/topicservices";
 import transervice from "../../__mock__/transervice";
-import Header from "../../components/Layouts/Header";
+import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
 const DataTranscription = () => {
   return (

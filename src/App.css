@@ -58,7 +58,7 @@
 
 /* --------------Slide Home------------ */
 .carousel {
-  position: static;
+  position: relative;
 }
 
 .carousel-indicators .active {
