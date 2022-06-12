@@ -15,6 +15,7 @@ const ImgVdSection = ({ content }) => {
   const [active, setActive] = useState(null);
 
   const handleClickShowBox = (index) => {
+    console.log(index);
     setActive(index);
   };
   return (
@@ -38,6 +39,7 @@ const ImgVdSection = ({ content }) => {
             <Grid container spacing={2}>
               {content.boxst.map((content, index) => {
                 const isActive = active === index;
+                console.log(isActive);
                 return (
                   <Grid key={index} item xs={6} sm={3} md={12}>
                     <BoxContent5
