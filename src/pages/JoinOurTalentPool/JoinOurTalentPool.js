@@ -30,7 +30,7 @@ const JoinOurTalentPool = () => {
   const [blogTranslate, setBlogTranslate] = useState(0);
 
   return (
-    <Wrapper>
+    <div>
       {/* Join our talent pool */}
       <Container>
         <Title>
@@ -341,7 +341,7 @@ const JoinOurTalentPool = () => {
           </Row>
         </Column>
       </Container>
-    </Wrapper>
+    </div>
   );
 };
 

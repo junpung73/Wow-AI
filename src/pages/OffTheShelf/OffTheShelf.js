@@ -24,7 +24,6 @@ import {
   FormCol,
   FormRow,
   Col,
-  Container,
 } from "./style";
 
 const OffTheShelf = () => {
@@ -32,7 +31,7 @@ const OffTheShelf = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <Container>
+    <div>
       <Wrapper>
         <SubContainer>
           <h2>Off-the-Shelf (OTS) AI Training Datasets</h2>
@@ -245,7 +244,7 @@ const OffTheShelf = () => {
           </Col>
         </Row>
       </Wrapper>
-    </Container>
+    </div>
   );
 };
 

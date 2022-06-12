@@ -11,7 +11,7 @@ import {
 
 const Resources = () => {
   return (
-    <Container>
+    <div>
       <Wrapper
         style={{ width: "100%", margin: 0, padding: 0, maxWidth: "100%" }}
       >
@@ -82,7 +82,7 @@ const Resources = () => {
           <LoadMoreButton>Load More</LoadMoreButton>
         </Column>
       </Wrapper>
-    </Container>
+    </div>
   );
 };
 

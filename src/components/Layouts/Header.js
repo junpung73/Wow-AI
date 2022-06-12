@@ -75,9 +75,9 @@ const DivStyled = styled("div")(({ theme }) => ({
 
 const Header = () => {
   return (
-    <React.Fragment>
+    <React.Fragment className="section-scroll">
       <div
-        className="header-info contain"
+        className="header-info contain section-scroll"
         style={{
           display: "flex",
           justifyContent: "space-between",

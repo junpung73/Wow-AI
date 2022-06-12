@@ -9,6 +9,10 @@
   --medium-text-3: 18px;
   --normal-text: 14px;
   --small-text: 12px;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
 }
 
 body {
