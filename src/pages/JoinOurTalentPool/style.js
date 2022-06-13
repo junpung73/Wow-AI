@@ -1,53 +1,6 @@
 import styled from "styled-components/macro";
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  max-width: 1330px;
-  width: 100%;
-  padding: 100px 12px;
-  justify-content: center;
-  scroll-snap-align: center;
-  margin: auto;
-  margin-top: 64px;
-
-  @media only screen and (max-width: 1441px) {
-    max-width: 1200px;
-  }
-
-  @media only screen and (max-width: 1441px) {
-    max-width: 1200px;
-  }
-
-  @media only screen and (max-width: 1301px) {
-    max-width: 1100px;
-  }
-  @media only screen and (max-width: 1201px) {
-    max-width: 1100px;
-  }
-  @media only screen and (max-width: 1112px) {
-    max-width: 1024px;
-  }
-  @media only screen and (max-width: 1100px) {
-    max-width: 980px;
-  }
-  @media only screen and (max-width: 1024px) {
-    max-width: 900px;
-  }
-  @media only screen and (max-width: 769px) {
-    max-width: 650px;
-  }
-  @media only screen and (max-width: 700px) {
-    max-width: 600px;
-  }
-
-  button {
-    outline: none;
-  }
-`;
-
 export const SubTitle = styled.h1`
-  margin-bottom: 40px;
   color: var(--secondary-bg);
 
   @media (max-width: 700px) {
@@ -453,18 +406,6 @@ export const Grid = styled.div`
   @media (max-width: 769px) {
     grid-template-columns: 1fr;
   }
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  width: 100%;
-  height: 100vh;
-
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 `;
 
 export const AskRow = styled(Row)`

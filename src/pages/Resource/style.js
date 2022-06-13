@@ -1,36 +1,5 @@
 import styled from "styled-components/macro";
 
-export const Wrapper = styled.div`
-  max-width: 1330px;
-  width: 100%;
-  padding: 100px 15px;
-  padding-bottom: 0;
-  margin: auto;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  scroll-snap-align: start;
-
-  @media only screen and (max-width: 1441px) {
-    max-width: 1200px;
-  }
-
-  @media only screen and (max-width: 1301px) {
-    max-width: 1100px;
-  }
-
-  button {
-    outline: none;
-  }
-
-  &:first-of-type {
-    margin-top: 50px;
-  }
-
-  &:last-of-type {
-    margin-bottom: 100px;
-  }
-`;
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
@@ -123,12 +92,4 @@ export const LoadMoreButton = styled.button`
     background-color: var(--secondary-bg);
     color: white;
   }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 `;

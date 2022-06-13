@@ -11,6 +11,7 @@ const BoxStyled = styled(Box)({
 });
 
 const BoxContain = styled(Box)({
+  position: "relative",
   borderRadius: "30px",
   aspectRatio: "1/1",
   display: "flex",

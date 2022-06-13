@@ -9,7 +9,7 @@ import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
 const DataTranscription = () => {
   return (
-    <div className="view-scroll">
+    <div>
       <Header />
       <HignQuality topic={topicservices[0]} />
       <div className="contain">

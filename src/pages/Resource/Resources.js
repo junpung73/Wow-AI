@@ -1,30 +1,28 @@
 import React from "react";
-import {
-  Wrapper,
-  Column,
-  WrapTopic,
-  Grid,
-  Item,
-  LoadMoreButton,
-  Container,
-} from "./style";
+import { Column, WrapTopic, Grid, Item, LoadMoreButton } from "./style";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
+import { Container } from "../../components/Container";
 
 const Resources = () => {
   return (
-    <Container>
+    <>
       <Header />
-      <Wrapper
-        style={{ width: "100%", margin: 0, padding: 0, maxWidth: "100%" }}
+      <Container
+        style={{
+          width: "100%",
+          margin: 0,
+          padding: 0,
+          maxWidth: "100%",
+        }}
       >
         <img
           src="/images/Group39449.png"
           alt="background"
           style={{ height: "100%", width: "100%" }}
         />
-      </Wrapper>
-      <Wrapper>
+      </Container>
+      <Container style={{ scrollSnapAlign: "start", paddingTop: "100px" }}>
         <Column>
           <h1 style={{ color: "var(--secondary-bg)", textAlign: "center" }}>
             Everything you need to know about Crowdsourcing
@@ -84,9 +82,9 @@ const Resources = () => {
           </Grid>
           <LoadMoreButton>Load More</LoadMoreButton>
         </Column>
-      </Wrapper>
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 };
 

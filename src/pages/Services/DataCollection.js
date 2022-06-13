@@ -15,7 +15,7 @@ import Footer from "../../components/Layouts/Footer";
 
 const DataCollection = () => {
   return (
-    <div className="view-scroll">
+    <div>
       <Header />
       <HignQuality topic={topicservices[1]} />
       <div className="contain">

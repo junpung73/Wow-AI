@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Wrapper,
   Row,
   BigImg,
   Picture,
@@ -9,17 +8,17 @@ import {
   SubmitButton,
   FormRow,
   FormCol,
-  Container,
 } from "./style";
 import Header from "../../../components/Layouts/Header/Header";
 import Footer from "../../../components/Layouts/Footer";
+import { Container } from "../../../components/Container";
 
 const Contact = () => {
   return (
-    <Container>
+    <>
       <Header />
       {/* <Dataset /> */}
-      <Wrapper>
+      <Container>
         <Row>
           <Picture>
             <BigImg src="images/image20.png" width="100%" />
@@ -68,14 +67,14 @@ const Contact = () => {
             <SubmitButton>Submit</SubmitButton>
           </Column>
         </Row>
-      </Wrapper>
+      </Container>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           textAlign: "center",
           alignItems: "center",
-          height: "40vh",
+          height: "20vh",
         }}
       >
         <h5 className="title-description">
@@ -85,7 +84,7 @@ const Contact = () => {
         </h5>
       </div>
       <Footer />
-    </Container>
+    </>
   );
 };
 

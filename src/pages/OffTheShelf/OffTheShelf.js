@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as bs from "react-icons/bs";
 import {
-  Wrapper,
   Row,
   SubContainer,
   SubscribeButton,
@@ -24,19 +23,19 @@ import {
   FormCol,
   FormRow,
   Col,
-  Container,
 } from "./style";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
+import { Container } from "../../components/Container";
 
 const OffTheShelf = () => {
   const [datasetSelect, setDatasetSelect] = useState("audio");
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <Container>
+    <>
       <Header />
-      <Wrapper>
+      <Container>
         <SubContainer>
           <h2>Off-the-Shelf (OTS) AI Training Datasets</h2>
           <p>
@@ -71,8 +70,8 @@ const OffTheShelf = () => {
           <span>Contact Us</span>
           <bs.BsArrowRight></bs.BsArrowRight>
         </ContactUsButton>
-      </Wrapper>
-      <Wrapper style={{ marginTop: "100px" }}>
+      </Container>
+      <Container style={{ marginTop: "100px" }}>
         <Column>
           <h1>Dataset</h1>
           <Row>
@@ -197,8 +196,8 @@ const OffTheShelf = () => {
             <bs.BsChevronRight />
           </PageSwitch>
         </Column>
-      </Wrapper>
-      <Wrapper>
+      </Container>
+      <Container>
         <Row>
           <Picture>
             <BigImg src="images/image20.png" width="100%" />
@@ -247,9 +246,9 @@ const OffTheShelf = () => {
             <SubmitButton>Submit</SubmitButton>
           </Col>
         </Row>
-      </Wrapper>
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 };
 

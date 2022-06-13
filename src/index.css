@@ -24,6 +24,7 @@ body {
   background-color: var(--primary-bg);
   overflow-y: scroll;
   height: 100vh;
+  scroll-snap-type: y proximity;
 }
 
 code {

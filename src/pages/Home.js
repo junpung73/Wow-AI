@@ -12,7 +12,7 @@ import Footer from "../components/Layouts/Footer";
 
 const Home = () => {
   return (
-    <div className="view-scroll">
+    <div>
       <Header />
       <SlideHome />
       <div className="contain">

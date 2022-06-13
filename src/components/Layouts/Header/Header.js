@@ -92,7 +92,7 @@ export default function Header() {
                 <a href="/resources">Resources</a>
               </NavItem>
               <NavItem>
-                <a href="/company">Company</a>
+                <a href="#">Company</a>
                 <Dropdown>
                   <a href="/about-us">About Us</a>
                   <a href="/contact">Contact</a>

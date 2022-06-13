@@ -11,7 +11,7 @@ import Footer from "../../components/Layouts/Footer";
 
 const DataAnnotation = () => {
   return (
-    <div className="view-scroll">
+    <div>
       <Header />
       <HignQuality topic={topicservices[2]} />
       <div className="contain">

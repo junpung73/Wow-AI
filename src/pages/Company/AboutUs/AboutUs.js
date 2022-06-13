@@ -3,15 +3,16 @@ import AboutDescrip from "../../../components/AboutDescrip";
 import { Topic } from "./style";
 import Header from "../../../components/Layouts/Header/Header";
 import Footer from "../../../components/Layouts/Footer";
+import { Container } from "../../../components/Container";
 
 const AboutUs = () => {
   return (
     <>
       <Header />
       <Topic>wow AI LLC</Topic>
-      <div className="container">
+      <Container style={{ scrollSnapAlign: "start" }}>
         <AboutDescrip />
-      </div>
+      </Container>
       <Footer />
     </>
   );

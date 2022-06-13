@@ -1,8 +1,8 @@
 // import { style } from "@mui/system";
 import React, { useState } from "react";
 import * as io from "react-icons/io";
+import { Container } from "../../components/Container";
 import {
-  Container,
   Picture,
   Title,
   BigImg,
@@ -22,7 +22,6 @@ import {
   ConCol,
   Grid,
   View,
-  Wrapper,
   AskRow,
   AskCol,
 } from "./style";
@@ -35,7 +34,7 @@ const JoinOurTalentPool = () => {
   const [blogTranslate, setBlogTranslate] = useState(0);
 
   return (
-    <Wrapper>
+    <>
       <Header />
       {/* Join our talent pool */}
       <Container>
@@ -181,72 +180,63 @@ const JoinOurTalentPool = () => {
       </Container>
 
       {/* Frequently asked questions */}
-      <Container style={{ scrollSnapAlign: "start" }}>
+      <Container style={{ scrollSnapAlign: "start", paddingTop: "100px" }}>
         <Column>
           <SubTitle>Frequently Asked Questions</SubTitle>
-          <AskRow>
-            <AskCol className="section-scroll">
-              <h4>1. What is Wow AI?</h4>
-              <p>
-                Wow AI is a trusted and professional partner that provides
-                high-quality data at a large scale to clients to improve their
-                AI/ML systems. Wow AI manages projects for clients, recruits
-                project contributors from all around the world, breaks down
-                complex projects into small tasks (collection, annotation,
-                translation, transcription, classifying, labeling, etc.) and
-                allocates them to suitable project contributors. Workers
-                complete tasks from home to get paid, includes Wow AI processes
-                and combines all the data collected into a meaningful and
-                qualified result, and sends it back to the client. Our clients
-                include leading companies in technology, automotive, eCommerce,
-                banking, healthcare and several other industries as well.
-              </p>
-              <h4>
-                2. How do I sign up for Wow AI project contributor account?
-              </h4>
-              <p>
-                3 simple steps:{" "}
-                <ul>
-                  <li>Visit connect.wow-ai.com</li>{" "}
-                  <li>
-                    Fill in your required personal information and contact
-                  </li>{" "}
-                  <li>
-                    Check your email and confirm the registration request Now,
-                    you are good to go!
-                  </li>
-                </ul>
-              </p>
-              <h4>3. How do I get paid?</h4>
-              <p>
-                Each project will have a different payment circle. Usually, in
-                long-term projects, you will receive an invoice for all of your
-                completed tasks within 7 working days of the next month. You
-                will have 2-3 days to confirm the invoice. Then once it is
-                confirmed, the payment will be made within 30 working days. (The
-                due date of each invoice is stated on our invoicing in system).
-                Payment will be made automatically to your wallet on our system.
-                Then, payments are automatically transferred by our system to
-                your designated chosen accounts. You can use your bank or
-                Payoneer account. Please take note. That there is a minimum
-                balance of 25 USD for bank accounts and 10 USD for payoneer
-                accounts for you to withdraw. And if your wallet’s balance is
-                lower than 10 USD, it can’t be sent to your Payoneer account. In
-                that case, you will have to wait until the balance on your
-                wallet is higher than the above limits.
-              </p>
-            </AskCol>
-            <video
-              style={{
-                width: "100%",
-                margin: "30px 0",
-                borderRadius: "20px",
-              }}
-              controls
-            >
-              <source src="videos/target_transfer.mp4"></source>
-            </video>
-          </AskRow>
+          <video
+            style={{
+              width: "100%",
+              margin: "30px 0",
+              borderRadius: "20px",
+            }}
+            controls
+          >
+            <source src="videos/target_transfer.mp4"></source>
+          </video>
+          <h4>1. What is Wow AI?</h4>
+          <p>
+            Wow AI is a trusted and professional partner that provides
+            high-quality data at a large scale to clients to improve their AI/ML
+            systems. Wow AI manages projects for clients, recruits project
+            contributors from all around the world, breaks down complex projects
+            into small tasks (collection, annotation, translation,
+            transcription, classifying, labeling, etc.) and allocates them to
+            suitable project contributors. Workers complete tasks from home to
+            get paid, includes Wow AI processes and combines all the data
+            collected into a meaningful and qualified result, and sends it back
+            to the client. Our clients include leading companies in technology,
+            automotive, eCommerce, banking, healthcare and several other
+            industries as well.
+          </p>
+          <h4>2. How do I sign up for Wow AI project contributor account?</h4>
+          <p>
+            3 simple steps:{" "}
+            <ul>
+              <li>Visit connect.wow-ai.com</li>{" "}
+              <li>Fill in your required personal information and contact</li>{" "}
+              <li>
+                Check your email and confirm the registration request Now, you
+                are good to go!
+              </li>
+            </ul>
+          </p>
+          <h4>3. How do I get paid?</h4>
+          <p>
+            Each project will have a different payment circle. Usually, in
+            long-term projects, you will receive an invoice for all of your
+            completed tasks within 7 working days of the next month. You will
+            have 2-3 days to confirm the invoice. Then once it is confirmed, the
+            payment will be made within 30 working days. (The due date of each
+            invoice is stated on our invoicing in system). Payment will be made
+            automatically to your wallet on our system. Then, payments are
+            automatically transferred by our system to your designated chosen
+            accounts. You can use your bank or Payoneer account. Please take
+            note. That there is a minimum balance of 25 USD for bank accounts
+            and 10 USD for payoneer accounts for you to withdraw. And if your
+            wallet’s balance is lower than 10 USD, it can’t be sent to your
+            Payoneer account. In that case, you will have to wait until the
+            balance on your wallet is higher than the above limits.
+          </p>
         </Column>
       </Container>
 
@@ -364,7 +354,7 @@ const JoinOurTalentPool = () => {
         </Column>
       </Container>
       <Footer />
-    </Wrapper>
+    </>
   );
 };
 

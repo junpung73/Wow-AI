@@ -45,9 +45,9 @@ const Contain = styled("div")(({ theme }) => ({
 
 const Solution = () => {
   return (
-    <Contain id="solutions">
+    <Contain id="solution" className="section-scroll">
       <h2
-        className="title-content section-scroll"
+        className="title-content"
         style={{ display: "flex", justifyContent: "center" }}
       >
         AI solutions for your industry
