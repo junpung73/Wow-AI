@@ -1,5 +1,4 @@
 import React from "react";
-import Dataset from "../../components/public/Dataset";
 import Download from "../../components/Services/Download";
 import HignQuality from "../../components/Services/public-service/HignQuality";
 import TransServices from "../../components/Services/TransServices";
@@ -7,6 +6,7 @@ import topicservices from "../../__mock__/topicservices";
 import transervice from "../../__mock__/transervice";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
+import BuildDataset from "../../components/public/BuildDataset";
 const DataTranscription = () => {
   return (
     <div>
@@ -24,7 +24,7 @@ const DataTranscription = () => {
         <a className="arrowdown" href="#dataset">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
-        <Dataset />
+        <BuildDataset />
       </div>
       <Footer />
     </div>

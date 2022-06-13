@@ -1,5 +1,4 @@
 import React from "react";
-import Dataset from "../../components/public/Dataset";
 import Download from "../../components/Services/Download";
 import ImgVdSection from "../../components/annotation/ImgVdSection";
 import HignQuality from "../../components/Services/public-service/HignQuality";
@@ -8,6 +7,7 @@ import annotation from "../../__mock__/annotation";
 import TextAudioSection from "../../components/annotation/TextAudioSection";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
+import BuildDataset from "../../components/public/BuildDataset";
 
 const DataAnnotation = () => {
   return (
@@ -38,7 +38,7 @@ const DataAnnotation = () => {
         <a className="arrowdown" href="#dataset">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
-        <Dataset />
+        <BuildDataset />
       </div>
       <Footer />
     </div>

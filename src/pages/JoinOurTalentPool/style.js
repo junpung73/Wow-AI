@@ -226,7 +226,6 @@ export const ConCol = styled(Column)`
 export const Carousel = styled(Row)`
   align-items: center;
   position: relative;
-  gap: 20px;
   width: 100%;
 
   transform: translateX(
@@ -331,7 +330,6 @@ export const Quote = styled(Card)`
   background-color: white;
   color: var(--secondary-text);
   aspect-ratio: 1;
-  flex: 1 1 33%;
 
   @media (max-width: 769px) {
     aspect-ratio: 2;
@@ -365,6 +363,7 @@ export const BlogItem = styled(Card)`
   color: white;
   padding: 0;
   border-radius: 10px;
+  flex: 1 0 33%;
   p {
     margin: 8px 0;
     font-size: 12px;
@@ -422,4 +421,9 @@ export const AskCol = styled(Column)`
   @media (max-width: 769px) {
     width: 100%;
   }
+`;
+
+export const PadDiv = styled.div`
+  padding: 0 5px;
+  flex: 1 0 calc(100% / 3);
 `;

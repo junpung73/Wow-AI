@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import * as io from "react-icons/io";
 import { Container } from "../../components/Container";
+import { PadDiv } from "./style";
 import {
   Picture,
   Title,
@@ -256,36 +257,54 @@ const JoinOurTalentPool = () => {
             </NavigateButton>
             <View>
               <Carousel translate={quoteTranslate}>
-                <Quote>
-                  <p>
-                    “This is a very independent job that is super flexible. You
-                    choose your own hours and take on multiple projects.”
-                  </p>
-                  <Carousel>
-                    <img src="images/avatar.svg"></img>
-                    <p>Wow AI, Image Collector</p>
-                  </Carousel>
-                </Quote>
-                <Quote>
-                  <p>
-                    “This is a very independent job that is super flexible. You
-                    choose your own hours and take on multiple projects.”
-                  </p>
-                  <Carousel>
-                    <img src="images/avatar.svg"></img>
-                    <p>Wow AI, Image Collector</p>
-                  </Carousel>
-                </Quote>
-                <Quote>
-                  <p>
-                    “This is a very independent job that is super flexible. You
-                    choose your own hours and take on multiple projects.”
-                  </p>
-                  <Carousel>
-                    <img src="images/avatar.svg"></img>
-                    <p>Wow AI, Image Collector</p>
-                  </Carousel>
-                </Quote>
+                <PadDiv>
+                  <Quote>
+                    <p>
+                      “This is a very independent job that is super flexible.
+                      You choose your own hours and take on multiple projects.”
+                    </p>
+                    <Carousel>
+                      <img src="images/avatar.svg"></img>
+                      <p>Wow AI, Image Collector</p>
+                    </Carousel>
+                  </Quote>
+                </PadDiv>
+                <PadDiv>
+                  <Quote>
+                    <p>
+                      “This is a very independent job that is super flexible.
+                      You choose your own hours and take on multiple projects.”
+                    </p>
+                    <Carousel>
+                      <img src="images/avatar.svg"></img>
+                      <p>Wow AI, Image Collector</p>
+                    </Carousel>
+                  </Quote>
+                </PadDiv>
+                <PadDiv>
+                  <Quote>
+                    <p>
+                      “This is a very independent job that is super flexible.
+                      You choose your own hours and take on multiple projects.”
+                    </p>
+                    <Carousel>
+                      <img src="images/avatar.svg"></img>
+                      <p>Wow AI, Image Collector</p>
+                    </Carousel>
+                  </Quote>
+                </PadDiv>
+                <PadDiv>
+                  <Quote>
+                    <p>
+                      “This is a very independent job that is super flexible.
+                      You choose your own hours and take on multiple projects.”
+                    </p>
+                    <Carousel>
+                      <img src="images/avatar.svg"></img>
+                      <p>Wow AI, Image Collector</p>
+                    </Carousel>
+                  </Quote>
+                </PadDiv>
               </Carousel>
             </View>
             <NavigateButton
@@ -318,27 +337,46 @@ const JoinOurTalentPool = () => {
             </NavigateButton>
             <View>
               <Carousel translate={blogTranslate}>
-                <BlogItem>
-                  <img src="images/blogimg.svg"></img>
-                  <p>10-08-2021</p>
-                  <h6>
-                    Surge of this virus is unpredictable in this era. Thoughts?
-                  </h6>
-                </BlogItem>
-                <BlogItem>
-                  <img src="images/blogimg.svg"></img>
-                  <p>10-08-2021</p>
-                  <h6>
-                    Surge of this virus is unpredictable in this era. Thoughts?
-                  </h6>
-                </BlogItem>
-                <BlogItem>
-                  <img src="images/blogimg.svg"></img>
-                  <p>10-08-2021</p>
-                  <h6>
-                    Surge of this virus is unpredictable in this era. Thoughts?
-                  </h6>
-                </BlogItem>
+                <PadDiv>
+                  <BlogItem>
+                    <img src="images/blogimg.svg"></img>
+                    <p>10-08-2021</p>
+                    <h6>
+                      Surge of this virus is unpredictable in this era.
+                      Thoughts?
+                    </h6>
+                  </BlogItem>
+                </PadDiv>
+                <PadDiv>
+                  <BlogItem>
+                    <img src="images/blogimg.svg"></img>
+                    <p>10-08-2021</p>
+                    <h6>
+                      Surge of this virus is unpredictable in this era.
+                      Thoughts?
+                    </h6>
+                  </BlogItem>
+                </PadDiv>
+                <PadDiv>
+                  <BlogItem>
+                    <img src="images/blogimg.svg"></img>
+                    <p>10-08-2021</p>
+                    <h6>
+                      Surge of this virus is unpredictable in this era.
+                      Thoughts?
+                    </h6>
+                  </BlogItem>
+                </PadDiv>
+                <PadDiv>
+                  <BlogItem>
+                    <img src="images/blogimg.svg"></img>
+                    <p>10-08-2021</p>
+                    <h6>
+                      Surge of this virus is unpredictable in this era.
+                      Thoughts?
+                    </h6>
+                  </BlogItem>
+                </PadDiv>
               </Carousel>
             </View>
             <NavigateButton

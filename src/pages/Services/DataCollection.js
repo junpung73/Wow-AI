@@ -1,5 +1,4 @@
 import React from "react";
-import Dataset from "../../components/public/Dataset";
 import Download from "../../components/Services/Download";
 import HignQuality from "../../components/Services/public-service/HignQuality";
 import ProjectAI from "../../components/Services/ProjectAI";
@@ -9,6 +8,7 @@ import topicservices from "../../__mock__/topicservices";
 import sectionservices from "../../__mock__/collection";
 import SpeechCollection from "../../components/Services/SpeechCollection";
 import IllutrationSection from "../../components/Services/IllutrationSection";
+import BuildDataset from "../../components/public/BuildDataset";
 
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
@@ -46,7 +46,7 @@ const DataCollection = () => {
         <a className="arrowdown" href="#dataset">
           <img src="/images/scrollarrow.png" alt="scroll" />
         </a>
-        <Dataset />
+        <BuildDataset />
       </div>
       <Footer />
     </div>
