@@ -22,7 +22,7 @@ const titleStyled = styled("p")(({ theme }) => ({
 const ProjectAI = () => {
   return (
     <div
-      style={{ padding: "10vh 0" }}
+      style={{ padding: "20vh 0" }}
       id="project-ai"
       className="section-scroll"
     >

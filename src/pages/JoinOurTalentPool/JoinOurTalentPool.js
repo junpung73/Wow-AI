@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import * as io from "react-icons/io";
 import { Container } from "../../components/Container";
-import { PadDiv } from "./style";
+import { PadDiv, PadDivBlog } from "./style";
 import {
   Picture,
   Title,
@@ -337,7 +337,7 @@ const JoinOurTalentPool = () => {
             </NavigateButton>
             <View>
               <Carousel translate={blogTranslate}>
-                <PadDiv>
+                <PadDivBlog>
                   <BlogItem>
                     <img src="images/blogimg.svg"></img>
                     <p>10-08-2021</p>
@@ -346,8 +346,8 @@ const JoinOurTalentPool = () => {
                       Thoughts?
                     </h6>
                   </BlogItem>
-                </PadDiv>
-                <PadDiv>
+                </PadDivBlog>
+                <PadDivBlog>
                   <BlogItem>
                     <img src="images/blogimg.svg"></img>
                     <p>10-08-2021</p>
@@ -356,8 +356,8 @@ const JoinOurTalentPool = () => {
                       Thoughts?
                     </h6>
                   </BlogItem>
-                </PadDiv>
-                <PadDiv>
+                </PadDivBlog>
+                <PadDivBlog>
                   <BlogItem>
                     <img src="images/blogimg.svg"></img>
                     <p>10-08-2021</p>
@@ -366,8 +366,8 @@ const JoinOurTalentPool = () => {
                       Thoughts?
                     </h6>
                   </BlogItem>
-                </PadDiv>
-                <PadDiv>
+                </PadDivBlog>
+                <PadDivBlog>
                   <BlogItem>
                     <img src="images/blogimg.svg"></img>
                     <p>10-08-2021</p>
@@ -376,7 +376,7 @@ const JoinOurTalentPool = () => {
                       Thoughts?
                     </h6>
                   </BlogItem>
-                </PadDiv>
+                </PadDivBlog>
               </Carousel>
             </View>
             <NavigateButton

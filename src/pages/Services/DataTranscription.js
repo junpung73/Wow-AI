@@ -13,17 +13,10 @@ const DataTranscription = () => {
       <Header />
       <HignQuality topic={topicservices[0]} />
       <div className="contain">
-        <a className="arrowdown" href="#trans-services">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
         <TransServices content={transervice} />
-        <a className="arrowdown" href="#download">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
+
         <Download />
-        <a className="arrowdown" href="#dataset">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
+
         <BuildDataset />
       </div>
       <Footer />

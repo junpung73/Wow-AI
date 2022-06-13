@@ -9,6 +9,7 @@ import Solution from "../components/home/Solution";
 import WhyChoose from "../components/home/WhyChoose";
 import Header from "../components/Layouts/Header/Header";
 import Footer from "../components/Layouts/Footer";
+import { Container } from "../components/Container";
 
 const Home = () => {
   return (
@@ -16,30 +17,27 @@ const Home = () => {
       <Header />
       <SlideHome />
       <div className="contain">
-        <a className="arrowdown" href="#aboutus">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
-        <AboutUs />
-        <a className="arrowdown" href="#services">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
-        <Services />
-        <a className="arrowdown" href="#achieverments">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
-        <Achieverments />
-        <a className="arrowdown" href="#why-choose">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
-        <WhyChoose />
-        <a className="arrowdown" href="#solutions">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
+        <Container>
+          <AboutUs />
+        </Container>
+
+        <Container>
+          <Services />
+        </Container>
+
+        <Container>
+          <Achieverments />
+        </Container>
+
+        <Container>
+          <WhyChoose />
+        </Container>
+
         <Solution />
-        <a className="arrowdown" href="#management">
-          <img src="/images/scrollarrow.png" alt="scroll" />
-        </a>
-        <Management />
+
+        <Container>
+          <Management />
+        </Container>
       </div>
       <Footer />
     </div>

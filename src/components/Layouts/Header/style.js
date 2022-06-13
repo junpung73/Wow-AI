@@ -3,10 +3,14 @@ import { DropdownAnimationMax, DropdownAnimationMin } from "./Animation";
 
 export const ContactContainer = styled.div`
   width: 100%;
-
+  padding: 5px 0;
   display: flex;
   justify-content: center;
   border-bottom: 1px white solid;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
 `;
 
 export const Navbar = styled.div`
@@ -55,7 +59,7 @@ export const Wrapper = styled.div`
 export const InfoText = styled.div`
   color: white;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
 
   > svg {
     margin: 0 5px;
@@ -151,7 +155,7 @@ export const NavItem = styled.div`
   color: white;
   cursor: pointer;
   height: 100%;
-  font-size: 22px;
+  font-size: 18px;
 
   > a {
     text-decoration: none;

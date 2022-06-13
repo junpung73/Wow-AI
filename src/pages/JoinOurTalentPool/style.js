@@ -325,7 +325,6 @@ export const NavigateButton = styled.button`
 `;
 
 export const Quote = styled(Card)`
-  display: flex;
   justify-content: space-between;
   background-color: white;
   color: var(--secondary-text);
@@ -358,6 +357,7 @@ export const TalentButton = styled.button`
 `;
 
 export const BlogItem = styled(Card)`
+  display: flex;
   aspect-ratio: 1;
   background-color: transparent;
   color: white;
@@ -426,4 +426,15 @@ export const AskCol = styled(Column)`
 export const PadDiv = styled.div`
   padding: 0 5px;
   flex: 1 0 calc(100% / 3);
+
+  @media (max-width: 769px) {
+    aspect-ratio: 2;
+    flex: 1 0 100%;
+  }
+`;
+
+export const PadDivBlog = styled(PadDiv)`
+  @media (max-width: 769px) {
+    aspect-ratio: 1.2;
+  }
 `;
