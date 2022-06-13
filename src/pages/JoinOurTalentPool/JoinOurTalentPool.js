@@ -288,7 +288,7 @@ const JoinOurTalentPool = () => {
                       You choose your own hours and take on multiple projects.”
                     </p>
                     <Carousel>
-                      <img src="images/avatar.svg"></img>
+                      <img src="images/reviewer.png"></img>
                       <p>Wow AI, Image Collector</p>
                     </Carousel>
                   </Quote>
