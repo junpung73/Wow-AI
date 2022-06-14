@@ -2,6 +2,11 @@ import { CardMedia } from "@mui/material";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
+const Video = {
+  display: "flex",
+  alignItems: "center",
+};
+
 const AboutUs = () => {
   return (
     <div
@@ -15,7 +20,7 @@ const AboutUs = () => {
       }}
     >
       <Row>
-        <Col xs={12} lg={7}>
+        <Col xs={12} lg={7} style={Video}>
           <CardMedia
             component="video"
             width="100%"

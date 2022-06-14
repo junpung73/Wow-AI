@@ -7,6 +7,7 @@ const Title = {
   fontWeght: "bold",
   marginTop: "4vh",
   marginBottom: "1.4rem",
+  fontSize: "var(--medium-text-3)",
 };
 
 const BulletPoint = {
@@ -16,6 +17,7 @@ const BulletPoint = {
 
 const InfoPage = styled(Grid)(({ theme }) => ({
   display: "block",
+  whiteSpace: "nowrap",
   [theme.breakpoints.down("sm")]: {
     display: "none",
   },

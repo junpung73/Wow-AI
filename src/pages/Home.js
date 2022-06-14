@@ -26,10 +26,6 @@ const Home = () => {
         </Container>
 
         <Container>
-          <Achieverments />
-        </Container>
-
-        <Container>
           <WhyChoose />
         </Container>
 

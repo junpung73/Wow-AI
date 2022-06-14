@@ -69,10 +69,7 @@ const SlideHome = () => {
               muted
               loop
             >
-              <source
-                src="/videos/pexels-kindel-media-9029254.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/ProfessionalProject.webm" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>
@@ -85,10 +82,7 @@ const SlideHome = () => {
               muted
               loop
             >
-              <source
-                src="/videos/pexels-kindel-media-8979467.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/BetterData2.webm" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>
@@ -101,10 +95,7 @@ const SlideHome = () => {
               muted
               loop
             >
-              <source
-                src="/videos/pexels-pavel-danilyuk-8084631.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/ATrustedPartner.webm" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>

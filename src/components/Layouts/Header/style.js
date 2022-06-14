@@ -59,7 +59,7 @@ export const Wrapper = styled.div`
 export const InfoText = styled.div`
   color: white;
   align-items: center;
-  font-size: 12px;
+  font-size: var(--normal-text);
 
   > svg {
     margin: 0 5px;
