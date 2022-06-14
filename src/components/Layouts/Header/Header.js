@@ -21,22 +21,22 @@ import {
 } from "./style";
 
 export default function Header() {
-  const [scrollY, setScrollY] = useState(0);
   const [showNavbar, setShowNavbar] = useState(false);
-
-  const handleScroll = () => {
-    // console.log(window.scrollY);
-    setScrollY(window.scrollY);
-  };
+  const [showMenu, setShowMenu] = useState("");
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const updateWindowDimensions = () => {
+      setShowMenu("");
+    };
+
+    window.addEventListener("resize", updateWindowDimensions);
+    return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
 
   return (
     <>
       <ContactContainer>
-        <Wrapper className="contain section-scroll" style={{ marginBottom: 0 }}>
+        <Wrapper style={{ marginBottom: 0 }} className="contain section-scroll">
           <Wrapper>
             <InfoText>
               English
@@ -55,7 +55,7 @@ export default function Header() {
           </Wrapper>
         </Wrapper>
       </ContactContainer>
-      <Navbar scrollY={scrollY}>
+      <Navbar>
         <Wrapper className="contain">
           <Wrapper>
             <a href="/">
@@ -77,7 +77,15 @@ export default function Header() {
                   </Wrapper>
                 </div>
               ) : null}
-              <NavItem>
+              <NavItem
+                navItemName="Services"
+                showMenu={showMenu}
+                onClick={() =>
+                  showMenu === "Services"
+                    ? setShowMenu("")
+                    : setShowMenu("Services")
+                }
+              >
                 <a>Services</a>
                 <Dropdown>
                   <a href="/data-collection">Data Collection</a>
@@ -85,20 +93,28 @@ export default function Header() {
                   <a href="/data-transcription">Data Transcription</a>
                 </Dropdown>
               </NavItem>
-              <NavItem>
+              <NavItem showMenu={showMenu} navItemName="off-the-shelf">
                 <a href="/off-the-shelf">Off the shelf data</a>
               </NavItem>
-              <NavItem>
+              <NavItem showMenu={showMenu} navItemName="resources">
                 <a href="/resources">Resources</a>
               </NavItem>
-              <NavItem>
+              <NavItem
+                showMenu={showMenu}
+                navItemName="Company"
+                onClick={() =>
+                  showMenu === "Company"
+                    ? setShowMenu("")
+                    : setShowMenu("Company")
+                }
+              >
                 <a href="#">Company</a>
                 <Dropdown>
                   <a href="/about-us">About Us</a>
                   <a href="/contact">Contact</a>
                 </Dropdown>
               </NavItem>
-              <NavItem>
+              <NavItem showMenu={showMenu} navItemName="join-our-talent-pool">
                 <a href="/join-our-talent-pool">Join Our Talent Pool</a>
               </NavItem>
               {showNavbar === true ? (

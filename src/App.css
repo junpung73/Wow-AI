@@ -372,3 +372,7 @@
     margin: 2vh -1vh 8vh;
   }
 }
+
+.swiper-slide {
+  width: 100%;
+}

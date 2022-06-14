@@ -27,8 +27,7 @@ export const Navbar = styled.div`
   -webkit-box-shadow: 5px 5px 20px -10px #000000;
   box-shadow: 5px 5px 20px -10px #000000;
 
-  background-color: ${({ scrollY }) =>
-    scrollY < 10 ? "var(--primary-bg)" : "transparent"};
+  background-color: var(--primary-bg);
 
   &:hover {
     background-color: var(--primary-bg);
@@ -111,7 +110,7 @@ export const Dropdown = styled.div`
   width: fit-content;
   overflow: hidden;
 
-  top: 100%;
+  top: calc(100% - 10px);
   left: 0;
   border-radius: 10px;
 
@@ -130,6 +129,9 @@ export const Dropdown = styled.div`
     &:hover {
       background-color: rgba(0, 0, 0, 0.1);
     }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
 
   @media (max-width: 1024px) {
@@ -138,11 +140,11 @@ export const Dropdown = styled.div`
     width: calc(100% + 50px);
     border-radius: 0 0 0 10px;
 
-    animation: ${DropdownAnimationMin} 150ms ease-in-out 0s 1;
+    animation: ${DropdownAnimationMin} 150ms ease-in-out;
   }
 
   @media (min-width: 1024px) {
-    animation: ${DropdownAnimationMax} 150ms ease-in-out 0s 1;
+    animation: ${DropdownAnimationMax} 150ms ease-in-out;
   }
 `;
 
@@ -180,8 +182,21 @@ export const NavItem = styled.div`
     }
 
     ${Dropdown} {
-      display: flex;
+      display: ${({ showMenu }) => (showMenu === "" ? "flex" : null)};
       flex-direction: column;
+    }
+  }
+
+  ${Dropdown} {
+    display: ${({ navItemName, showMenu }) =>
+      navItemName === showMenu ? "flex" : null};
+    flex-direction: column;
+  }
+
+  > a {
+    &:after {
+      width: ${({ navItemName, showMenu }) =>
+        navItemName === showMenu ? "100%" : null};
     }
   }
 

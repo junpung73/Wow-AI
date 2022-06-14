@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import * as io from "react-icons/io";
 import { Container } from "../../components/Container";
 import { PadDiv, PadDivBlog } from "./style";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import {
   Picture,
   Title,
@@ -23,12 +28,11 @@ import {
   ConCol,
   Grid,
   View,
-  AskRow,
-  AskCol,
 } from "./style";
-
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
+import { StyledSlider, StyledNavButton } from "./style";
 
 const JoinOurTalentPool = () => {
   const [quoteTranslate, setQuoteTranslate] = useState(0);
@@ -242,154 +246,163 @@ const JoinOurTalentPool = () => {
       </Container>
 
       {/* What do our project contributor say */}
-      <Container>
-        <Column>
-          <SubTitle>What do our project contributors say?</SubTitle>
-          <Row>
-            <NavigateButton
-              onClick={() => {
-                setQuoteTranslate(quoteTranslate + 100);
-              }}
-            >
-              <div>
-                <io.IoIosArrowBack></io.IoIosArrowBack>
-              </div>
-            </NavigateButton>
-            <View>
-              <Carousel translate={quoteTranslate}>
-                <PadDiv>
-                  <Quote>
-                    <p>
-                      “This is a very independent job that is super flexible.
-                      You choose your own hours and take on multiple projects.”
-                    </p>
-                    <Carousel>
-                      <img src="images/avatar.svg"></img>
-                      <p>Wow AI, Image Collector</p>
-                    </Carousel>
-                  </Quote>
-                </PadDiv>
-                <PadDiv>
-                  <Quote>
-                    <p>
-                      “This is a very independent job that is super flexible.
-                      You choose your own hours and take on multiple projects.”
-                    </p>
-                    <Carousel>
-                      <img src="images/avatar.svg"></img>
-                      <p>Wow AI, Image Collector</p>
-                    </Carousel>
-                  </Quote>
-                </PadDiv>
-                <PadDiv>
-                  <Quote>
-                    <p>
-                      “This is a very independent job that is super flexible.
-                      You choose your own hours and take on multiple projects.”
-                    </p>
-                    <Carousel>
-                      <img src="images/reviewer.png"></img>
-                      <p>Wow AI, Image Collector</p>
-                    </Carousel>
-                  </Quote>
-                </PadDiv>
-                <PadDiv>
-                  <Quote>
-                    <p>
-                      “This is a very independent job that is super flexible.
-                      You choose your own hours and take on multiple projects.”
-                    </p>
-                    <Carousel>
-                      <img src="images/avatar.svg"></img>
-                      <p>Wow AI, Image Collector</p>
-                    </Carousel>
-                  </Quote>
-                </PadDiv>
+      <Container style={{ flexDirection: "column" }}>
+        <SubTitle>What do our project contributors say?</SubTitle>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            769: {
+              slidesPerView: 3,
+            },
+          }}
+          spaceBetween={20}
+          navigation={{
+            prevEl: ".prevBtn",
+            nextEl: ".nextBtn",
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          style={{ display: "static", width: "100%" }}
+        >
+          <SwiperSlide>
+            <Quote>
+              <p>
+                “This is a very independent job that is super flexible. You
+                choose your own hours and take on multiple projects.”
+              </p>
+              <Carousel>
+                <img src="images/avatar.svg"></img>
+                <p>Wow AI, Image Collector</p>
               </Carousel>
-            </View>
-            <NavigateButton
-              onClick={() => {
-                setQuoteTranslate(quoteTranslate - 100);
-              }}
-            >
-              <div>
-                <io.IoIosArrowForward></io.IoIosArrowForward>
-              </div>
-            </NavigateButton>
-          </Row>
+            </Quote>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Quote>
+              <p>
+                “This is a very independent job that is super flexible. You
+                choose your own hours and take on multiple projects.”
+              </p>
+              <Carousel>
+                <img src="images/avatar.svg"></img>
+                <p>Wow AI, Image Collector</p>
+              </Carousel>
+            </Quote>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Quote>
+              <p>
+                “This is a very independent job that is super flexible. You
+                choose your own hours and take on multiple projects.”
+              </p>
+              <Carousel>
+                <img src="images/avatar.svg"></img>
+                <p>Wow AI, Image Collector</p>
+              </Carousel>
+            </Quote>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Quote>
+              <p>
+                “This is a very independent job that is super flexible. You
+                choose your own hours and take on multiple projects.”
+              </p>
+              <Carousel>
+                <img src="images/avatar.svg"></img>
+                <p>Wow AI, Image Collector</p>
+              </Carousel>
+            </Quote>
+          </SwiperSlide>
+
+          <div>
+            <StyledNavButton className="prevBtn">
+              <io.IoIosArrowBack />
+            </StyledNavButton>
+            <StyledNavButton className="nextBtn">
+              <io.IoIosArrowForward />
+            </StyledNavButton>
+          </div>
+        </Swiper>
+        <Column>
           <TalentButton>Join our talent</TalentButton>
         </Column>
       </Container>
-
       {/* Blogs */}
-      <Container>
-        <Column>
-          <SubTitle>Blogs</SubTitle>
-          <Row>
-            <NavigateButton
-              onClick={() => {
-                setBlogTranslate(blogTranslate + 100);
-              }}
-            >
-              <div>
-                <io.IoIosArrowBack></io.IoIosArrowBack>
-              </div>
-            </NavigateButton>
-            <View>
-              <Carousel translate={blogTranslate}>
-                <PadDivBlog>
-                  <BlogItem>
-                    <img src="images/blogimg.svg"></img>
-                    <p>10-08-2021</p>
-                    <h6>
-                      Surge of this virus is unpredictable in this era.
-                      Thoughts?
-                    </h6>
-                  </BlogItem>
-                </PadDivBlog>
-                <PadDivBlog>
-                  <BlogItem>
-                    <img src="images/blogimg.svg"></img>
-                    <p>10-08-2021</p>
-                    <h6>
-                      Surge of this virus is unpredictable in this era.
-                      Thoughts?
-                    </h6>
-                  </BlogItem>
-                </PadDivBlog>
-                <PadDivBlog>
-                  <BlogItem>
-                    <img src="images/blogimg.svg"></img>
-                    <p>10-08-2021</p>
-                    <h6>
-                      Surge of this virus is unpredictable in this era.
-                      Thoughts?
-                    </h6>
-                  </BlogItem>
-                </PadDivBlog>
-                <PadDivBlog>
-                  <BlogItem>
-                    <img src="images/blogimg.svg"></img>
-                    <p>10-08-2021</p>
-                    <h6>
-                      Surge of this virus is unpredictable in this era.
-                      Thoughts?
-                    </h6>
-                  </BlogItem>
-                </PadDivBlog>
-              </Carousel>
-            </View>
-            <NavigateButton
-              onClick={() => {
-                setBlogTranslate(blogTranslate - 100);
-              }}
-            >
-              <div>
-                <io.IoIosArrowForward></io.IoIosArrowForward>
-              </div>
-            </NavigateButton>
-          </Row>
-        </Column>
+      <Container style={{ flexDirection: "column" }}>
+        <SubTitle>Blogs</SubTitle>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            769: {
+              slidesPerView: 3,
+            },
+          }}
+          spaceBetween={20}
+          navigation={{
+            prevEl: ".prevBtnBlogs",
+            nextEl: ".nextBtnBlogs",
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          style={{ display: "static", width: "100%" }}
+        >
+          <SwiperSlide>
+            <BlogItem>
+              <img src="images/blogimg.svg"></img>
+              <p>10-08-2021</p>
+              <h6>
+                Surge of this virus is unpredictable in this era. Thoughts?
+              </h6>
+            </BlogItem>
+          </SwiperSlide>
+          <SwiperSlide>
+            <BlogItem>
+              <img src="images/blogimg.svg"></img>
+              <p>10-08-2021</p>
+              <h6>
+                Surge of this virus is unpredictable in this era. Thoughts?
+              </h6>
+            </BlogItem>
+          </SwiperSlide>
+          <SwiperSlide>
+            <BlogItem>
+              <img src="images/blogimg.svg"></img>
+              <p>10-08-2021</p>
+              <h6>
+                Surge of this virus is unpredictable in this era. Thoughts?
+              </h6>
+            </BlogItem>
+          </SwiperSlide>
+          <SwiperSlide>
+            <BlogItem>
+              <img src="images/blogimg.svg"></img>
+              <p>10-08-2021</p>
+              <h6>
+                Surge of this virus is unpredictable in this era. Thoughts?
+              </h6>
+            </BlogItem>
+          </SwiperSlide>
+
+          <div>
+            <StyledNavButton className="prevBtnBlogs">
+              <io.IoIosArrowBack />
+            </StyledNavButton>
+            <StyledNavButton className="nextBtnBlogs">
+              <io.IoIosArrowForward />
+            </StyledNavButton>
+          </div>
+        </Swiper>
       </Container>
       <Footer />
     </>

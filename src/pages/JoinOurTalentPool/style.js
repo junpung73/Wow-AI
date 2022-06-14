@@ -1,4 +1,6 @@
+import { flexbox } from "@mui/system";
 import styled from "styled-components/macro";
+import { SwiperSlide } from "swiper/react";
 
 export const SubTitle = styled.h1`
   color: var(--secondary-bg);
@@ -98,7 +100,6 @@ export const SmallImg = styled(BigImg)`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: justify;
   position: relative;
   > img {
     margin: auto 70px;
@@ -251,7 +252,25 @@ export const Carousel = styled(Row)`
   }
 `;
 
-export const Card = styled(Column)`
+export const Card = styled.a`
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+
+  > img {
+    margin: auto 70px;
+    width: 125px;
+  }
+
+  :hover {
+    color: white;
+  }
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
   flex: 1 1 25%;
   border-radius: 30px;
   background-color: var(--secondary-text);
@@ -259,13 +278,13 @@ export const Card = styled(Column)`
   height: fit-content;
   aspect-ratio: 1;
 
-  &:first-of-type {
+  /* &:first-of-type {
     margin-left: 0;
   }
 
   &:last-of-type {
     margin-right: 0;
-  }
+  } */
 
   @media (max-width: 1301px) {
     padding: 30px 20px;
@@ -389,6 +408,7 @@ export const BlogItem = styled(Card)`
   }
   &:hover {
     background-color: #1a1a1a;
+    color: white;
   }
 
   @media (max-width: 769px) {
@@ -439,5 +459,49 @@ export const PadDiv = styled.div`
 export const PadDivBlog = styled(PadDiv)`
   @media (max-width: 769px) {
     aspect-ratio: 1.2;
+  }
+`;
+
+export const StyledNavButton = styled.button`
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  z-index: 1;
+  background: var(--secondary-text);
+  border: none;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  :hover {
+    background-color: purple;
+  }
+
+  &:first-of-type {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+  }
+
+  &:last-of-type {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+  }
+
+  &[disabled] {
+    opacity: 0.8;
+    cursor: default;
+  }
+`;
+export const StyledSlider = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 100;
+
+  .swipe-slide {
+    padding: 0 2.5rem;
   }
 `;
