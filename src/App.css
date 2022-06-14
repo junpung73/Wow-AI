@@ -13,8 +13,9 @@
   box-sizing: border-box;
   margin-right: auto;
   display: block;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ------------Style Bootstrap-------------- */

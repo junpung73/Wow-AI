@@ -30,6 +30,9 @@ const ContaiService = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     padding: "10vh 8rem",
   },
+  [theme.breakpoints.down("sm")]: {
+    padding: "0",
+  },
 }));
 const TextStyled = styled("p")(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {

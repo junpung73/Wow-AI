@@ -193,7 +193,9 @@ const OffTheShelf = () => {
           </PageSwitch>
         </Column>
       </Container>
-      <BuildDataset />
+      <Container>
+        <BuildDataset />
+      </Container>
       <Footer />
     </>
   );

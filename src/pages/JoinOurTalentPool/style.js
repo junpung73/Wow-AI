@@ -128,6 +128,7 @@ export const JoinButton = styled.button`
   @media (max-width: 769px) {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
 `;
 
@@ -197,6 +198,7 @@ export const ConCol = styled(Column)`
 
     @media (max-width: 769px) {
       /* border-width: 0; */
+      padding: 0;
       border: 0;
     }
   }
@@ -206,15 +208,16 @@ export const ConCol = styled(Column)`
     border-width: 0 0 1px 1px;
     padding: 50px;
     @media (max-width: 1024px) {
-      padding: 10px;
+      padding: 20px;
     }
     @media (max-width: 769px) {
+      padding: 0;
       /* border-width: 0; */
       border: 0;
     }
   }
   @media (max-width: 1024px) {
-    padding: 10px;
+    padding: 0px;
   }
 
   @media (max-width: 769px) {

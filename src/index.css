@@ -32,7 +32,7 @@ code {
     monospace;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
   body {
     scroll-snap-type: none;
   }

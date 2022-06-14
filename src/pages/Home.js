@@ -17,23 +17,15 @@ const Home = () => {
       <Header />
       <SlideHome />
       <div className="contain">
-        <Container>
-          <AboutUs />
-        </Container>
+        <AboutUs />
 
-        <Container>
-          <Services />
-        </Container>
+        <Services />
 
-        <Container>
-          <WhyChoose />
-        </Container>
+        <WhyChoose />
 
         <Solution />
 
-        <Container>
-          <Management />
-        </Container>
+        <Management />
       </div>
       <Footer />
     </div>

@@ -3,13 +3,16 @@ import Header from "../../../components/Layouts/Header/Header";
 import Footer from "../../../components/Layouts/Footer";
 
 import BuildDataset from "../../../components/public/BuildDataset";
+import { Container } from "../../../components/Container";
 
 const Contact = () => {
   return (
     <>
       <Header />
       {/* <Dataset /> */}
-      <BuildDataset />
+      <Container>
+        <BuildDataset />
+      </Container>
       <div
         style={{
           display: "flex",

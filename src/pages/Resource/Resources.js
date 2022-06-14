@@ -19,7 +19,7 @@ const Resources = () => {
         <img
           src="/images/Group39449.png"
           alt="background"
-          style={{ width: "100%", height: "100vh" }}
+          style={{ width: "100%" }}
         />
       </Container>
       <Container style={{ scrollSnapAlign: "start", paddingTop: "100px" }}>

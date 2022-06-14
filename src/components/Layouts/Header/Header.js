@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <>
       <ContactContainer>
-        <Wrapper className="contain section-scroll">
+        <Wrapper className="contain section-scroll" style={{ marginBottom: 0 }}>
           <Wrapper>
             <InfoText>
               English

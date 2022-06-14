@@ -1,4 +1,3 @@
-import { Container } from "../Container";
 import styled from "styled-components/macro";
 export const Row = styled.div`
   display: flex;
@@ -92,56 +91,54 @@ export const SubmitButton = styled(SubscribeButton)`
 
 const BuildDataset = () => {
   return (
-    <Container>
-      <Row>
-        <Picture>
-          <BigImg src="images/image20.png" width="100%" />
-        </Picture>
-        <Column>
-          <h3>
-            Want to build your own{" "}
-            <span style={{ color: "var(--secondary-bg)" }}>data set</span>?
-          </h3>
-          <p>
-            Contact us now to learn how we can collect a custom data set for
-            your unique AI solution.
-          </p>
-          <FormRow>
-            <FormCol>
-              <p>First Name *</p>
-              <InputForm></InputForm>
-            </FormCol>
-            <FormCol>
-              <p>Last Name *</p>
-              <InputForm></InputForm>
-            </FormCol>
-          </FormRow>
-          <FormRow>
-            <FormCol>
-              <p>Email *</p>
-              <InputForm type="email"></InputForm>
-            </FormCol>
-          </FormRow>
-          <FormRow>
-            <FormCol>
-              <p>Telephone *</p>
-              <InputForm type="tel"></InputForm>
-            </FormCol>
-            <FormCol>
-              <p>Company *</p>
-              <InputForm></InputForm>
-            </FormCol>
-          </FormRow>
-          <FormRow>
-            <FormCol>
-              <p>Comment *</p>
-              <InputForm style={{ height: "100px" }}></InputForm>
-            </FormCol>
-          </FormRow>
-          <SubmitButton>Submit</SubmitButton>
-        </Column>
-      </Row>
-    </Container>
+    <Row>
+      <Picture>
+        <BigImg src="images/image20.png" width="100%" />
+      </Picture>
+      <Column>
+        <h3>
+          Want to build your own{" "}
+          <span style={{ color: "var(--secondary-bg)" }}>data set</span>?
+        </h3>
+        <p>
+          Contact us now to learn how we can collect a custom data set for your
+          unique AI solution.
+        </p>
+        <FormRow>
+          <FormCol>
+            <p>First Name *</p>
+            <InputForm></InputForm>
+          </FormCol>
+          <FormCol>
+            <p>Last Name *</p>
+            <InputForm></InputForm>
+          </FormCol>
+        </FormRow>
+        <FormRow>
+          <FormCol>
+            <p>Email *</p>
+            <InputForm type="email"></InputForm>
+          </FormCol>
+        </FormRow>
+        <FormRow>
+          <FormCol>
+            <p>Telephone *</p>
+            <InputForm type="tel"></InputForm>
+          </FormCol>
+          <FormCol>
+            <p>Company *</p>
+            <InputForm></InputForm>
+          </FormCol>
+        </FormRow>
+        <FormRow>
+          <FormCol>
+            <p>Comment *</p>
+            <InputForm style={{ height: "100px" }}></InputForm>
+          </FormCol>
+        </FormRow>
+        <SubmitButton>Submit</SubmitButton>
+      </Column>
+    </Row>
   );
 };
 

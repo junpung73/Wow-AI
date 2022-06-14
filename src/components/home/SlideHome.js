@@ -23,6 +23,9 @@ const Topic = styled("h5")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     fontSize: "var(--medium-text-2)",
   },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "26px",
+  },
 }));
 
 const SlideHome = () => {
