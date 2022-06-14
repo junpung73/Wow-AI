@@ -97,7 +97,7 @@ const TransServices = ({ content }) => {
       {content.map((content, index) => {
         const isActive = active === index;
         return (
-          <Grid container spacing={2} style={{ margin: "1px 0" }}>
+          <Grid container spacing={2} style={{ marginTop: "1px" }}>
             <Grid item xs={6}>
               <BoxStyled>
                 <img
