@@ -25,9 +25,10 @@ const DataAnnotation = () => {
         <ImgVdSection content={annotation[3]} />
 
         <Download />
-
-        <BuildDataset />
       </div>
+      <Container>
+        <BuildDataset />
+      </Container>
       <Footer />
     </div>
   );

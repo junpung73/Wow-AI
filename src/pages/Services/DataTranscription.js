@@ -7,6 +7,7 @@ import transervice from "../../__mock__/transervice";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
 import BuildDataset from "../../components/public/BuildDataset";
+import { Container } from "../../components/Container";
 const DataTranscription = () => {
   return (
     <div>
@@ -16,9 +17,10 @@ const DataTranscription = () => {
         <TransServices content={transervice} />
 
         <Download />
-
-        <BuildDataset />
       </div>
+      <Container>
+        <BuildDataset />
+      </Container>
       <Footer />
     </div>
   );

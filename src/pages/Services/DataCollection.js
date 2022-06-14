@@ -30,9 +30,10 @@ const DataCollection = () => {
         <IllutrationSection content={sectionservices[3]} />
 
         <Download />
-
-        <BuildDataset />
       </div>
+      <Container>
+        <BuildDataset />
+      </Container>
       <Footer />
     </div>
   );
