@@ -22,11 +22,11 @@ const Contact = () => {
           height: "1vh",
         }}
       >
-        <h5 className="title-description">
+        <h3 style={{ fontWeight: "500" }}>
           Contact Details <br />
           Address: 19W 34TH ST STE 1018, NY, USA <br />
           Email: contact@wow-ai.com
-        </h5>
+        </h3>
       </div>
       <Footer />
     </>

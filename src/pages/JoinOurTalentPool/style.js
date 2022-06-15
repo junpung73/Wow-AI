@@ -369,6 +369,10 @@ export const Quote = styled(Card)`
     background-color: var(--secondary-text);
     color: white;
   }
+
+  h3 {
+    padding-left: 10px;
+  }
 `;
 
 export const TalentButton = styled.button`
@@ -396,7 +400,6 @@ export const BlogItem = styled(Card)`
   flex: 1 0 33%;
   h4 {
     margin: 8px 0;
-    font-size: 12px;
     color: #b8b8b8;
     padding: 0 5px;
   }

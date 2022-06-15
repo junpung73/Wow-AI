@@ -14,8 +14,8 @@ const DetailBlog = () => {
           style={{ width: "100%" }}
         />
         <h2
-          className="title-content scroll-section"
-          style={{ color: "var(--primary-text)" }}
+          className="title-content section-scroll"
+          style={{ color: "var(--primary-text)", paddingTop: "100px" }}
         >
           Surge of this virus is unpredictable in this era. Thoughts?
         </h2>

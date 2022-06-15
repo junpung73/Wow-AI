@@ -190,7 +190,9 @@ const OffTheShelf = () => {
           </Column>
           <PageSwitch>
             <bs.BsChevronLeft />
-            1/9
+            <span>
+              <h4>1/9</h4>
+            </span>
             <bs.BsChevronRight />
           </PageSwitch>
         </Column>

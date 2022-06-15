@@ -304,6 +304,8 @@ export const PageSwitch = styled.span`
   margin-top: 20px;
   color: rgba(255, 255, 255, 25%);
   text-align: center;
+  display: flex;
+  justify-content: center;
 
   svg {
     cursor: pointer;

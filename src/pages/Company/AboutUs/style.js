@@ -9,6 +9,7 @@ export const Topic = styled.div`
   color: var(--primary-text);
   align-items: center;
   font-size: var(--large-text);
+  text-transform: uppercase;
 `;
 
 export const UpLine = styled.div`
