@@ -9,7 +9,7 @@ const BoxStyled = styled(Box)({
   width: "98%",
   display: "flex",
   flexWrap: "wrap",
-  margin: "1rem",
+  marginBottom: "1rem",
 });
 
 const BoxContent = {
