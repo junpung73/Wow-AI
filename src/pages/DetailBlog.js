@@ -13,11 +13,14 @@ const DetailBlog = () => {
           alt="detail-blog"
           style={{ width: "100%" }}
         />
-        <h2 className="title-content" style={{ color: "var(--primary-text)" }}>
+        <h2
+          className="title-content scroll-section"
+          style={{ color: "var(--primary-text)" }}
+        >
           Surge of this virus is unpredictable in this era. Thoughts?
         </h2>
         <div style={{ marginBottom: "20vh" }}>
-          <p>
+          <p className="section-scroll">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at risus
             efficitur, volutpat est in, porttitor ligula. Cras magna elit,
             cursus et eleifend a, fringilla vitae arcu. Quisque varius semper
@@ -30,7 +33,7 @@ const DetailBlog = () => {
             Maecenas nec erat ut nisl convallis rutrum. Duis mi nisi, gravida
             sit amet metus a, laoreet congue arcu. Sed vel bibendum urna.
           </p>
-          <p>
+          <p className="section-scroll">
             Duis tincidunt consectetur orci ornare tincidunt. Morbi arcu nisl,
             hendrerit at eros vel, rutrum bibendum nisl. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Vivamus volutpat sodales orci sed
@@ -42,7 +45,7 @@ const DetailBlog = () => {
             sociosqu ad litora torquent per conubia nostra, per inceptos
             himenaeos. Duis aliquam pellentesque ex id porttitor.
           </p>
-          <p>
+          <p className="section-scroll">
             Duis vel imperdiet massa, nec molestie diam. Integer ac mattis arcu,
             ac sollicitudin metus. Proin et rhoncus tortor. Vivamus porta eros
             nec fermentum molestie. Vestibulum vel sagittis odio. Nulla libero
@@ -51,7 +54,7 @@ const DetailBlog = () => {
             Vestibulum mollis odio vitae ante pretium hendrerit. Pellentesque
             efficitur mi eget enim consequat accumsan eget varius diam.
           </p>
-          <p>
+          <p className="section-scroll">
             Ut lacinia augue vel velit efficitur lobortis. Vivamus interdum nisi
             mauris, a ultrices ligula iaculis cursus. Curabitur consectetur urna
             nec sem luctus, et imperdiet ligula tincidunt. Aliquam ut ornare
@@ -63,7 +66,7 @@ const DetailBlog = () => {
             id tempus. Donec dui lacus, aliquam sed nulla quis, ornare facilisis
             libero.
           </p>
-          <p>
+          <p className="section-scroll">
             Integer ut lorem mattis, ornare magna et, placerat elit. In
             venenatis nulla interdum tempus sodales. Nunc eget nibh at sapien
             ornare vulputate tincidunt ac justo. Phasellus tempus rutrum
@@ -76,7 +79,7 @@ const DetailBlog = () => {
             lectus ut augue. Cras consectetur nulla quis tristique facilisis.
           </p>
           <br />
-          <p>
+          <p className="section-scroll">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at risus
             efficitur, volutpat est in, porttitor ligula. Cras magna elit,
             cursus et eleifend a, fringilla vitae arcu. Quisque varius semper
@@ -89,7 +92,7 @@ const DetailBlog = () => {
             Maecenas nec erat ut nisl convallis rutrum. Duis mi nisi, gravida
             sit amet metus a, laoreet congue arcu. Sed vel bibendum urna.
           </p>
-          <p>
+          <p className="section-scroll">
             Duis tincidunt consectetur orci ornare tincidunt. Morbi arcu nisl,
             hendrerit at eros vel, rutrum bibendum nisl. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Vivamus volutpat sodales orci sed
@@ -101,7 +104,7 @@ const DetailBlog = () => {
             sociosqu ad litora torquent per conubia nostra, per inceptos
             himenaeos. Duis aliquam pellentesque ex id porttitor.
           </p>
-          <p>
+          <p className="section-scroll">
             Duis vel imperdiet massa, nec molestie diam. Integer ac mattis arcu,
             ac sollicitudin metus. Proin et rhoncus tortor. Vivamus porta eros
             nec fermentum molestie. Vestibulum vel sagittis odio. Nulla libero
@@ -110,7 +113,7 @@ const DetailBlog = () => {
             Vestibulum mollis odio vitae ante pretium hendrerit. Pellentesque
             efficitur mi eget enim consequat accumsan eget varius diam.
           </p>
-          <p>
+          <p className="section-scroll">
             Ut lacinia augue vel velit efficitur lobortis. Vivamus interdum nisi
             mauris, a ultrices ligula iaculis cursus. Curabitur consectetur urna
             nec sem luctus, et imperdiet ligula tincidunt. Aliquam ut ornare
@@ -122,7 +125,7 @@ const DetailBlog = () => {
             id tempus. Donec dui lacus, aliquam sed nulla quis, ornare facilisis
             libero.
           </p>
-          <p>
+          <p className="section-scroll">
             Integer ut lorem mattis, ornare magna et, placerat elit. In
             venenatis nulla interdum tempus sodales. Nunc eget nibh at sapien
             ornare vulputate tincidunt ac justo. Phasellus tempus rutrum

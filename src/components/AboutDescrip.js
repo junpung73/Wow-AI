@@ -103,6 +103,7 @@ const AboutDescrip = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          scrollSnapAlign: "center",
         }}
       >
         <div className="title-description" style={feature}>
