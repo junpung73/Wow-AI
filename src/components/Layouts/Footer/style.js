@@ -12,7 +12,7 @@ export const FooterContainer = styled(Container)`
   padding: 30px 15px;
   display: flex;
   justify-content: space-between;
-  scroll-snap-align: end;
+  scroll-snap-align: none;
 `;
 
 export const Col = styled.div`

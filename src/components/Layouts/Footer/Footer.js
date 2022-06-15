@@ -3,7 +3,7 @@ import { Reserved, FooterContainer, ListCol, LogoCol, Wrapper } from "./style";
 
 const Footer = () => {
   return (
-    <>
+    <div style={{ marginTop: "300px", scrollSnapAlign: "end" }}>
       <Wrapper>
         <FooterContainer>
           <LogoCol>
@@ -52,7 +52,7 @@ const Footer = () => {
           </Reserved>
         </FooterContainer>
       </Wrapper>
-    </>
+    </div>
   );
 };
 export default Footer;
