@@ -29,12 +29,12 @@ const Management = () => {
       id="management"
       className="section-scroll"
     >
-      <h2
+      <h1
         className="title-content"
         style={{ display: "flex", justifyContent: "center" }}
       >
         Our crowd management
-      </h2>
+      </h1>
       <Grid container spacing={2}>
         <Grid item xs={12} lg={6}>
           <img
@@ -50,14 +50,16 @@ const Management = () => {
         </Grid>
         <Grid item xs={12} lg={6}>
           <ContentStyled>
-            The quality of AI data depends on the people who collect and
-            annotate it. We make sure to support every single resource 24/7 so
-            that they can deliver the highest-quality data.
-            <br />
-            <br />
-            We build a close relationship with our global crowd through our
-            unique way of management. Our crowd resources are our valuable
-            assets.
+            <i>
+              The quality of AI data depends on the people who collect and
+              annotate it. We make sure to support every single resource 24/7 so
+              that they can deliver the highest-quality data.
+              <br />
+              <br />
+              We build a close relationship with our global crowd through our
+              unique way of management. Our crowd resources are our valuable
+              assets.
+            </i>
           </ContentStyled>
           <div
             style={{
@@ -68,16 +70,24 @@ const Management = () => {
             }}
           >
             <BoxStyled>
-              100,000 Global <br /> Freelancers
+              <p style={{ marginBottom: '0' }}>
+                100,000 Global <br /> Freelancers
+              </p>
             </BoxStyled>
             <BoxStyled>
-              120+ <br /> Languages
+              <p style={{ marginBottom: '0' }}>
+                120+ <br /> Languages
+              </p>
             </BoxStyled>
             <BoxStyled>
-              247+ <br /> Support
+              <p style={{ marginBottom: '0' }}>
+                247+ <br /> Support
+              </p>
             </BoxStyled>
             <BoxStyled>
-              100% <br /> Customer <br /> Satisfation
+              <p style={{ marginBottom: '0' }}>
+                100% <br /> Customer <br /> Satisfation
+              </p>
             </BoxStyled>
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>

@@ -46,12 +46,12 @@ const Contain = styled("div")(({ theme }) => ({
 const Solution = () => {
   return (
     <Contain id="solution" className="section-scroll">
-      <h2
+      <h1
         className="title-content"
         style={{ display: "flex", justifyContent: "center" }}
       >
         AI solutions for your industry
-      </h2>
+      </h1>
       <div
         style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
       >
@@ -86,14 +86,14 @@ const Solution = () => {
             }}
           >
             <Box1>
-              <h5 className="title-description" style={{ padding: "0" }}>
+              <h1 className="title-description" style={{ padding: "0" }}>
                 Free Consultation
-              </h5>
+              </h1>
             </Box1>
             <Box2>
-              <h5 className="title-description" style={{ padding: "0" }}>
+              <h1 className="title-description" style={{ padding: "0" }}>
                 Retail
-              </h5>
+              </h1>
               <p>
                 From enhanced customer service to better sales forecasts, AI is
                 transforming retail by creating a truly customer-centric

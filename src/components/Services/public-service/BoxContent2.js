@@ -14,7 +14,7 @@ const BoxStyled = styled(Box)({
   backgroundColor: "var(--secondary-text)",
 });
 
-const TitleStyled = styled("h5")(({ theme }) => ({
+const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
   cursor: "pointer",
@@ -23,12 +23,6 @@ const TitleStyled = styled("h5")(({ theme }) => ({
     padding: "0",
   },
 }));
-// const Descrip = styled("p")(({ theme }) => ({
-//   fontSize: "var(--normal-text)",
-//   [theme.breakpoints.down("md")]: {
-//     display: "none",
-//   },
-// }));
 const BoxDetail = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   height: "16rem",

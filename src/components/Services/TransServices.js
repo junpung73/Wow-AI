@@ -43,7 +43,7 @@ const TextStyled = styled("p")(({ theme }) => ({
     textOverflow: "ellipsis",
   },
 }));
-const TitleStyled = styled("h5")(({ theme }) => ({
+const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
   cursor: "pointer",
@@ -91,9 +91,9 @@ const TransServices = ({ content }) => {
   };
   return (
     <ContaiService id="trans-services" className="section-scroll">
-      <h2 className="title-content" style={{ textAlign: "center" }}>
+      <h1 className="title-content" style={{ textAlign: "center" }}>
         Transcription Services
-      </h2>
+      </h1>
       {content.map((content, index) => {
         const isActive = active === index;
         return (

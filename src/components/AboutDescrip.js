@@ -67,7 +67,7 @@ const AboutDescrip = () => {
             <div style={Title}>
               <div style={DotBulletPoint}></div>
               <div style={BulletPoint}></div>
-              <h5 className="title-description">Mission</h5>
+              <h1 className="title-description">Mission</h1>
             </div>
             <p style={textStyled}>
               Wow AI focuses on delivering the highest quality of AI training
@@ -78,7 +78,7 @@ const AboutDescrip = () => {
             <div style={Title}>
               <div style={DotBulletPoint}></div>
               <div style={BulletPoint}></div>
-              <h5 className="title-description">Vision</h5>
+              <h1 className="title-description">Vision</h1>
             </div>
             <p style={textStyled}>
               Become an all-in-one platform for all AI data services at a global
@@ -89,7 +89,7 @@ const AboutDescrip = () => {
             <div style={Title}>
               <div style={DotBulletPoint}></div>
               <div style={BulletPoint}></div>
-              <h5 className="title-description">Values</h5>
+              <h1 className="title-description">Values</h1>
             </div>
             <p style={textStyled}>
               A close-knit and trustworthy collection of global crowds

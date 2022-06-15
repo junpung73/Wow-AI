@@ -59,7 +59,7 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <h2 className="title-description">+ Data collection</h2>
+            <h1 className="title-description">+ Data collection</h1>
             <UlStyled>
               <li>Text data collection</li>
               <li>Image data collection</li>
@@ -72,7 +72,7 @@ const Services = () => {
             </LinkStyled>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <h2 className="title-description">+ Transcription</h2>
+            <h1 className="title-description">+ Transcription</h1>
             <UlStyled>
               <li>Image Transcription</li>
               <li>Audio Transcription</li>
@@ -86,7 +86,7 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <h2 className="title-description">+ Data annotation</h2>
+            <h1 className="title-description">+ Data annotation</h1>
             <UlStyled>
               <li>Text data annotation</li>
               <li>Image data annotation</li>
@@ -101,7 +101,7 @@ const Services = () => {
             </div>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <h2 className="title-description">+ Tailor-made solution ?</h2>
+            <h1 className="title-description">+ Tailor-made solution ?</h1>
             <LinkStyled>
               Share with us &nbsp;
               <img src="/images/Vector9.png" alt="..." />

@@ -26,9 +26,9 @@ const ProjectAI = () => {
       id="project-ai"
       className="section-scroll"
     >
-      <h2 className="title-content" style={{ textAlign: "center" }}>
+      <h1 className="title-content" style={{ textAlign: "center" }}>
         Jumpstart your AI projects <br /> with excellent-quality data{" "}
-      </h2>
+      </h1>
       <Grid container spacing={5}>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
