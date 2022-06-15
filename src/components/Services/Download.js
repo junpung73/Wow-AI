@@ -51,11 +51,11 @@ const Download = () => {
       </div>
       <BoxStyled>
         <RowStyled>
-          <h5 className="title-description">Medical dataset</h5>
+          <h1 className="title-description">Medical dataset</h1>
           <VerticalLine></VerticalLine>
-          <h5 className="title-description">OCR dataset</h5>
+          <h1 className="title-description">OCR dataset</h1>
           <VerticalLine></VerticalLine>
-          <h5 className="title-description">Audio dataset</h5>
+          <h1 className="title-description">Audio dataset</h1>
         </RowStyled>
         <RowStyled>
           <a href="#download" style={LinkStyle}>

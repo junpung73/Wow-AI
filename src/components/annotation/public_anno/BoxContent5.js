@@ -17,7 +17,7 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   },
 }));
 
-const TitleStyled = styled("h5")(({ theme }) => ({
+const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
   padding: "1vh",
