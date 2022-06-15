@@ -42,9 +42,9 @@ const HignQuality = ({ topic }) => {
         <div style={{ textAlign: "center" }}>
           <TopicPink>{topic.title1}</TopicPink>
           <TopicWhite>{topic.title2}</TopicWhite>
-          <div
+          <p
             dangerouslySetInnerHTML={{ __html: `${topic.description}` }}
-          ></div>
+          ></p>
         </div>
       </Container>
     </div>
