@@ -15,12 +15,6 @@ html {
   overflow-y: hidden;
 }
 
-.scroll-view {
-  overflow-y: scroll;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-}
-
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
@@ -28,9 +22,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-text);
   background-color: var(--primary-bg);
-  /* overflow-y: scroll;
+  overflow-y: scroll;
   height: 100vh;
-  scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 
 code {

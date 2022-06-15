@@ -29,7 +29,7 @@ const OffTheShelf = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <div className="scroll-view">
+    <>
       <Header />
       <Container>
         <SubContainer>
@@ -197,7 +197,7 @@ const OffTheShelf = () => {
         <BuildDataset />
       </Container>
       <Footer />
-    </div>
+    </>
   );
 };
 
