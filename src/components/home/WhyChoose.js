@@ -26,7 +26,7 @@ const WhyChoose = () => {
       id="why-choose"
       className="section-scroll"
     >
-      <h2 className="title-content">Why choose Wow AI</h2>
+      <h1 className="title-content">Why choose Wow AI</h1>
       <table style={{ borderCollapse: "collapse" }}>
         <tr>
           <TitleTable className="title-description td-home-left">
