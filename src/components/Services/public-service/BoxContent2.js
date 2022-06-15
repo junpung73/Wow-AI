@@ -23,12 +23,6 @@ const TitleStyled = styled("h1")(({ theme }) => ({
     padding: "0",
   },
 }));
-// const Descrip = styled("p")(({ theme }) => ({
-//   fontSize: "var(--normal-text)",
-//   [theme.breakpoints.down("md")]: {
-//     display: "none",
-//   },
-// }));
 const BoxDetail = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   height: "16rem",
