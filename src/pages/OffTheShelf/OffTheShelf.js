@@ -33,7 +33,7 @@ const OffTheShelf = () => {
       <Header />
       <Container>
         <SubContainer>
-          <h2>Off-the-Shelf (OTS) AI Training Datasets</h2>
+          <h1>Off-the-Shelf (OTS) AI Training Datasets</h1>
           <p>
             Index of Ready-made Datasets for Computer Vision and Natural
             Language Processing

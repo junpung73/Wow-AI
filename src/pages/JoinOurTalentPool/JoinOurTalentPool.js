@@ -191,7 +191,7 @@ const JoinOurTalentPool = () => {
           >
             <source src="videos/target_transfer.mp4"></source>
           </video>
-          <h3>1. What is Wow AI?</h3>
+          <h3 style={{ fontWeight: "bold" }}>1. What is Wow AI?</h3>
           <p>
             Wow AI is a trusted and professional partner that provides
             high-quality data at a large scale to clients to improve their AI/ML
@@ -206,7 +206,9 @@ const JoinOurTalentPool = () => {
             automotive, eCommerce, banking, healthcare and several other
             industries as well.
           </p>
-          <h3>2. How do I sign up for Wow AI project contributor account?</h3>
+          <h3 style={{ fontWeight: "bold" }}>
+            2. How do I sign up for Wow AI project contributor account?
+          </h3>
           <p>
             3 simple steps:{" "}
             <ul>
@@ -218,7 +220,7 @@ const JoinOurTalentPool = () => {
               </li>
             </ul>
           </p>
-          <h3>3. How do I get paid?</h3>
+          <h3 style={{ fontWeight: "bold" }}>3. How do I get paid?</h3>
           <p>
             Each project will have a different payment circle. Usually, in
             long-term projects, you will receive an invoice for all of your

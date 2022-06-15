@@ -15,7 +15,11 @@ export const Title = styled.div`
 
   h1 {
     margin-bottom: 50px;
+    padding-right: 200px;
 
+    @media (max-width: 1024px) {
+      padding-right: 0;
+    }
     @media (max-width: 700px) {
       font-size: var(--medium-text-2);
       text-align: center;

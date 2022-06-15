@@ -57,34 +57,86 @@ const Footer = () => {
           <InfoPage item xs={3} md={2}>
             <Typography style={Title}>Company</Typography>
             <ul style={BulletPoint}>
-              <li><a href="#"  style={{textDecoration:'none', color:'white'}}>About us</a> </li>
-              <li>Service</li>
-              <li>Resources</li>
-              <li>Join our crowd pool</li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Resources
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Join our crowd pool
+                </a>
+              </li>
             </ul>
           </InfoPage>
           <InfoPage item xs={3} md={2}>
             <Typography style={Title}>Data Collection</Typography>
             <ul style={BulletPoint}>
-              <li>Audio Collection</li>
-              <li>Image Collection</li>
-              <li>Utterances Collection</li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Audio Collection
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Image Collection
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Utterances Collection
+                </a>
+              </li>
             </ul>
           </InfoPage>
           <InfoPage item xs={3} md={2}>
             <Typography style={Title}>Data Annotation</Typography>
             <ul style={BulletPoint}>
-              <li>Image Annotation</li>
-              <li>Entity Annotation</li>
-              <li>Video Annotation</li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Image Annotation
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Entity Annotation
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Video Annotation
+                </a>
+              </li>
             </ul>
           </InfoPage>
           <InfoPage item xs={3} md={2}>
             <Typography style={Title}>Data Transcription</Typography>
             <ul style={BulletPoint}>
-              <li>Image Transcription</li>
-              <li>Audio Transcription</li>
-              <li>Other special services?</li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Image Transcription
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Audio Transcription
+                </a>
+              </li>
+              <li>
+                <a href="#" style={{ textDecoration: "none", color: "white" }}>
+                  Other Special Services
+                </a>
+              </li>
             </ul>
           </InfoPage>
         </Grid>

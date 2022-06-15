@@ -6,14 +6,6 @@ export const SubContainer = styled.div`
   width: 50%;
   justify-content: center;
 
-  p {
-    font-size: var(--medium-text-3);
-  }
-
-  h2 {
-    font-size: var(--medium-text-1);
-  }
-
   ul {
     list-style-type: none;
   }
@@ -24,10 +16,15 @@ export const SubContainer = styled.div`
 
   @media (max-width: 769px) {
     width: 100%;
-    h2 {
+    h1 {
       font-size: var(--medium-text-2);
     }
-  } ;
+  }
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: var(--medium-text-1);
+    }
+  }
 `;
 
 export const Row = styled.div`
