@@ -4,9 +4,9 @@ export default [
     title: "Text Data Collection",
     description:
       "Multilingual text data is critical to developing your natural language processing. (Menu Dataset, Ticket Dataset, Business Card Dataset, Document Dataset, Receipt Dataset, Text Messages) to extract vital information hidden deep within unstructured data and address a range of application cases. Wow AI provides a variety of Data Collection services. For example:",
-    img1: "/images/collection/DocumentDatasetCollection1.png",
-    img2: "/images/collection/AcousticDataCollection1.png",
-    img3: "/images/collection/FacialDatasetCollection1.png",
+    img1: "images/collection/text/Document Dataset Collection.webp",
+    img2: "images/collection/text/Receipt Dataset Collection.webp",
+    
     boxst: [
       {
         color: "var(--secondary-text)",
@@ -29,9 +29,9 @@ export default [
     title: "Speech Data Collection",
     description:
       "We can assist you in gathering data from over 120 languages and dialects, accents, regions, and voice varieties, as well as transcribe (including utterances), timestamp, and classify it. We provide a variety of speech data collection services, including:",
-    img1: "/images/collection/FacialDatasetCollection1.png",
-    img2: "/images/collection/DocumentDatasetCollection1.png",
-    img3: "/images/collection/AcousticDataCollection1.png",
+    img1: "/images/collection/speech/Acoustic Data Collection.webp",
+    img2: "/images/collection/speech/Dialogue Speech Collection.webp",
+    img3: "/images/collection/speech/Monologue Speech Collection.webp",
     boxst: [
       {
         title: "Monologue Speech Collection",
@@ -50,9 +50,10 @@ export default [
     title: "Image Data Collection",
     description:
       "Collect large volumes of image datasets (medical image datasets, invoice image datasets, facial dataset, or any custom data set) for a variety of use cases, such as image classification, image segmentation, facial recognition, and so on, to add computer vision to your machine learning capabilities.",
-    img1: "/images/collection/AcousticDataCollection1.png",
-    img2: "/images/collection/FacialDatasetCollection1.png",
-    img3: "/images/collection/DocumentDatasetCollection1.png",
+     
+    img1: "/images/collection/image/Document Dataset Collection.webp",
+    img2: "/images/collection/image/Facial Dataset Collection.webp",
+    img3: "/images/collection/image/Medical Dataset Collection.webp",
     boxst: [
       {
         title: "Document Dataset Collection",
@@ -76,9 +77,8 @@ export default [
     title: "Video Data Collection",
     description:
       "When it comes to video data collection services, Wow AI can provide you with the necessary skills, knowledge, resources, and scalability. Our videos are of the greatest quality and are specially designed to fit your needs. Each dataset is created specifically for you.",
-    img1: "/images/collection/image35.png",
-    img2: "/images/collection/AcousticDataCollection1.png",
-    img3: "/images/collection/DocumentDatasetCollection1.png",
+      img1: "/images/collection/video/Traffic Video Dataset Collection.mp4",
+    
     boxst: [
       {
         title: "Human Posture Video Dataset Collection",
