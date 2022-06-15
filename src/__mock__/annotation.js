@@ -94,9 +94,9 @@ export default [
   {
     id: "video-annotation",
     title: "Video data annotation",
-    img1: "/images/annotation/SemanticSegmentation4.png",
-    img2: "/images/annotation/SemanticSegmentation5.png",
-    img3: "/images/annotation/Named-entityrecognition2.png",
+    video1: "/images/collection/video/Traffic Video Dataset Collection.mp4",
+    video2: "/images/collection/video/Traffic Video Dataset Collection.mp4",
+    video3: "/images/collection/video/Traffic Video Dataset Collection.mp4",
     boxst: [
       {
         title: "Tagging",
