@@ -6,7 +6,7 @@ import BoxContent5 from "./public_anno/BoxContent5";
 
 const BoxContain = styled("div")(({ theme }) => ({
   padding: "0 10rem",
-  [theme.breakpoints.down("xl")]: {
+  [theme.breakpoints.down("lg")]: {
     padding: "0",
   },
 }));
