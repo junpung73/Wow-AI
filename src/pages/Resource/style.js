@@ -19,9 +19,14 @@ export const WrapTopic = styled.div`
     opacity: 0.6;
     color: white;
     text-decoration: none;
+    font-size: var(--medium-text-3);
 
     &:hover {
       opacity: 1;
+    }
+
+    @media (max-width: 769px) {
+      font-size: var(--normal-text);
     }
   }
 
@@ -59,22 +64,14 @@ export const Item = styled.a`
     width: 100%;
     border-radius: 20px;
   }
-  p {
+  h4 {
     margin: 0;
-    font-size: 16px;
     color: #888888;
     padding: 0 10px;
-
-    @media (max-width: 528px) {
-      font-size: 8px;
-    }
   }
-  h5 {
+  p {
     color: white;
     padding: 0 10px;
-    @media (max-width: 528px) {
-      font-size: 14px;
-    }
   }
 `;
 
@@ -87,6 +84,7 @@ export const LoadMoreButton = styled.button`
   padding: 5px 50px;
   margin: 20px auto;
   margin-bottom: 50px;
+  font-size: var(--medium-text-3);
 
   &:hover {
     background-color: var(--secondary-bg);

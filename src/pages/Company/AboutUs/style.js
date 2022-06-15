@@ -8,13 +8,13 @@ export const Topic = styled.div`
   justify-content: center;
   color: var(--primary-text);
   align-items: center;
-  font-size: 98px;
+  font-size: var(--large-text);
 
-  @media (max-width: 1100px) {
+  /* @media (max-width: 1100px) {
     font-size: 64px;
   }
 
   @media (max-width: 769px) {
     font-size: 48px;
-  }
+  } */
 `;

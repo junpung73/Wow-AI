@@ -6,6 +6,14 @@ export const SubContainer = styled.div`
   width: 50%;
   justify-content: center;
 
+  p {
+    font-size: var(--medium-text-3);
+  }
+
+  h2 {
+    font-size: var(--medium-text-1);
+  }
+
   ul {
     list-style-type: none;
   }
@@ -16,6 +24,9 @@ export const SubContainer = styled.div`
 
   @media (max-width: 769px) {
     width: 100%;
+    h2 {
+      font-size: var(--medium-text-2);
+    }
   } ;
 `;
 
@@ -34,7 +45,7 @@ export const SelectButtonGroup = styled(Row)`
     gap: 10px;
     width: 100%;
     &:last-of-type {
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
   }
 `;
@@ -47,7 +58,6 @@ export const SelectButtonRow = styled(Row)`
     flex-direction: column;
     gap: 20px;
     white-space: nowrap;
-    font-size: 12px;
   }
 `;
 
@@ -94,6 +104,11 @@ export const SubscribeButton = styled.button`
   width: fit-content;
   padding: 5px 50px;
   margin: 20px 0;
+  font-size: var(--medium-text-3);
+
+  @media (max-width: 769px) {
+    margin: 20px auto;
+  }
 
   &:hover {
     background-color: var(--secondary-bg);
@@ -105,7 +120,7 @@ export const ListItem = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 20px;
+  font-size: var(--normal-text);
   color: white;
   width: 50%;
   margin-left: 36px;
@@ -122,9 +137,9 @@ export const ListItem = styled.div`
     margin-left: -24px;
   }
 
-  @media (max-width: 1100px) {
+  /* @media (max-width: 1100px) {
     font-size: 14px;
-  }
+  } */
 `;
 
 export const Column = styled.div`
@@ -172,7 +187,7 @@ export const ContactUsButton = styled.button`
   width: fit-content;
   position: absolute;
   color: white;
-  font-size: 20px;
+  font-size: var(--medium-text-3);
   border-radius: 10px;
   border: 0;
   display: flex;
@@ -197,13 +212,16 @@ export const ContactUsButton = styled.button`
   }
 
   @media (max-width: 769px) {
-    font-size: 14px;
-    padding: 10px 15px;
+    font-size: var(--normal-text);
+    padding: 10px 0;
+    width: 100%;
+    max-width: fit-content;
   } ;
 `;
 
 export const SelectButton = styled.button`
   width: fit-content;
+  font-size: var(--normal-text);
   padding: 0 30px;
   background-color: var(--primary-bg);
   border: ${({ btName, dataset }) =>
@@ -219,7 +237,7 @@ export const SelectButton = styled.button`
     border-color: white;
   }
   @media (max-width: 769px) {
-    padding: 0 15px;
+    padding: 0 5px;
   }
 `;
 
@@ -234,9 +252,11 @@ export const DropdownButton = styled.button`
   color: white;
   border: 2px solid white;
   background-color: transparent;
+  font-size: var(--normal-text);
 
   @media (max-width: 769px) {
     width: 128px;
+    padding: 1px 5px;
   }
 `;
 
@@ -247,7 +267,7 @@ export const DropdownMenu = styled.div`
   top: calc(100% + 20px);
   left: 0;
   padding: 10px 0;
-  width: 100%;
+  width: fit-content;
   background-color: var(--primary-bg);
   border-radius: 10px;
   transform: ${({ showDropdown }) =>

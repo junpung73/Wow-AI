@@ -59,14 +59,14 @@ const JoinOurTalentPool = () => {
         <Column>
           <ConRow>
             <ConCol>
-              <h3>Become our project contributors</h3>
-              <h5 style={{ fontSize: "18px" }}>
+              <h2>Become our project contributors</h2>
+              <h3>
                 Wow AI is a trusted and professional partner that provides
                 high-quality data at a large scale to clients to help improve
                 their AI/ML systems. We welcome all people from all walks of
                 life to join these projects. You can work remotely anytime and
                 anywhere.
-              </h5>
+              </h3>
               <JoinButton>Join our crowdsourcing projects now!</JoinButton>
             </ConCol>
             <ConCol style={{ borderLeft: 0 }}>
@@ -75,13 +75,13 @@ const JoinOurTalentPool = () => {
           </ConRow>
           <ConRow>
             <ConCol style={{ border: 0 }}>
-              <h3>Why become our project contributors?</h3>
-              <h5>
+              <h2>Why become our project contributors?</h2>
+              <h3>
                 Wow AI provides you with opportunities in supporting our clients
                 in collecting, enhancing, and upgrading their data input for AI
                 models. We welcome workers across the globe regardless of their
                 backgrounds and experience.
-              </h5>
+              </h3>
             </ConCol>
             <ConCol style={{ borderBottom: 0 }}>
               <img src="images/contributor2.svg"></img>
@@ -198,7 +198,7 @@ const JoinOurTalentPool = () => {
           >
             <source src="videos/target_transfer.mp4"></source>
           </video>
-          <h4>1. What is Wow AI?</h4>
+          <h3>1. What is Wow AI?</h3>
           <p>
             Wow AI is a trusted and professional partner that provides
             high-quality data at a large scale to clients to improve their AI/ML
@@ -213,7 +213,7 @@ const JoinOurTalentPool = () => {
             automotive, eCommerce, banking, healthcare and several other
             industries as well.
           </p>
-          <h4>2. How do I sign up for Wow AI project contributor account?</h4>
+          <h3>2. How do I sign up for Wow AI project contributor account?</h3>
           <p>
             3 simple steps:{" "}
             <ul>
@@ -225,7 +225,7 @@ const JoinOurTalentPool = () => {
               </li>
             </ul>
           </p>
-          <h4>3. How do I get paid?</h4>
+          <h3>3. How do I get paid?</h3>
           <p>
             Each project will have a different payment circle. Usually, in
             long-term projects, you will receive an invoice for all of your
@@ -360,37 +360,29 @@ const JoinOurTalentPool = () => {
           <SwiperSlide>
             <BlogItem>
               <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </BlogItem>
           </SwiperSlide>
           <SwiperSlide>
             <BlogItem>
               <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </BlogItem>
           </SwiperSlide>
           <SwiperSlide>
             <BlogItem>
               <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </BlogItem>
           </SwiperSlide>
           <SwiperSlide>
             <BlogItem>
               <img src="images/blogimg.svg"></img>
-              <p>10-08-2021</p>
-              <h6>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h6>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </BlogItem>
           </SwiperSlide>
 

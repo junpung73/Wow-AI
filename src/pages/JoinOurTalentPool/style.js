@@ -1,12 +1,9 @@
-import { flexbox } from "@mui/system";
 import styled from "styled-components/macro";
-import { SwiperSlide } from "swiper/react";
 
 export const SubTitle = styled.h1`
   color: var(--secondary-bg);
-
   @media (max-width: 700px) {
-    font-size: 25px;
+    font-size: var(--medium-text-2);
   }
 `;
 
@@ -18,17 +15,10 @@ export const Title = styled.div`
 
   h1 {
     margin-bottom: 50px;
-    font-size: 104px;
 
-    @media (max-width: 1100px) {
-      font-size: 70px;
-    }
-
-    @media (max-width: 1024px) {
-      font-size: 60px;
-    }
     @media (max-width: 700px) {
-      font-size: 50px;
+      font-size: var(--medium-text-2);
+      text-align: center;
     }
   }
 
@@ -121,6 +111,7 @@ export const JoinButton = styled.button`
   height: 40px;
   margin-bottom: 30px;
   margin-top: 20px;
+  font-size: var(--medium-text-3);
 
   &:hover {
     background-color: var(--secondary-bg);
@@ -372,6 +363,7 @@ export const TalentButton = styled.button`
   width: fit-content;
   padding: 5px 80px;
   margin: 50px auto;
+  font-size: var(--medium-text-3);
 
   &:hover {
     background-color: var(--secondary-text);
@@ -386,13 +378,13 @@ export const BlogItem = styled(Card)`
   padding: 0;
   border-radius: 10px;
   flex: 1 0 33%;
-  p {
+  h4 {
     margin: 8px 0;
     font-size: 12px;
     color: #b8b8b8;
     padding: 0 5px;
   }
-  h6 {
+  p {
     padding: 0 5px;
     @media (max-width: 1024px) {
       font-size: 14px;
@@ -453,12 +445,6 @@ export const PadDiv = styled.div`
   @media (max-width: 769px) {
     aspect-ratio: 2;
     flex: 1 0 100%;
-  }
-`;
-
-export const PadDivBlog = styled(PadDiv)`
-  @media (max-width: 769px) {
-    aspect-ratio: 1.2;
   }
 `;
 

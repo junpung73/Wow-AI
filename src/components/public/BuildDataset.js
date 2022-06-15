@@ -87,6 +87,7 @@ export const SubscribeButton = styled.button`
 export const SubmitButton = styled(SubscribeButton)`
   margin: 20px auto;
   margin-bottom: 0;
+  font-size: var(--medium-text-3);
 `;
 
 const BuildDataset = () => {
@@ -96,10 +97,10 @@ const BuildDataset = () => {
         <BigImg src="images/image20.png" width="100%" />
       </Picture>
       <Column>
-        <h3>
+        <h2>
           Want to build your own{" "}
           <span style={{ color: "var(--secondary-bg)" }}>data set</span>?
-        </h3>
+        </h2>
         <p>
           Contact us now to learn how we can collect a custom data set for your
           unique AI solution.

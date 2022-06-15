@@ -24,9 +24,9 @@ const Resources = () => {
       </Container>
       <Container style={{ scrollSnapAlign: "start", paddingTop: "100px" }}>
         <Column>
-          <h1 style={{ color: "var(--secondary-bg)", textAlign: "center" }}>
+          <h2 style={{ color: "var(--secondary-bg)", textAlign: "center" }}>
             Everything you need to know about Crowdsourcing
-          </h1>
+          </h2>
           <WrapTopic>
             <a href="#">Topic 1</a>
             <a href="#">Topic 2</a>
@@ -39,45 +39,33 @@ const Resources = () => {
           <Grid>
             <Item>
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
             <Item href="/detail-blog">
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
             <Item href="/detail-blog">
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
             <Item href="/detail-blog">
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
             <Item href="/detail-blog">
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
             <Item href="/detail-blog">
               <img src="images/Group73.png"></img>
-              <p>10-08-2021</p>
-              <h5>
-                Surge of this virus is unpredictable in this era. Thoughts?
-              </h5>
+              <h4>10-08-2021</h4>
+              <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
           </Grid>
           <LoadMoreButton>Load More</LoadMoreButton>

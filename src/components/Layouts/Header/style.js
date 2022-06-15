@@ -157,7 +157,7 @@ export const NavItem = styled.div`
   color: white;
   cursor: pointer;
   height: 100%;
-  font-size: 18px;
+  font-size: var(--medium-text-3);
 
   > a {
     text-decoration: none;
