@@ -184,7 +184,6 @@ export const ContactUsButton = styled.button`
   width: fit-content;
   position: absolute;
   color: white;
-  font-size: var(--medium-text-3);
   border-radius: 10px;
   border: 0;
   display: flex;
@@ -197,7 +196,6 @@ export const ContactUsButton = styled.button`
   white-space: nowrap;
   p {
     margin: 0;
-    font-size: var(--medium-text-3);
   }
 
   span,
@@ -231,6 +229,10 @@ export const SelectButton = styled.button`
   color: ${({ btName, dataset }) =>
     btName === dataset ? "white" : "rgba(255, 255, 255, 25%)"};
 
+  p {
+    margin: 0;
+  }
+
   &:hover {
     color: white;
     border-color: white;
@@ -251,7 +253,9 @@ export const DropdownButton = styled.button`
   color: white;
   border: 2px solid white;
   background-color: transparent;
-  font-size: var(--normal-text);
+  p {
+    margin: 0;
+  }
 
   @media (max-width: 769px) {
     width: 128px;

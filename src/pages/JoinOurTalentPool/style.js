@@ -116,7 +116,10 @@ export const JoinButton = styled.button`
   height: 40px;
   margin-bottom: 30px;
   margin-top: 20px;
-  font-size: var(--medium-text-3);
+
+  p {
+    margin: 0;
+  }
 
   &:hover {
     background-color: var(--secondary-bg);
@@ -126,7 +129,6 @@ export const JoinButton = styled.button`
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    font-size: var(--normal-text);
   }
 `;
 

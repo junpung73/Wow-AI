@@ -28,13 +28,27 @@ const Resources = () => {
             Everything you need to know about Crowdsourcing
           </h2>
           <WrapTopic>
-            <a href="#">Topic 1</a>
-            <a href="#">Topic 2</a>
-            <a href="#">Topic 3</a>
-            <a href="#">Topic 4</a>
-            <a href="#">Topic 5</a>
-            <a href="#">Topic 6</a>
-            <a href="#">Topic 7</a>
+            <a href="#">
+              <p>Topic 1</p>
+            </a>
+            <a href="#">
+              <p>Topic 2</p>
+            </a>
+            <a href="#">
+              <p>Topic 3</p>
+            </a>
+            <a href="#">
+              <p>Topic 4</p>
+            </a>
+            <a href="#">
+              <p>Topic 5</p>
+            </a>
+            <a href="#">
+              <p>Topic 6</p>
+            </a>
+            <a href="#">
+              <p>Topic 7</p>
+            </a>
           </WrapTopic>
           <Grid>
             <Item>

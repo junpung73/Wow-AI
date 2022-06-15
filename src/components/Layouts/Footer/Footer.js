@@ -23,25 +23,22 @@ const Footer = () => {
             <a href="#">Join our crowd pool</a>
           </ListCol>
           <ListCol>
-            <h3>Company</h3>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Resources</a>
-            <a href="#">Join our crowd pool</a>
+            <h3>Data collection</h3>
+            <a href="#">Audio Collection</a>
+            <a href="#">Image Collection</a>
+            <a href="#">Utterances Collection</a>
           </ListCol>
           <ListCol>
-            <h3>Company</h3>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Resources</a>
-            <a href="#">Join our crowd pool</a>
+            <h3>Data annotation</h3>
+            <a href="#">Image Annotation</a>
+            <a href="#">Entity Annotation</a>
+            <a href="#">Video Annotation</a>
           </ListCol>
           <ListCol>
-            <h3>Company</h3>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Resources</a>
-            <a href="#">Join our crowd pool</a>
+            <h3>Data transcription</h3>
+            <a href="#">Image Transcription</a>
+            <a href="#">Audio Transcription</a>
+            <a href="#">Other special services?</a>
           </ListCol>
         </FooterContainer>
       </Wrapper>

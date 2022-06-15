@@ -87,7 +87,10 @@ export const SubscribeButton = styled.button`
 export const SubmitButton = styled(SubscribeButton)`
   margin: 20px auto;
   margin-bottom: 0;
-  font-size: var(--medium-text-3);
+
+  h3 {
+    margin: 0;
+  }
 `;
 
 const BuildDataset = () => {
@@ -137,7 +140,9 @@ const BuildDataset = () => {
             <InputForm style={{ height: "100px" }}></InputForm>
           </FormCol>
         </FormRow>
-        <SubmitButton>Submit</SubmitButton>
+        <SubmitButton>
+          <h3>Submit</h3>
+        </SubmitButton>
       </Column>
     </Row>
   );

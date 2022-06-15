@@ -26,7 +26,9 @@ export const WrapTopic = styled.div`
     }
 
     @media (max-width: 769px) {
-      font-size: var(--normal-text);
+      p {
+        font-size: var(--xs);
+      }
     }
   }
 

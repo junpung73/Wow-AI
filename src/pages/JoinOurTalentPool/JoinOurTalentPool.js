@@ -62,7 +62,9 @@ const JoinOurTalentPool = () => {
                 life to join these projects. You can work remotely anytime and
                 anywhere.
               </p>
-              <JoinButton>Join our crowdsourcing projects now!</JoinButton>
+              <JoinButton>
+                <p>Join our crowdsourcing projects now!</p>
+              </JoinButton>
             </ConCol>
             <ConCol style={{ borderLeft: 0 }}>
               <img src="images/contributor1.svg"></img>

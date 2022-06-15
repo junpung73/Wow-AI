@@ -19,7 +19,7 @@ const Contact = () => {
           justifyContent: "center",
           textAlign: "center",
           alignItems: "center",
-          height: "20vh",
+          height: "1vh",
         }}
       >
         <h5 className="title-description">

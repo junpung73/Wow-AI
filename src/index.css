@@ -6,9 +6,10 @@
   --large-text: 56px;
   --medium-text-1: 40px;
   --medium-text-2: 36px;
-  --medium-text-3: 18px;
-  --normal-text: 14px;
-  --small-text: 12px;
+  --medium-text-3: 22px;
+  --normal-text: 18px;
+  --small-text: 16px;
+  --xs: 14px;
 }
 
 html {
@@ -58,4 +59,22 @@ p {
 h4 {
   font-weight: normal;
   font-size: var(--small-text);
+}
+
+@media (max-width: 769px) {
+  p {
+    font-size: var(--small-text);
+  }
+
+  h4 {
+    font-size: var(--xs);
+  }
+
+  h2 {
+    font-size: var(--medium-text-2);
+  }
+
+  h3 {
+    font-size: 18px;
+  }
 }

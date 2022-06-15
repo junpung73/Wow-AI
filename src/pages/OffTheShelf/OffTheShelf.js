@@ -63,7 +63,9 @@ const OffTheShelf = () => {
         </Picture>
         <ContactUsButton>
           <p>Plug-in the data you've been missing</p>
-          <span>Contact Us</span>
+          <span>
+            <p>Contact Us</p>
+          </span>
           <bs.BsArrowRight></bs.BsArrowRight>
         </ContactUsButton>
       </Container>
@@ -78,28 +80,28 @@ const OffTheShelf = () => {
                   dataset={datasetSelect}
                   onClick={() => setDatasetSelect("audio")}
                 >
-                  Audio Dataset
+                  <p>Audio Dataset</p>
                 </SelectButton>
                 <SelectButton
                   btName="ocr"
                   dataset={datasetSelect}
                   onClick={() => setDatasetSelect("ocr")}
                 >
-                  OCR Dataset
+                  <p>OCR Dataset</p>
                 </SelectButton>
                 <SelectButton
                   btName="medical"
                   dataset={datasetSelect}
                   onClick={() => setDatasetSelect("medical")}
                 >
-                  Medical Dataset
+                  <p>Medical Dataset</p>
                 </SelectButton>
               </SelectButtonGroup>
               <SelectButtonGroup>
                 <DropdownButton
                   onClick={() => setShowDropdown(() => !showDropdown)}
                 >
-                  Imaging Data
+                  <p>Imaging Data</p>
                   {showDropdown === true ? (
                     <bs.BsChevronUp />
                   ) : (
