@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import * as io from "react-icons/io";
 import { Container } from "../../components/Container";
-import { PadDiv, PadDivBlog } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,12 +13,10 @@ import {
   BigImg,
   SmallImg,
   Column,
-  Row,
   CardItem,
   SubTitle,
   Card,
   Quote,
-  NavigateButton,
   JoinButton,
   Carousel,
   TalentButton,
@@ -27,17 +24,13 @@ import {
   ConRow,
   ConCol,
   Grid,
-  View,
 } from "./style";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import Header from "../../components/Layouts/Header/Header";
 import Footer from "../../components/Layouts/Footer";
-import { StyledSlider, StyledNavButton } from "./style";
+import { StyledNavButton } from "./style";
 
 const JoinOurTalentPool = () => {
-  const [quoteTranslate, setQuoteTranslate] = useState(0);
-  const [blogTranslate, setBlogTranslate] = useState(0);
-
   return (
     <>
       <Header />
@@ -266,8 +259,6 @@ const JoinOurTalentPool = () => {
             prevEl: ".prevBtn",
             nextEl: ".nextBtn",
           }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
           style={{ display: "static", width: "100%" }}
         >
           <SwiperSlide>
@@ -353,8 +344,6 @@ const JoinOurTalentPool = () => {
             prevEl: ".prevBtnBlogs",
             nextEl: ".nextBtnBlogs",
           }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
           style={{ display: "static", width: "100%" }}
         >
           <SwiperSlide>

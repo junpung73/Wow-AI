@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Title = {
-  fontSize: "var(--normal-text)",
   fontWeght: "bold",
   marginTop: "4vh",
   marginBottom: "1.4rem",

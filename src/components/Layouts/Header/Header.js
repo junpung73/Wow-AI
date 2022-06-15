@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as io from "react-icons/io";
 import * as io5 from "react-icons/io5";
 import * as fa from "react-icons/fa";
@@ -12,8 +12,6 @@ import {
   NavItem,
   NavItemWrapper,
   NavItemContainer,
-  IndicatorBar,
-  Indicator,
   NavbarButton,
   NavbarExit,
   PageCover,
