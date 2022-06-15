@@ -19,7 +19,7 @@ const SlideContent = ({ content }) => {
         borderRadius: "30px",
         padding: "1vh",
       }}>
-        <div>
+        <>
           {content.img1 && (
             <img src={content.img1} class="img-slide-content d-block w-100" alt="slide1" />
           )}
@@ -27,6 +27,7 @@ const SlideContent = ({ content }) => {
             <video
               class="slide-image d-block w-100"
               width="100%"
+              style={{borderRadius: '30px'}}
               autoPlay
               muted
               loop
@@ -35,8 +36,8 @@ const SlideContent = ({ content }) => {
               Your browser does not support the video tag.
             </video>
           )}
-        </div>
-        <div>
+        </>
+        <>
           {content.img2 && (
             <img src={content.img2} class="img-slide-content d-block w-100" alt="slide1" />
           )}
@@ -44,6 +45,7 @@ const SlideContent = ({ content }) => {
             <video
               class="slide-image d-block w-100"
               width="100%"
+              style={{borderRadius: '30px'}}
               autoPlay
               muted
               loop
@@ -52,8 +54,8 @@ const SlideContent = ({ content }) => {
               Your browser does not support the video tag.
             </video>
           )}
-        </div>
-        <div>
+        </>
+        <>
           {content.img3 && (
             <img src={content.img3} class="img-slide-content d-block w-100" alt="slide1" />
           )}
@@ -61,6 +63,7 @@ const SlideContent = ({ content }) => {
             <video
               class="slide-image d-block w-100"
               width="100%"
+              style={{borderRadius: '30px'}}
               autoPlay
               muted
               loop
@@ -69,7 +72,7 @@ const SlideContent = ({ content }) => {
               Your browser does not support the video tag.
             </video>
           )}
-        </div>
+        </>
       </Slider>
     </div>
   );

@@ -10,8 +10,8 @@ const BoxStyled = styled(Box)({
   alignItems: "center",
   textAlign: "center",
 });
-const titleStyled = styled("p")(({ theme }) => ({
-  fontSize: "var(--medium-text-2)",
+const TitleStyled = styled("p")(({ theme }) => ({
+  fontSize: "var(--medium-text-3)",
   fontWeoght: "bold",
   marginBottom: "0",
   [theme.breakpoints.down("md")]: {
@@ -32,30 +32,30 @@ const ProjectAI = () => {
       <Grid container spacing={5}>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
-            <div>
-              <titleStyled>100,000</titleStyled> Global <br /> Freelancers
-            </div>
+            <TitleStyled>
+              100,000 Global <br /> Freelancers
+            </TitleStyled>
           </BoxStyled>
         </Grid>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
-            <div>
-              <titleStyled>120+</titleStyled> Languages
-            </div>
+            <TitleStyled>
+              120+ Languages
+            </TitleStyled>
           </BoxStyled>
         </Grid>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
-            <div>
-              <titleStyled>247+</titleStyled> Support
-            </div>
+            <TitleStyled>
+              247+ Support
+            </TitleStyled>
           </BoxStyled>
         </Grid>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
-            <div>
-              <titleStyled>100%</titleStyled> Customer <br /> Satisfation
-            </div>
+            <TitleStyled>
+              100% Customer <br /> Satisfation
+            </TitleStyled>
           </BoxStyled>
         </Grid>
       </Grid>
