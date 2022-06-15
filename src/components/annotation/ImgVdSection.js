@@ -5,7 +5,7 @@ import SlideContent from "../public/SlideContent";
 import BoxContent5 from "./public_anno/BoxContent5";
 
 const BoxContain = styled("div")(({ theme }) => ({
-  padding: "0 10vh",
+  padding: "0 10rem",
   [theme.breakpoints.down("xl")]: {
     padding: "0",
   },

@@ -5,7 +5,7 @@ import BoxContent4 from "./public_anno/BoxContent4";
 import Slider from "react-slick";
 
 const BoxContain = styled("div")(({ theme }) => ({
-  padding: "0 10vh",
+  padding: "0 10rem",
   [theme.breakpoints.down("lg")]: {
     padding: "0",
   },
