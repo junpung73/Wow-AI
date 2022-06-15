@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "../components/Layouts/Header/Header";
-import Footer from "../components/Layouts/Footer";
+import Footer from "../components/Layouts/Footer/Footer";
 
 const DetailBlog = () => {
   return (

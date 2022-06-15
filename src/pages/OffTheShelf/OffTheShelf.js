@@ -20,7 +20,7 @@ import {
   PageSwitch,
 } from "./style";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 import { Container } from "../../components/Container";
 import BuildDataset from "../../components/public/BuildDataset";
 

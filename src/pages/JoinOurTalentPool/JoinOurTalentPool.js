@@ -27,7 +27,7 @@ import {
 } from "./style";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 import { StyledNavButton } from "./style";
 
 const JoinOurTalentPool = () => {
@@ -52,14 +52,16 @@ const JoinOurTalentPool = () => {
         <Column>
           <ConRow>
             <ConCol>
-              <h2>Become our project contributors</h2>
-              <h3>
+              <h2 style={{ fontWeight: "bold" }}>
+                Become our project contributors
+              </h2>
+              <p>
                 Wow AI is a trusted and professional partner that provides
                 high-quality data at a large scale to clients to help improve
                 their AI/ML systems. We welcome all people from all walks of
                 life to join these projects. You can work remotely anytime and
                 anywhere.
-              </h3>
+              </p>
               <JoinButton>Join our crowdsourcing projects now!</JoinButton>
             </ConCol>
             <ConCol style={{ borderLeft: 0 }}>
@@ -69,12 +71,12 @@ const JoinOurTalentPool = () => {
           <ConRow>
             <ConCol style={{ border: 0 }}>
               <h2>Why become our project contributors?</h2>
-              <h3>
+              <p>
                 Wow AI provides you with opportunities in supporting our clients
                 in collecting, enhancing, and upgrading their data input for AI
                 models. We welcome workers across the globe regardless of their
                 backgrounds and experience.
-              </h3>
+              </p>
             </ConCol>
             <ConCol style={{ borderBottom: 0 }}>
               <img src="images/contributor2.svg"></img>
@@ -141,7 +143,7 @@ const JoinOurTalentPool = () => {
       </Container>
 
       {/* How it works */}
-      <Container style={{ paddingBottom: "300px" }}>
+      <Container style={{ paddingBottom: "150px", paddingTop: "150px" }}>
         <Column>
           <SubTitle style={{ textAlign: "center" }}>How it works</SubTitle>
           <Grid>
@@ -270,7 +272,7 @@ const JoinOurTalentPool = () => {
                 choose your own hours and take on multiple projects.”
               </p>
               <Carousel>
-                <img src="images/avatar.svg"></img>
+                <img src="images/reviewer.png"></img>
                 <p>Wow AI, Image Collector</p>
               </Carousel>
             </Quote>
@@ -282,7 +284,7 @@ const JoinOurTalentPool = () => {
                 choose your own hours and take on multiple projects.”
               </p>
               <Carousel>
-                <img src="images/avatar.svg"></img>
+                <img src="images/reviewer.png"></img>
                 <p>Wow AI, Image Collector</p>
               </Carousel>
             </Quote>
@@ -294,7 +296,7 @@ const JoinOurTalentPool = () => {
                 choose your own hours and take on multiple projects.”
               </p>
               <Carousel>
-                <img src="images/avatar.svg"></img>
+                <img src="images/reviewer.png"></img>
                 <p>Wow AI, Image Collector</p>
               </Carousel>
             </Quote>
@@ -306,7 +308,7 @@ const JoinOurTalentPool = () => {
                 choose your own hours and take on multiple projects.”
               </p>
               <Carousel>
-                <img src="images/avatar.svg"></img>
+                <img src="images/reviewer.png"></img>
                 <p>Wow AI, Image Collector</p>
               </Carousel>
             </Quote>

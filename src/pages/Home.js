@@ -7,7 +7,7 @@ import SlideHome from "../components/home/SlideHome";
 import Solution from "../components/home/Solution";
 import WhyChoose from "../components/home/WhyChoose";
 import Header from "../components/Layouts/Header/Header";
-import Footer from "../components/Layouts/Footer";
+import Footer from "../components/Layouts/Footer/Footer";
 
 const Home = () => {
   return (

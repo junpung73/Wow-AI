@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../../components/Layouts/Header/Header";
-import Footer from "../../../components/Layouts/Footer";
+import Footer from "../../../components/Layouts/Footer/Footer";
 
 import BuildDataset from "../../../components/public/BuildDataset";
 import { Container } from "../../../components/Container";

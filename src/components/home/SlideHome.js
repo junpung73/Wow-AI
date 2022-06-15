@@ -113,10 +113,7 @@ const SlideHome = () => {
           }}
         >
           <div className="contain">
-            <Topic>
-              A trusted partner that provides high-quality data <br /> solutions
-              for AI training at a large scale.
-            </Topic>
+            <Topic>A global provider of high-quality AI training data</Topic>
             <a className="btn btn-light" href="/contact">
               Contact Us
             </a>
@@ -157,7 +154,6 @@ const SlideHome = () => {
             }}
           >
             <LinkStyled href="#aboutus">Scroll Down</LinkStyled>
-            <h5 style={titleSlide}>02 &ensp; | &ensp; 01</h5>
           </div>
         </div>
       </div>

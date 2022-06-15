@@ -5,7 +5,7 @@ import TransServices from "../../components/Services/TransServices";
 import topicservices from "../../__mock__/topicservices";
 import transervice from "../../__mock__/transervice";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 import BuildDataset from "../../components/public/BuildDataset";
 import { Container } from "../../components/Container";
 const DataTranscription = () => {

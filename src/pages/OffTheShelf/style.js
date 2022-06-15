@@ -180,7 +180,7 @@ export const SmallImg = styled(BigImg)`
 
 export const ContactUsButton = styled.button`
   background-color: #1e1e1e;
-  padding: 10px 50px;
+  padding: 10px 150px;
   width: fit-content;
   position: absolute;
   color: white;
@@ -197,6 +197,7 @@ export const ContactUsButton = styled.button`
   white-space: nowrap;
   p {
     margin: 0;
+    font-size: var(--medium-text-3);
   }
 
   span,
@@ -206,11 +207,12 @@ export const ContactUsButton = styled.button`
 
   @media (max-width: 1100px) {
     bottom: -15%;
+    padding: 10px 100px;
   }
 
   @media (max-width: 769px) {
     font-size: var(--normal-text);
-    padding: 10px 0;
+    padding: 10px 5px;
     width: 100%;
     max-width: fit-content;
   } ;

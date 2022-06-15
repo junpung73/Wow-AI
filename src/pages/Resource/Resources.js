@@ -1,7 +1,7 @@
 import React from "react";
 import { Column, WrapTopic, Grid, Item, LoadMoreButton } from "./style";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 import { Container } from "../../components/Container";
 
 const Resources = () => {

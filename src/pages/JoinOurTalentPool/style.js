@@ -1,10 +1,11 @@
 import styled from "styled-components/macro";
 
-export const SubTitle = styled.h1`
+export const SubTitle = styled.h2`
   color: var(--secondary-bg);
-  @media (max-width: 700px) {
-    font-size: var(--medium-text-2);
-  }
+  margin-bottom: 20px;
+  /* @media (max-width: 700px) {
+    font-size: var(--medium-text-);
+  } */
 `;
 
 export const Title = styled.div`
@@ -125,6 +126,7 @@ export const JoinButton = styled.button`
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    font-size: var(--normal-text);
   }
 `;
 
@@ -177,6 +179,14 @@ export const ConRow = styled(Row)`
     flex-direction: column-reverse;
     img {
       margin: auto;
+
+      @media (max-width: 769px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    h2 {
+      font-size: var(--medium-text-3);
     }
   }
 `;
@@ -484,6 +494,10 @@ export const StyledNavButton = styled.button`
   &[disabled] {
     opacity: 0.8;
     cursor: default;
+  }
+
+  @media (max-width: 769px) {
+    display: none;
   }
 `;
 export const StyledSlider = styled.div`

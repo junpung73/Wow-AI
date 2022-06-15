@@ -11,7 +11,7 @@ import IllutrationSection from "../../components/Services/IllutrationSection";
 import BuildDataset from "../../components/public/BuildDataset";
 import { Container } from "../../components/Container";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 
 const DataCollection = () => {
   return (

@@ -6,7 +6,7 @@ import topicservices from "../../__mock__/topicservices";
 import annotation from "../../__mock__/annotation";
 import TextAudioSection from "../../components/annotation/TextAudioSection";
 import Header from "../../components/Layouts/Header/Header";
-import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer/Footer";
 import BuildDataset from "../../components/public/BuildDataset";
 import { Container } from "../../components/Container";
 

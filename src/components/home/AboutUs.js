@@ -30,7 +30,7 @@ const AboutUs = () => {
               padding: "8px",
               aspectRatio: "16/9",
             }}
-            image="/videos/pexels-pavel-danilyuk-8084506.mp4"
+            image="/videos/ATrustedPartner.webm"
             controls
             loop
           />
