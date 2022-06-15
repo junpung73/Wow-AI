@@ -57,7 +57,7 @@ const Footer = () => {
           <InfoPage item xs={3} md={2}>
             <Typography style={Title}>Company</Typography>
             <ul style={BulletPoint}>
-              <li>About us</li>
+              <li><a href="#"  style={{textDecoration:'none', color:'white'}}>About us</a> </li>
               <li>Service</li>
               <li>Resources</li>
               <li>Join our crowd pool</li>
