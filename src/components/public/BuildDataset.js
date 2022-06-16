@@ -90,6 +90,7 @@ export const SubmitButton = styled(SubscribeButton)`
 
   h3 {
     margin: 0;
+    font-weight: normal;
   }
 `;
 
@@ -102,10 +103,10 @@ const BuildDataset = () => {
       <Column>
         <h2>
           Want to build your own{" "}
-          <span style={{ color: "var(--secondary-bg)" }}>data set</span>?
+          <span style={{ color: "var(--secondary-bg)" }}>dataset</span>?
         </h2>
         <p>
-          Contact us now to learn how we can collect a custom data set for your
+          Contact us now to learn how we can collect a custom dataset for your
           unique AI solution.
         </p>
         <FormRow>

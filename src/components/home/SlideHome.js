@@ -71,8 +71,9 @@ const SlideHome = () => {
               autoPlay
               muted
               loop
+              playsInline
             >
-              <source src="/videos/ProfessionalProject.webm" type="video/mp4" />
+              <source src="/videos/ProfessionalProject.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>
@@ -84,8 +85,9 @@ const SlideHome = () => {
               autoPlay
               muted
               loop
+              playsInline
             >
-              <source src="/videos/BetterData2.webm" type="video/mp4" />
+              <source src="/videos/BetterData2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>
@@ -97,8 +99,9 @@ const SlideHome = () => {
               autoPlay
               muted
               loop
+              playsInline
             >
-              <source src="/videos/ATrustedPartner.webm" type="video/mp4" />
+              <source src="/videos/ATrustedPartner.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div class="carousel-caption d-none d-md-block"></div>

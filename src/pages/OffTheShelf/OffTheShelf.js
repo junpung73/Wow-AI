@@ -71,7 +71,7 @@ const OffTheShelf = () => {
       </Container>
       <Container style={{ marginTop: "100px" }}>
         <Column>
-          <h2>Dataset</h2>
+          <h2 style={{ marginBottom: "15px" }}>Dataset</h2>
           <Row>
             <SelectButtonRow>
               <SelectButtonGroup>
@@ -126,66 +126,66 @@ const OffTheShelf = () => {
             </TableRow>
             <TableRow>
               <p>1</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>BRAIN</p>
+              <p>3618</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>2</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>SKULL</p>
+              <p>9</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>3</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>HEAD</p>
+              <p>53144</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>4</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>NECK</p>
+              <p>25</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>5</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>CHEST</p>
+              <p>29</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>6</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>ABDOMEN</p>
+              <p>316</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>7</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>CSPINE</p>
+              <p>726</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>8</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>TSPINE</p>
+              <p>9</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
             <TableRow>
               <p>9</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
-              <p>Sr no</p>
+              <p>LSPINE</p>
+              <p>7287</p>
+              <p>MRI</p>
+              <p>Dicom</p>
             </TableRow>
           </Column>
           <PageSwitch>

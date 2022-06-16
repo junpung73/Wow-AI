@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const Topic = styled.div`
   height: 45vw;
-  background-image: url(images/Group39457.png);
+  background-image: url(images/1.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -110,6 +110,7 @@ export const Circle = styled.div`
   position: relative;
   h3 {
     width: fit-content;
+    color: var(--secondary-bg);
   }
 
   &:before {

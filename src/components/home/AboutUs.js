@@ -30,7 +30,7 @@ const AboutUs = () => {
               padding: "8px",
               aspectRatio: "16/9",
             }}
-            image="/videos/ATrustedPartner.webm"
+            image="/videos/ATrustedPartner.mp4"
             controls
             loop
           />

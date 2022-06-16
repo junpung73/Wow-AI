@@ -265,6 +265,13 @@ export const Card = styled.a`
   flex-direction: column;
   position: relative;
   color: white;
+  transition: top 2s ease-in-out;
+  flex: 1 1 25%;
+  border-radius: 30px;
+  background-color: var(--secondary-text);
+  padding: 50px 30px;
+  height: fit-content;
+  aspect-ratio: 1;
 
   > img {
     margin: auto 70px;
@@ -272,18 +279,14 @@ export const Card = styled.a`
   }
 
   :hover {
-    color: white;
+    color: var(--secondary-text);
+    top: -20px;
+    background-color: white;
   }
 
   @media (max-width: 769px) {
     width: 100%;
   }
-  flex: 1 1 25%;
-  border-radius: 30px;
-  background-color: var(--secondary-text);
-  padding: 50px 30px;
-  height: fit-content;
-  aspect-ratio: 1;
 
   /* &:first-of-type {
     margin-left: 0;
@@ -368,6 +371,7 @@ export const Quote = styled(Card)`
   &:hover {
     background-color: var(--secondary-text);
     color: white;
+    top: 0;
   }
 
   h3 {
@@ -420,6 +424,7 @@ export const BlogItem = styled(Card)`
   &:hover {
     background-color: #1a1a1a;
     color: white;
+    top: 0;
   }
 
   @media (max-width: 769px) {

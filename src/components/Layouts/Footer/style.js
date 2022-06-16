@@ -21,16 +21,19 @@ export const Col = styled.div`
   width: fit-content;
 `;
 export const LogoCol = styled(Col)`
-  justify-content: center;
+  justify-content: start;
   padding-right: 10px;
 
   img {
-    width: 120px;
+    width: 170px;
     margin-bottom: 20px;
   }
 
   h3 {
     font-weight: normal;
+  }
+  span {
+    white-space: nowrap;
   }
 `;
 
@@ -81,12 +84,35 @@ export const ListCol = styled(Col)`
 `;
 
 export const Reserved = styled.div`
-  text-transform: uppercase;
   display: flex;
   width: 100%;
   justify-content: center;
 
   h3 {
+    color: #b8b8b8;
     font-weight: 200;
+    letter-spacing: 5px;
+  }
+`;
+
+export const SocialRow = styled.div`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+`;
+
+export const Social = styled.div`
+  aspect-ratio: 1;
+  background-color: white;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 50%;
+
+  svg {
+    color: var(--primary-bg);
+    width: 100%;
+    font-size: 30px;
   }
 `;

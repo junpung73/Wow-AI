@@ -45,6 +45,15 @@ export const SelectButtonGroup = styled(Row)`
       justify-content: flex-start;
     }
   }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:last-of-type {
+      align-items: flex-end;
+    }
+  }
 `;
 
 export const SelectButtonRow = styled(Row)`
@@ -55,6 +64,10 @@ export const SelectButtonRow = styled(Row)`
     flex-direction: column;
     gap: 20px;
     white-space: nowrap;
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: row;
   }
 `;
 
@@ -130,8 +143,8 @@ export const ListItem = styled.div`
     background-size: contain;
     background-position: center;
     aspect-ratio: 1;
-    height: 18px;
-    margin-left: -24px;
+    height: 24px;
+    margin-left: -28px;
   }
 
   /* @media (max-width: 1100px) {
@@ -213,7 +226,11 @@ export const ContactUsButton = styled.button`
     padding: 10px 5px;
     width: 100%;
     max-width: fit-content;
-  } ;
+  }
+
+  @media (max-width: 450px) {
+    padding: 10px 2px;
+  }
 `;
 
 export const SelectButton = styled.button`
@@ -268,7 +285,7 @@ export const DropdownMenu = styled.div`
   display: flex;
   flex-direction: column;
   top: calc(100% + 20px);
-  left: 0;
+  right: 0;
   padding: 10px 0;
   width: fit-content;
   background-color: var(--primary-bg);
@@ -281,6 +298,14 @@ export const DropdownMenu = styled.div`
   box-shadow: 5px 5px 12px -4px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 5px 5px 12px -4px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 10px 12px -4px rgba(0, 0, 0, 1);
+
+  @media (max-width: 769px) {
+    left: 0;
+  }
+  @media (max-width: 450px) {
+    right: 0;
+    left: auto;
+  }
 `;
 
 export const DropdownItem = styled.div`

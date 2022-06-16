@@ -286,8 +286,8 @@ const JoinOurTalentPool = () => {
           <SwiperSlide>
             <Quote>
               <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
+                “I like that the hours are very flexible depending on what task
+                I’m doing. The work is fun and simple depending on the task!”
               </p>
               <Carousel>
                 <img src="images/reviewer.png"></img>
@@ -298,8 +298,9 @@ const JoinOurTalentPool = () => {
           <SwiperSlide>
             <Quote>
               <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
+                “As a mom, I am tied with my babies. I feel lucky to be working
+                as a project contributor at Wow AI. I have time for my kids, and
+                earn a decent income without work pressure.”
               </p>
               <Carousel>
                 <img src="images/reviewer.png"></img>
@@ -310,8 +311,9 @@ const JoinOurTalentPool = () => {
           <SwiperSlide>
             <Quote>
               <p>
-                “This is a very independent job that is super flexible. You
-                choose your own hours and take on multiple projects.”
+                “As a mom, I am tied with my babies. I feel lucky to be working
+                as a project contributor at Wow AI. I have time for my kids, and
+                earn a decent income without work pressure.”
               </p>
               <Carousel>
                 <img src="images/reviewer.png"></img>
