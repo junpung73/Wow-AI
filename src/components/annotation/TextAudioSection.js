@@ -53,22 +53,25 @@ const TextAudioSection = ({ content }) => {
                 <div>
                   <img
                     src={content.img1}
-                    class="img-slide-content4 d-block w-100"
+                    class="img-slide-content d-block w-100"
                     alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
                   />
                 </div>
                 <div>
                   <img
                     src={content.img2}
-                    class="img-slide-content4 d-block w-100"
+                    class="img-slide-content d-block w-100"
                     alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
                   />
                 </div>
                 <div>
                   <img
                     src={content.img3}
-                    class="img-slide-content4 d-block w-100"
+                    class="img-slide-content d-block w-100"
                     alt="slide1"
+                    style={{ aspectRatio: "24/19" }}
                   />
                 </div>
               </Slider>
