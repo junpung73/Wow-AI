@@ -21,7 +21,7 @@ const ContentStyled = styled("div")(({ theme }) => ({
     fontSize: "var(--small-text)",
   },
 }));
-
+ 
 const Management = () => {
   return (
     <div
@@ -43,6 +43,8 @@ const Management = () => {
             style={{
               padding: "5px",
               width: "100%",
+              border: "0px solid var(--secondary-bg)",
+              borderRadius: "15px",
             }}
           />
         </Grid>
@@ -68,22 +70,22 @@ const Management = () => {
             }}
           >
             <BoxStyled>
-              <p style={{ marginBottom: "0" }}>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
                 100,000 Global <br /> Freelancers
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: "0" }}>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
                 120+ <br /> Languages
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: "0" }}>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
                 247+ <br /> Support
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: "0" }}>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
                 98% <br /> Customer <br /> Satisfation
               </p>
             </BoxStyled>
