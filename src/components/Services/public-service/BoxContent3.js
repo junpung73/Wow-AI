@@ -45,7 +45,7 @@ const Detail = {
   fontSize: "18px",
   lineHeight: "18px",
   marginBottom: "0",
-  textAlign: "justify",
+  textAlign: "left",
 }
 
 const BoxContent3 = ({ index, isActive, handleClickShowBox, content }) => {
@@ -72,16 +72,6 @@ const BoxContent3 = ({ index, isActive, handleClickShowBox, content }) => {
         </BoxDetail>
       </div>
     </ReactCardFlip>
-    // <BoxStyled>
-    //   <TitleStyled onClick={() => handleClickShowBox(index)}>
-    //     {content.title}
-    //   </TitleStyled>
-    //   {isActive && (
-    //     <BoxDetail onClick={() => handleClickShowBox(null)}>
-    //       {content.description}
-    //     </BoxDetail>
-    //   )}
-    // </BoxStyled>
   );
 };
 

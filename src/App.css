@@ -91,11 +91,11 @@
 }
 
 .img-slide-content {
-  border-radius: 30px;
+  border-radius: 20px;
   aspect-ratio: 1/1;
 }
 .img-slide-content4 {
-  border-radius: 30px;
+  border-radius: 20px;
   aspect-ratio: 24/19;
 }
 .slick-prev,

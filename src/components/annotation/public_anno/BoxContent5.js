@@ -4,7 +4,7 @@ import ReactCardFlip from 'react-card-flip';
 
 const BoxStyled = styled(Box)({
   position: "relative",
-  borderRadius: "30px",
+  borderRadius: "15px",
   aspectRatio: "1/1",
   display: "flex",
   justifyContent: "center",
@@ -32,12 +32,12 @@ const TitleStyled = styled("h1")(({ theme }) => ({
 }));
 const BoxDetail = styled(Box)({
   position: "relative",
-  borderRadius: "30px",
+  borderRadius: "15px",
   aspectRatio: "1/1",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  padding: "2%",
+  padding: "5%",
   backgroundColor: "var(--primary-text)",
   color: "var(--secondary-text)",
   cursor: "pointer",
@@ -46,7 +46,7 @@ const Detail = {
   fontSize: "14px",
   lineHeight: "14px",
   marginBottom: "0",
-  textAlign: "justify",
+  textAlign: "left",
 }
 
 const BoxContent5 = ({ index, isActive, handleClickShowBox, content }) => {

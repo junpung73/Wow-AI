@@ -2,10 +2,6 @@ import { styled } from "@mui/material";
 import React from "react";
 import "react-slideshow-image/dist/styles.css";
 
-// const titleSlide = {
-//   fontWeight: "bold",
-//   fontSize: "var(--medium-text-3)",
-// };
 const LinkStyled = styled("a")({
   color: "var(--primary-text)",
   textDecoration: "none",
@@ -45,7 +41,41 @@ const SlideHome = () => {
         class="carousel slide"
         data-bs-ride="carousel"
       >
+        {/* Start */}
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            {/* <video
+              class="slide-image d-block w-100"
+              width="100%"
+              autoPlay
+              muted
+              loop
+            >
+              <source src="/videos/Final4_5.gif" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
+            <img class="slide-image d-block w-100" src="/videos/Final4_5.gif" alt="slide-gif"/>
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
         <div
+          style={{
+            position: "absolute",
+            top: "30vh",
+            display: "flex",
+            width: "100%",
+          }}
+        >
+          <div className="contain">
+            <Topic>A global provider of high-quality AI training data</Topic>
+            <a className="btn btn-light" href="/contact">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        {/* End */}
+
+        {/* <div
           class="carousel-indicators"
           style={{ "&:active": { backgroundColor: "var(--secondary-bg)" } }}
         >
@@ -145,7 +175,7 @@ const SlideHome = () => {
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> */}
         <ScrollDown>
           <div
             className="contain"
