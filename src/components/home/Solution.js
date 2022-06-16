@@ -12,7 +12,6 @@ const Box1 = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
-
   [theme.breakpoints.down("sm")]: {
     height: "16rem",
     fontSize: "var(--normal-text)",
@@ -72,9 +71,9 @@ const Solution = () => {
         </a>
       </div>
       <br />
-      <Grid container spacing={5}>
-        <Grid item xs={12} sm={6}>
-          <SlideContent content={solutions[0]} style={{marginBottom: '10rem'}} />
+      <Grid container spacing={6}>
+        <Grid item xs={12} sm={6} style={{marginBottom: '20px'}}>
+          <SlideContent content={solutions[0]}/>
         </Grid>
         <Grid item xs={12} sm={6} style={{ position: "relative" }}>
           <div

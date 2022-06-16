@@ -94,7 +94,10 @@
   border-radius: 30px;
   aspect-ratio: 1/1;
 }
-
+.img-slide-content4 {
+  border-radius: 30px;
+  aspect-ratio: 24/19;
+}
 .slick-prev,
 .slick-next {
   display: none !important;
@@ -354,6 +357,9 @@
 @media only screen and (max-width: 900px) {
   .title-description {
     padding: 0;
+  }
+  .img-slide-content4 {
+    aspect-ratio: 1/1;
   }
 }
 
