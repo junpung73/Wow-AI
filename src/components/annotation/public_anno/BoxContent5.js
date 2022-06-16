@@ -13,6 +13,10 @@ const BoxStyled = styled(Box)({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: "pointer",
+  transition: "all .5s ease",
+  '&:hover': {
+    backgroundColor: "var(--secondary-bg)",
+  }
 });
 
 const TitleStyled = styled("h1")(({ theme }) => ({
@@ -42,7 +46,7 @@ const Detail = {
   fontSize: "14px",
   lineHeight: "14px",
   marginBottom: "0",
-  textAlign: "center",
+  textAlign: "justify",
 }
 
 const BoxContent5 = ({ index, isActive, handleClickShowBox, content }) => {
@@ -54,7 +58,7 @@ const BoxContent5 = ({ index, isActive, handleClickShowBox, content }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div>
-        <BoxStyled onMouseOver={handleClick}>
+        <BoxStyled onClick={handleClick}>
           <TitleStyled>
             {content.title}
           </TitleStyled>
@@ -62,7 +66,7 @@ const BoxContent5 = ({ index, isActive, handleClickShowBox, content }) => {
       </div>
 
       <div>
-        <BoxDetail onMouseOut={handleClick}>
+        <BoxDetail onClick={handleClick}>
           <p style={Detail}>
             {content.description}
           </p>

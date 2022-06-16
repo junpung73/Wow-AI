@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
 import ReactCardFlip from 'react-card-flip';
 
-const BoxStyled = styled(Box)(({ theme }) => ({
+const BoxStyled = styled(Box)({
   position: "relative",
   borderRadius: "30px",
   aspectRatio: "1/1",
@@ -14,7 +14,11 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: "pointer",
-}));
+  transition: "all .5s ease",
+  '&:hover': {
+    backgroundColor: "var(--secondary-bg)",
+  }
+});
 
 const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--normal-text)",
@@ -27,7 +31,7 @@ const TitleStyled = styled("h1")(({ theme }) => ({
     padding: "0",
   },
 }));
-const BoxDetail = styled(Box)(({ theme }) => ({
+const BoxDetail = styled(Box)({
   position: "relative",
   borderRadius: "30px",
   aspectRatio: "1/1",
@@ -39,12 +43,12 @@ const BoxDetail = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--primary-text)",
   color: "var(--secondary-text)",
   cursor: "pointer",
-}));
+});
 const Detail = {
   fontSize: "14px",
   lineHeight: "14px",
   marginBottom: "0",
-  textAlign: "center",
+  textAlign: "justify",
 }
 
 const BoxContent4 = ({ content }) => {
