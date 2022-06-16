@@ -25,9 +25,9 @@ const SlideContent = ({ content }) => {
           )}
           {content.video1 && (
             <video
-              class="slide-image d-block w-100"
+              class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px'}}
+              style={{borderRadius: '30px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop
@@ -43,9 +43,9 @@ const SlideContent = ({ content }) => {
           )}
           {content.video2 && (
             <video
-              class="slide-image d-block w-100"
+              class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px'}}
+              style={{borderRadius: '30px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop
@@ -61,9 +61,9 @@ const SlideContent = ({ content }) => {
           )}
           {content.video3 && (
             <video
-              class="slide-image d-block w-100"
+              class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px'}}
+              style={{borderRadius: '30px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop
