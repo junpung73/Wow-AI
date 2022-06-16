@@ -343,6 +343,12 @@
   .title-content {
     font-size: var(--medium-text-2) !important;
   }
+  .slide-image {
+    height: 90vh;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
