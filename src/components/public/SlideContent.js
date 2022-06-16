@@ -27,7 +27,7 @@ const SlideContent = ({ content }) => {
             <video
               class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px', aspectRatio: '1/1'}}
+              style={{borderRadius: '20px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop
@@ -45,7 +45,7 @@ const SlideContent = ({ content }) => {
             <video
               class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px', aspectRatio: '1/1'}}
+              style={{borderRadius: '20px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop
@@ -63,7 +63,7 @@ const SlideContent = ({ content }) => {
             <video
               class="d-block w-100"
               width="100%"
-              style={{borderRadius: '30px', aspectRatio: '1/1'}}
+              style={{borderRadius: '20px', aspectRatio: '1/1'}}
               autoPlay
               muted
               loop

@@ -1,6 +1,6 @@
 import { Box, Grid, styled } from "@mui/material";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import ReactCardFlip from 'react-card-flip';
 
 const BoxStyled = styled(Box)({
   borderRadius: "30px",
@@ -8,6 +8,7 @@ const BoxStyled = styled(Box)({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  
 });
 
 const BoxContain = styled(Box)({
@@ -20,6 +21,11 @@ const BoxContain = styled(Box)({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   padding: "10%",
+  cursor: "pointer",
+  transition: "all .5s ease",
+  '&:hover': {
+    backgroundColor: "var(--secondary-bg)",
+  }
 });
 
 const ContaiService = styled("div")(({ theme }) => ({
@@ -35,6 +41,7 @@ const ContaiService = styled("div")(({ theme }) => ({
   },
 }));
 const TextStyled = styled("p")(({ theme }) => ({
+  marginBottom: "0",
   [theme.breakpoints.down("sm")]: {
     display: "-webkit-box",
     WebkitBoxOrient: "vertical",
@@ -46,85 +53,99 @@ const TextStyled = styled("p")(({ theme }) => ({
 const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
-  cursor: "pointer",
   padding: "8vh 1vh",
   [theme.breakpoints.down("md")]: {
     fontSize: "var(--normal-text)",
     padding: "0",
   },
 }));
-const BoxDetail = styled(Box)(({ theme }) => ({
+const BoxDetail = styled(Box)({
+  position: "relative",
   borderRadius: "30px",
-  height: "15rem",
   aspectRatio: "1/1",
   display: "flex",
-  position: "absolute",
-  padding: "0.5rem",
-  marginBottom: "2rem",
-  marginLeft: "2rem",
   justifyContent: "center",
   alignItems: "center",
-  textAlign: "justify",
+  padding: "10%",
   backgroundColor: "var(--primary-text)",
   color: "var(--secondary-text)",
-  lineHeight: "18px",
   cursor: "pointer",
-  [theme.breakpoints.down("lg")]: {
-    height: "18rem",
-  },
-  [theme.breakpoints.down("md")]: {
-    height: "14rem",
-  },
-  [theme.breakpoints.down("sm")]: {
-    height: "8rem",
-    lineHeight: "16px",
-    padding: "0.2rem",
-    borderRadius: "15px",
-  },
-}));
+});
 
 const TransServices = ({ content }) => {
-  const [active, setActive] = useState(null);
+  const [isFlipped1, setIsFlipped1] = useState(false);
+  const [isFlipped2, setIsFlipped2] = useState(false);
 
-  const handleClickShowBox = (index) => {
-    setActive(index);
-  };
+  const handleClick1 = () => {
+    setIsFlipped1(!isFlipped1);
+  }
+  const handleClick2 = () => {
+    setIsFlipped2(!isFlipped2);
+  }
   return (
     <ContaiService id="trans-services" className="section-scroll">
       <h1 className="title-content" style={{ textAlign: "center" }}>
         Transcription Services
       </h1>
-      {content.map((content, index) => {
-        const isActive = active === index;
-        return (
-          <Grid container spacing={2} style={{ marginTop: "1px" }}>
-            <Grid item xs={6}>
-              <BoxStyled>
-                <img
-                  src={content.img}
-                  alt="transcription service"
-                  style={{ borderRadius: "30px", width: "100%" }}
-                />
-              </BoxStyled>
-            </Grid>
-            <Grid item xs={6}>
-              <BoxContain>
-                <TitleStyled onClick={() => handleClickShowBox(index)}>
-                  {content.title}
+      <Grid container spacing={2} style={{ marginTop: "1px" }}>
+        <Grid item xs={6}>
+          <BoxStyled>
+            <img
+              src={content[0].img}
+              alt="transcription service"
+              style={{ borderRadius: "30px", width: "100%" }}
+            />
+          </BoxStyled>
+        </Grid>
+        <Grid item xs={6}>
+          <ReactCardFlip isFlipped={isFlipped1} flipDirection="horizontal">
+            <div>
+              <BoxContain onClick={handleClick1}>
+                <TitleStyled>
+                  {content[0].title}
                 </TitleStyled>
-                {isActive && (
-                  <BoxDetail onClick={() => handleClickShowBox(null)}>
-                    <TextStyled>
-                      Audio transcription is the process of converting spoken
-                      language into written language. This is what we do best.
-                    </TextStyled>
-                  </BoxDetail>
-                )}
               </BoxContain>
-            </Grid>
-          </Grid>
-        );
-      })}
+            </div>
+
+            <div>
+              <BoxDetail onClick={handleClick1}>
+                <TextStyled>
+                  {content[0].description}
+                </TextStyled>
+              </BoxDetail>
+            </div>
+          </ReactCardFlip>
+        </Grid>
+
+        <Grid item xs={6}>
+          <BoxStyled>
+            <img
+              src={content[1].img}
+              alt="transcription service"
+              style={{ borderRadius: "30px", width: "100%" }}
+            />
+          </BoxStyled>
+        </Grid>
+        <Grid item xs={6}>
+          <ReactCardFlip isFlipped={isFlipped2} flipDirection="horizontal">
+            <div>
+              <BoxContain onClick={handleClick2}>
+                <TitleStyled>
+                  {content[1].title}
+                </TitleStyled>
+              </BoxContain>
+            </div>
+
+            <div>
+              <BoxDetail onClick={handleClick2}>
+                <TextStyled>
+                  {content[1].description}
+                </TextStyled>
+              </BoxDetail>
+            </div>
+          </ReactCardFlip>
+        </Grid>
+      </Grid>
     </ContaiService>
   );
 };
