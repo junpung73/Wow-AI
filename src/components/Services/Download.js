@@ -37,6 +37,12 @@ const MedicalStyled = styled("a")(({ theme }) => ({
     width: "30%",
   },
 }));
+const LinkS = styled('span')({
+  transition: "all .3s ease",
+  '&:hover': {
+    fontWeight: 'bold'
+  }
+});
 
 const Download = () => {
   return (
@@ -52,23 +58,25 @@ const Download = () => {
       <BoxStyled>
         <RowStyled>
           <h1 className="title-description">Medical dataset</h1>
-          <VerticalLine></VerticalLine>
+          <VerticalLine/>
           <h1 className="title-description">OCR dataset</h1>
-          <VerticalLine></VerticalLine>
+          <VerticalLine/>
           <h1 className="title-description">Audio dataset</h1>
         </RowStyled>
         <RowStyled>
           <a href="#download" style={LinkStyle}>
-            <ImgStyled src="/images/Group882.png" alt="Download" />
-            <span> Imaging data </span>
+            <ImgStyled src="/images/Group882.svg" alt="Download" />
+            <LinkS> Imaging data </LinkS>
           </a>
+          <VerticalLine style={{borderColor: "var(priamry-bg)"}}/>
           <a href="#download" style={LinkStyle}>
-            <ImgStyled src="/images/Group882.png" alt="Download" />
-            <span> Imaging data </span>
+            <ImgStyled src="/images/Group882.svg" alt="Download" />
+            <LinkS> Imaging data </LinkS>
           </a>
+          <VerticalLine style={{borderColor: "var(priamry-bg)"}}/>
           <a href="#download" style={LinkStyle}>
-            <ImgStyled src="/images/Group882.png" alt="Download" />
-            <span> Audio data </span>
+            <ImgStyled src="/images/Group882.svg" alt="Download" />
+            <LinkS> Audio data </LinkS>
           </a>
         </RowStyled>
         <div
@@ -76,16 +84,19 @@ const Download = () => {
             display: "flex",
             justifyContent: "space-around",
             padding: "5vh 0",
+            margin: "0 2vh",
           }}
         >
           <a href="#download" style={LinkStyle}>
-            <ImgStyled src="/images/Group882.png" alt="Download" />
-            <span> Audio data </span>
+            <ImgStyled src="/images/Group882.svg" alt="Download" />
+            <LinkS> Audio data </LinkS>
           </a>
-          <div>&emsp; &emsp; &emsp;</div>
+          <VerticalLine style={{borderColor: "var(priamry-bg)"}}/>
+          <div>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; </div>
+          <VerticalLine style={{borderColor: "var(priamry-bg)"}}/>
           <MedicalStyled href="#download" style={LinkStyle}>
-            <ImgStyled src="/images/Group882.png" alt="Download" />
-            <span> Medical Audio data </span>
+            <ImgStyled src="/images/Group882.svg" alt="Download" />
+            <LinkS> Medical Audio data </LinkS>
           </MedicalStyled>
         </div>
       </BoxStyled>

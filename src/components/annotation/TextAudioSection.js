@@ -50,30 +50,30 @@ const TextAudioSection = ({ content }) => {
                   padding: "1vh",
                 }}
               >
-                <div>
+                <>
                   <img
                     src={content.img1}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19" }}
+                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
                   />
-                </div>
-                <div>
+                </>
+                <>
                   <img
                     src={content.img2}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19" }}
+                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
                   />
-                </div>
-                <div>
+                </>
+                <>
                   <img
                     src={content.img3}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19" }}
+                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
                   />
-                </div>
+                </>
               </Slider>
             </div>
           </Grid>
