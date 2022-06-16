@@ -10,6 +10,7 @@ import Resources from "./pages/Resource/Resources";
 import DataAnnotation from "./pages/Services/DataAnnotation";
 import DataCollection from "./pages/Services/DataCollection";
 import DataTranscription from "./pages/Services/DataTranscription";
+import Loading from "./pages/Loading/Loading";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail-blog" element={<DetailBlog />} />
+        <Route path="/loading" element={<Loading />} />
       </Routes>
     </BrowserRouter>
   );
