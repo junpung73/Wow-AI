@@ -4,7 +4,7 @@ import React from "react";
 const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--secondary-text)",
   borderRadius: "30px",
-  // width: "22%",
+  width: "22%",
   aspectRatio: "1/1",
   display: "flex",
   justifyContent: "center",
@@ -21,7 +21,7 @@ const ContentStyled = styled("div")(({ theme }) => ({
     fontSize: "var(--small-text)",
   },
 }));
-
+ 
 const Management = () => {
   return (
     <div
@@ -43,6 +43,8 @@ const Management = () => {
             style={{
               padding: "5px",
               width: "100%",
+              border: "0px solid var(--secondary-bg)",
+              borderRadius: "15px",
             }}
           />
         </Grid>
@@ -59,37 +61,7 @@ const Management = () => {
               assets.
             </i>
           </ContentStyled>
-          <Grid container spacing={2} style={{marginTop: "10px", marginBottom: "15px"}}>
-            <Grid item xs={6} sm={3}>
-              <BoxStyled>
-                <p style={{ marginBottom: "0" }}>
-                  100,000 Global <br /> Freelancers
-                </p>
-              </BoxStyled>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <BoxStyled>
-                <p style={{ marginBottom: "0" }}>
-                  120+ <br /> Languages
-                </p>
-              </BoxStyled>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <BoxStyled>
-                <p style={{ marginBottom: "0" }}>
-                  247+ <br /> Support
-                </p>
-              </BoxStyled>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <BoxStyled>
-                <p style={{ marginBottom: "0" }}>
-                  98% <br /> Customer <br /> Satisfation
-                </p>
-              </BoxStyled>
-            </Grid>
-          </Grid>
-          {/* <div
+          <div
             style={{
               display: "flex",
               width: "100%",
@@ -97,8 +69,27 @@ const Management = () => {
               margin: "2vh 0",
             }}
           >
-
-          </div> */}
+            <BoxStyled>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
+                100,000 Global <br /> Freelancers
+              </p>
+            </BoxStyled>
+            <BoxStyled>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
+                120+ <br /> Languages
+              </p>
+            </BoxStyled>
+            <BoxStyled>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
+                247+ <br /> Support
+              </p>
+            </BoxStyled>
+            <BoxStyled>
+              <p style={{ marginBottom: "0", padding:"10px" }}>
+                98% <br /> Customer <br /> Satisfation
+              </p>
+            </BoxStyled>
+          </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <a href="/contact" className="btn btn-dark">
               Contact us now
