@@ -2,10 +2,10 @@ import { styled } from "@mui/material";
 import React from "react";
 import "react-slideshow-image/dist/styles.css";
 
-const titleSlide = {
-  fontWeight: "bold",
-  fontSize: "var(--medium-text-3)",
-};
+// const titleSlide = {
+//   fontWeight: "bold",
+//   fontSize: "var(--medium-text-3)",
+// };
 const LinkStyled = styled("a")({
   color: "var(--primary-text)",
   textDecoration: "none",
@@ -16,7 +16,7 @@ const LinkStyled = styled("a")({
     color: "var(--primary-text)",
   },
 });
-const Topic = styled("h5")(({ theme }) => ({
+const Topic = styled("h1")(({ theme }) => ({
   fontSize: "var(--medium-text-1)",
   fontWeight: "bold",
   paddingBottom: "30px",
@@ -25,6 +25,15 @@ const Topic = styled("h5")(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "26px",
+  },
+}));
+const ScrollDown = styled("div")(({ theme }) => ({
+  position: "absolute",
+  bottom: "3vh",
+  display: "flex",
+  width: "100%",
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
   },
 }));
 
@@ -140,14 +149,7 @@ const SlideHome = () => {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        <div
-          style={{
-            position: "absolute",
-            bottom: "3vh",
-            display: "flex",
-            width: "100%",
-          }}
-        >
+        <ScrollDown>
           <div
             className="contain"
             style={{
@@ -158,7 +160,7 @@ const SlideHome = () => {
           >
             <LinkStyled href="#aboutus">Scroll Down</LinkStyled>
           </div>
-        </div>
+        </ScrollDown>
       </div>
     </div>
   );

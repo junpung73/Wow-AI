@@ -73,7 +73,7 @@ const Solution = () => {
       </div>
       <br />
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} style={{marginBottom: '20px'}}>
           <SlideContent content={solutions[0]} />
         </Grid>
         <Grid item xs={12} sm={6} style={{ position: "relative" }}>
