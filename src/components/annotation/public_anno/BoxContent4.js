@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
+import ReactCardFlip from 'react-card-flip';
 
 const BoxStyled = styled(Box)(({ theme }) => ({
   position: "relative",
@@ -13,9 +14,6 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: "pointer",
-  [theme.breakpoints.down("sm")]: {
-    borderRadius: "15px",
-  },
 }));
 
 const TitleStyled = styled("h1")(({ theme }) => ({
@@ -30,43 +28,59 @@ const TitleStyled = styled("h1")(({ theme }) => ({
   },
 }));
 const BoxDetail = styled(Box)(({ theme }) => ({
+  position: "relative",
   borderRadius: "30px",
-  height: "12rem",
   aspectRatio: "1/1",
   display: "flex",
-  position: "absolute",
-  padding: "0.5rem",
-  marginBottom: "2rem",
-  marginLeft: "2rem",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  textAlign: "justify",
+  padding: "2%",
   backgroundColor: "var(--primary-text)",
   color: "var(--secondary-text)",
-  lineHeight: "18px",
-  [theme.breakpoints.down("md")]: {
-    height: "12rem",
-  },
-  [theme.breakpoints.down("sm")]: {
-    height: "10rem",
-    lineHeight: "16px",
-    padding: "0.2rem",
-    borderRadius: "15px",
-  },
+  cursor: "pointer",
 }));
+const Detail = {
+  fontSize: "14px",
+  lineHeight: "14px",
+  marginBottom: "0",
+  textAlign: "center",
+}
 
-const BoxContent4 = ({ index, isActive, handleClickShowBox, content }) => {
+const BoxContent4 = ({ content }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  }
   return (
-    <BoxStyled>
-      <TitleStyled onClick={() => handleClickShowBox(index)}>
-        {content.title}
-      </TitleStyled>
-      {isActive && (
-        <BoxDetail onClick={() => handleClickShowBox(null)}>
-          {content.description}
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <div>
+        <BoxStyled onClick={handleClick}>
+          <TitleStyled>
+            {content.title}
+          </TitleStyled>
+        </BoxStyled>
+      </div>
+
+      <div>
+        <BoxDetail onClick={handleClick}>
+          <p style={Detail}>
+            {content.description}
+          </p>
         </BoxDetail>
-      )}
-    </BoxStyled>
+      </div>
+    </ReactCardFlip>
+    // <BoxStyled>
+    //   <TitleStyled onClick={() => handleClickShowBox(index)}>
+    //     {content.title}
+    //   </TitleStyled>
+    //   {isActive && (
+    //     <BoxDetail onClick={() => handleClickShowBox(null)}>
+    //       {content.description}
+    //     </BoxDetail>
+    //   )}
+    // </BoxStyled>
   );
 };
 
