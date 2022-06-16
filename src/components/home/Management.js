@@ -41,8 +41,6 @@ const Management = () => {
             src="/images/image36.png"
             alt="management"
             style={{
-              border: "2px solid var(--secondary-bg)",
-              borderRadius: "15px",
               padding: "5px",
               width: "100%",
             }}
@@ -70,23 +68,23 @@ const Management = () => {
             }}
           >
             <BoxStyled>
-              <p style={{ marginBottom: '0' }}>
+              <p style={{ marginBottom: "0" }}>
                 100,000 Global <br /> Freelancers
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: '0' }}>
+              <p style={{ marginBottom: "0" }}>
                 120+ <br /> Languages
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: '0' }}>
+              <p style={{ marginBottom: "0" }}>
                 247+ <br /> Support
               </p>
             </BoxStyled>
             <BoxStyled>
-              <p style={{ marginBottom: '0' }}>
-                100% <br /> Customer <br /> Satisfation
+              <p style={{ marginBottom: "0" }}>
+                98% <br /> Customer <br /> Satisfation
               </p>
             </BoxStyled>
           </div>
