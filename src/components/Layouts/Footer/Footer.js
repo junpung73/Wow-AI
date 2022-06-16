@@ -10,10 +10,7 @@ const Footer = () => {
             <a href="/">
               <img src="Frame.png" alt="logo" />
             </a>
-            <h3>
-              A trusted partner that provides high-quality data solutions for AI
-              training at a large scale.
-            </h3>
+            <h3>A global provider of high-quality AI training data</h3>
           </LogoCol>
           <ListCol>
             <h3>Company</h3>

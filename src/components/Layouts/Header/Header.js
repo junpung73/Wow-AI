@@ -41,14 +41,14 @@ export default function Header() {
               <io.IoIosArrowDown />
             </InfoText>
           </Wrapper>
-          <Wrapper>
+          <Wrapper style={{ gap: "30px" }}>
             <InfoText>
               <fa.FaMapMarkerAlt />
               34th ST STE 1018, NY, USA
             </InfoText>
             <InfoText>
               <io5.IoMail />
-              34th ST STE 1018, NY, USA
+              contact@wow-ai.com
             </InfoText>
           </Wrapper>
         </Wrapper>

@@ -28,6 +28,10 @@ export const LogoCol = styled(Col)`
     width: 120px;
     margin-bottom: 20px;
   }
+
+  h3 {
+    font-weight: normal;
+  }
 `;
 
 export const ListCol = styled(Col)`
