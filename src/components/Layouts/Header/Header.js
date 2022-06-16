@@ -48,7 +48,7 @@ export default function Header() {
             </InfoText>
             <InfoText>
               <io5.IoMail />
-              34th ST STE 1018, NY, USA
+              contact@wow-ai.com
             </InfoText>
           </Wrapper>
         </Wrapper>
