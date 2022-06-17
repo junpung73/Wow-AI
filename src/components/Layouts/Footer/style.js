@@ -108,16 +108,24 @@ export const Social = styled.div`
   aspect-ratio: 1;
   background-color: white;
   width: fit-content;
-  /* height: 100%; */
+  height: 100%;
   line-height: 1;
-  padding: 10px;
+  padding: 7px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
 
   svg {
     color: var(--primary-bg);
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    svg {
+      color: var(--secondary-bg);
+    }
   }
 `;

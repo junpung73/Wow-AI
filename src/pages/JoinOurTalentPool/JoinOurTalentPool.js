@@ -269,7 +269,8 @@ const JoinOurTalentPool = () => {
             prevEl: ".prevBtn",
             nextEl: ".nextBtn",
           }}
-          style={{ display: "static", width: "100%" }}
+          pagination={{ clickable: true }}
+          style={{ display: "static", width: "100%", paddingBottom: "40px" }}
         >
           <SwiperSlide>
             <Quote>
@@ -356,7 +357,8 @@ const JoinOurTalentPool = () => {
             prevEl: ".prevBtnBlogs",
             nextEl: ".nextBtnBlogs",
           }}
-          style={{ display: "static", width: "100%" }}
+          pagination={{ clickable: true }}
+          style={{ display: "static", width: "100%", paddingBottom: "40px" }}
         >
           <SwiperSlide>
             <BlogItem>

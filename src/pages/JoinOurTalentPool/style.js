@@ -366,6 +366,13 @@ export const Quote = styled(Card)`
   background-color: white;
   color: var(--secondary-text);
   aspect-ratio: 1;
+  overflow: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   &:hover {
     background-color: var(--secondary-text);
@@ -378,7 +385,7 @@ export const Quote = styled(Card)`
   }
 
   @media (max-width: 769px) {
-    aspect-ratio: 2;
+    aspect-ratio: 1.5;
     flex: 1 0 100%;
     width: 100%;
 
@@ -412,6 +419,7 @@ export const BlogItem = styled(Card)`
   padding: 0;
   border-radius: 10px;
   flex: 1 0 33%;
+  height: fit-content;
   h4 {
     margin: 8px 0;
     color: #b8b8b8;
