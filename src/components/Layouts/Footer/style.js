@@ -40,6 +40,7 @@ export const LogoCol = styled(Col)`
 export const ListCol = styled(Col)`
   white-space: nowrap;
   padding-left: 10px;
+  width: fit-content;
   h3 {
     padding: 10px 0;
   }
@@ -99,7 +100,7 @@ export const SocialRow = styled.div`
   width: 100%;
   height: fit-content;
   display: flex;
-  gap: 30px;
+  justify-content: start;
   margin-top: 20px;
 `;
 
@@ -107,12 +108,16 @@ export const Social = styled.div`
   aspect-ratio: 1;
   background-color: white;
   width: fit-content;
-  padding: 15px;
+  /* height: 100%; */
+  line-height: 1;
+  padding: 10px;
   border-radius: 50%;
+  margin-right: 10px;
 
   svg {
     color: var(--primary-bg);
     width: 100%;
-    font-size: 30px;
+    height: 100%;
+    font-size: 20px;
   }
 `;
