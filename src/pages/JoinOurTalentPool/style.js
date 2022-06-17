@@ -265,7 +265,7 @@ export const Card = styled.a`
   flex-direction: column;
   position: relative;
   color: white;
-  transition: top 2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   flex: 1 1 25%;
   border-radius: 30px;
   background-color: var(--secondary-text);

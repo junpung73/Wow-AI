@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
-import ReactCardFlip from 'react-card-flip';
+import ReactCardFlip from "react-card-flip";
 
 const BoxStyled = styled(Box)({
   position: "relative",
@@ -14,19 +14,19 @@ const BoxStyled = styled(Box)({
   color: "var(--primary-text)",
   cursor: "pointer",
   transition: "all .5s ease",
-  '&:hover': {
+  "&:hover": {
     backgroundColor: "var(--secondary-bg)",
-  }
+  },
 });
 
 const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: "var(--normal-text)",
-  fontWeight: "500",
+  fontWeight: "bold",
   padding: "1vh",
-  textAlign: 'center',
+  textAlign: "center",
   [theme.breakpoints.down("md")]: {
     fontSize: "var(--normal-text)",
-    fontWeight: "normal",
+    fontWeight: "bold",
     padding: "0",
   },
 }));
@@ -47,29 +47,25 @@ const Detail = {
   lineHeight: "14px",
   marginBottom: "0",
   textAlign: "left",
-}
+};
 
 const BoxContent5 = ({ index, isActive, handleClickShowBox, content }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
     setIsFlipped(!isFlipped);
-  }
+  };
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div>
         <BoxStyled onClick={handleClick}>
-          <TitleStyled>
-            {content.title}
-          </TitleStyled>
+          <TitleStyled>{content.title}</TitleStyled>
         </BoxStyled>
       </div>
 
       <div>
         <BoxDetail onClick={handleClick}>
-          <p style={Detail}>
-            {content.description}
-          </p>
+          <p style={Detail}>{content.description}</p>
         </BoxDetail>
       </div>
     </ReactCardFlip>
