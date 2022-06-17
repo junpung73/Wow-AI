@@ -9,6 +9,14 @@ const BoxStyled = styled(Box)({
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
+  position: "relative",
+  cursor: "pointer",
+  transition: "all .3s ease",
+  "&:hover": {
+    top: "-20px",
+    backgroundColor: "var(--primary-text)",
+    color: "var(--secondary-text)",
+  }
 });
 const TitleStyled = styled("p")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",

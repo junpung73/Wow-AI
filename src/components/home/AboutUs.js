@@ -31,7 +31,8 @@ const AboutUs = () => {
               aspectRatio: "16/9",
             }}
             image="/videos/ATrustedPartner.mp4"
-            controls
+            autoPlay
+            muted
             loop
           />
         </Col>

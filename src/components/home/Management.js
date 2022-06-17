@@ -7,8 +7,16 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   aspectRatio: "1/1",
   display: "flex",
   justifyContent: "center",
+  position: "relative",
   alignItems: "center",
   textAlign: "center",
+  cursor: "pointer",
+  transition: "all .3s ease",
+  '&:hover': {
+    top: "-20px",
+    backgroundColor: "var(--primary-text)",
+    color: "var(--secondary-text)",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "12px",
     borderRadius: "15px",
