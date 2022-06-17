@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
   white-space: nowrap;
 
   > a > img {
-    width: 120px;
+    width: 150px;
     margin: 20px 0;
   }
 
