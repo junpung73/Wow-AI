@@ -12,11 +12,6 @@ const BoxContain = styled("div")(({ theme }) => ({
 }));
 
 const SpeechCollection = ({ content }) => {
-  const [active, setActive] = useState(null);
-
-  const handleClickShowBox = (index) => {
-    setActive(index);
-  };
   return (
     <div
       className="section-scroll"
@@ -28,19 +23,11 @@ const SpeechCollection = ({ content }) => {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
             <Grid container spacing={3}>
-              {content.boxst.map((content, index) => {
-                const isActive = active === index;
-                return (
+              {content.boxst.map((content, index) => (
                   <Grid item key={index} xs={6} sm={12}>
-                    <BoxContent2
-                      index={index}
-                      isActive={isActive}
-                      handleClickShowBox={handleClickShowBox}
-                      content={content}
-                    />
+                    <BoxContent2 content={content}/>
                   </Grid>
-                );
-              })}
+                ))}
             </Grid>
           </Grid>
           <Grid item xs={12} sm={8}>

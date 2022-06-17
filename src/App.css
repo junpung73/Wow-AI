@@ -127,6 +127,13 @@
   color: var(--secondary-bg);
 }
 
+.title-descrip {
+  font-size: var(--medium-text-3);
+  font-weight: bold;
+  padding: 2vh 0 1.5vh 0;
+  color: var(--primary-text);
+}
+
 .title-description {
   font-size: var(--medium-text-3) !important;
   font-weight: bold !important;

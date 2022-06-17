@@ -12,7 +12,11 @@ const Box1 = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
-
+  transition: "all .3s ease",
+  cursor: "pointer",
+  "&:hover": {
+    transform: 'scale(1.1)',
+  },
   [theme.breakpoints.down("sm")]: {
     height: "16rem",
     fontSize: "var(--normal-text)",
@@ -73,7 +77,7 @@ const Solution = () => {
       </div>
       <br />
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={6} style={{marginBottom: '20px'}}>
+        <Grid item xs={12} sm={6} style={{ marginBottom: '20px' }}>
           <SlideContent content={solutions[0]} />
         </Grid>
         <Grid item xs={12} sm={6} style={{ position: "relative" }}>
@@ -86,7 +90,7 @@ const Solution = () => {
             }}
           >
             <Box1>
-              <h1 className="title-description" style={{ padding: "0" }}>
+              <h1 className="title-description" style={{ padding: "0", cursor: "pointer", }}>
                 Free Consultation
               </h1>
             </Box1>
@@ -101,6 +105,7 @@ const Solution = () => {
                 your AI.
               </p>
             </Box2>
+
           </div>
         </Grid>
       </Grid>
