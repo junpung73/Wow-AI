@@ -10,7 +10,7 @@ const BoxStyled = styled(Box)({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  padding: "2%",
+  padding: "15px",
   backgroundColor: "var(--secondary-text)",
   color: "var(--primary-text)",
   cursor: "pointer",
@@ -21,7 +21,7 @@ const BoxStyled = styled(Box)({
 });
 
 const TitleStyled = styled("h1")(({ theme }) => ({
-  fontSize: "var(--normal-text)",
+  fontSize: "14px",
   fontWeight: "bold",
   padding: "1vh",
   textAlign: "center",
@@ -46,7 +46,6 @@ const BoxDetail = styled(Box)({
 });
 const Detail = {
   fontSize: "14px",
-  lineHeight: "14px",
   marginBottom: "0",
   textAlign: "left",
 };

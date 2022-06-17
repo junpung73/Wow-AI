@@ -87,7 +87,7 @@ export default [
           "We provide video datasets of diverse human postures like walking, sitting, sleeping, etc. in various lighting circumstances ranging.",
       },
       {
-        title: "CCTV/Surveillance Video Dataset",
+        title: "CCTV/ Surveillance Video Dataset",
         description:
           "We can gather surveillance footage from security cameras to help investigators train and detect people with criminal histories.",
       },
