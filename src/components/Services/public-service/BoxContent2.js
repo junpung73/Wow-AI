@@ -42,14 +42,18 @@ const BoxDetail = styled(Box)({
   color: "var(--secondary-text)",
   cursor: "pointer",
 });
-const Detail = {
+const Detail = styled("p")(({ theme }) => ({
   fontSize: "18px",
   lineHeight: "18px",
   marginBottom: "0",
-  textAlign: "justify",
-}
+  textAlign: "left",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+    lineHeight: "16px",
+  },
+}));
 
-const BoxContent2 = ({ index, isActive, handleClickShowBox, content }) => {
+const BoxContent2 = ({ content }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
@@ -67,9 +71,9 @@ const BoxContent2 = ({ index, isActive, handleClickShowBox, content }) => {
 
       <div>
         <BoxDetail onClick={handleClick}>
-          <p style={Detail}>
+          <Detail>
             {content.description}
-          </p>
+          </Detail>
         </BoxDetail>
       </div>
     </ReactCardFlip>

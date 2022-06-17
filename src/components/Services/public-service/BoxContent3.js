@@ -26,7 +26,7 @@ const TitleStyled = styled("h1")(({ theme }) => ({
   padding: "1vh 0",
   cursor: "pointer",
   [theme.breakpoints.down("md")]: {
-    fontSize: "var(--normal-text)",
+    fontSize: "var(--small-text)",
     padding: "0",
   },
 }));
@@ -41,14 +41,18 @@ const BoxDetail = styled(Box)({
   color: "var(--secondary-text)",
   cursor: "pointer",
 });
-const Detail = {
+const Detail = styled("p")(({ theme }) => ({
   fontSize: "18px",
   lineHeight: "18px",
   marginBottom: "0",
   textAlign: "left",
-}
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+    lineHeight: "16px",
+  },
+}));
 
-const BoxContent3 = ({ index, isActive, handleClickShowBox, content }) => {
+const BoxContent3 = ({ content }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
@@ -66,9 +70,9 @@ const BoxContent3 = ({ index, isActive, handleClickShowBox, content }) => {
 
       <div>
         <BoxDetail onClick={handleClick}>
-          <p style={Detail}>
+          <Detail>
             {content.description}
-          </p>
+          </Detail>
         </BoxDetail>
       </div>
     </ReactCardFlip>

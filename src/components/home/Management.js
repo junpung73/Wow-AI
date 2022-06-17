@@ -48,6 +48,8 @@ const Management = () => {
             src="/images/image36.png"
             alt="management"
             style={{
+              borderRadius: "30px",
+              border: "2px solid var(--secondary-bg)",
               padding: "5px",
               width: "100%",
             }}
