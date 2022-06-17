@@ -1,7 +1,7 @@
 import { Box, Grid, Link, styled } from "@mui/material";
 import React from "react";
 
-const BoxStyled = styled(Box)({
+const BoxStyled = styled(Box)(({ theme }) => ({
   border: "2px solid var(--secondary-bg)",
   borderRadius: "15px",
   padding: "10px",
@@ -14,7 +14,10 @@ const BoxStyled = styled(Box)({
   "&:hover": {
     backgroundColor: "var(--secondary-text)",
   },
-});
+  [theme.breakpoints.down("sm")]: {
+    aspectRatio: "1/1.7",
+  },
+}));
 
 const BoxContent = {
   paddingLeft: "20px",
@@ -72,29 +75,25 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <TitleStyled>+ Data collection</TitleStyled>
-              <UlStyled>
-                <li>Text data collection</li>
-                <li>Image data collection</li>
-                <li>Speech data collection</li>
-                <li>Audio data collection</li>
-              </UlStyled>
-            </div>
+            <TitleStyled>+ Data collection</TitleStyled>
+            <UlStyled>
+              <li>Text data collection</li>
+              <li>Image data collection</li>
+              <li>Speech data collection</li>
+              <li>Audio data collection</li>
+            </UlStyled>
             <LinkStyled>
               Discover now &nbsp;
               <img src="/images/Vector9.png" alt="..." />
             </LinkStyled>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <TitleStyled>+ Transcription</TitleStyled>
-              <UlStyled>
-                <li>Image Transcription</li>
-                <li>Audio Transcription</li>
-                <li>Tailor-made solution</li>
-              </UlStyled>
-            </div>
+            <TitleStyled>+ Transcription</TitleStyled>
+            <UlStyled>
+              <li>Image Transcription</li>
+              <li>Audio Transcription</li>
+              <li>Tailor-made solution</li>
+            </UlStyled>
             <LinkStyled>
               Learn more &nbsp;
               <img src="/images/Vector9.png" alt="..." />
@@ -103,15 +102,13 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <TitleStyled>+ Data annotation</TitleStyled>
-              <UlStyled>
-                <li>Text data annotation</li>
-                <li>Image data annotation</li>
-                <li>Speech data annotation</li>
-                <li>Audio data annotation</li>
-              </UlStyled>
-            </div>
+            <TitleStyled>+ Data annotation</TitleStyled>
+            <UlStyled>
+              <li>Text data annotation</li>
+              <li>Image data annotation</li>
+              <li>Speech data annotation</li>
+              <li>Audio data annotation</li>
+            </UlStyled>
             <div style={{ display: "flex" }}>
               <LinkStyled>
                 Free <br /> Consultation &nbsp;
