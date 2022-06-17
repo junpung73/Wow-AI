@@ -44,17 +44,17 @@ const SlideHome = () => {
         {/* Start */}
         <div class="carousel-inner">
           <div class="carousel-item active">
-            {/* <video
+            <video
               class="slide-image d-block w-100"
               width="100%"
               autoPlay
               muted
               loop
             >
-              <source src="/videos/Final4_5.gif" type="video/mp4" />
+              <source src="/videos/Final4.mp4" type="video/mp4" />
               Your browser does not support the video tag.
-            </video> */}
-            <img class="slide-image d-block w-100" src="/videos/Final4_5.gif" alt="slide-gif"/>
+            </video>
+            {/* <img class="slide-image d-block w-100" src="/videos/Final4_5.gif" alt="slide-gif"/> */}
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
         </div>
