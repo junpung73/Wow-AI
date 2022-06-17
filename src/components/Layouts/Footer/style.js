@@ -107,20 +107,17 @@ export const SocialRow = styled.div`
 export const Social = styled.a`
   aspect-ratio: 1;
   background-color: white;
-  width: fit-content;
-  height: 100%;
-  line-height: 1;
+  width: 30px;
+  height: 30px;
   padding: 7px;
   border-radius: 50%;
   margin-right: 20px;
+  display: flex;
   justify-content: center;
-  align-items: center;
   cursor: pointer;
 
   svg {
     color: var(--primary-bg);
-    width: 100%;
-    height: 100%;
     font-size: 16px;
   }
 
