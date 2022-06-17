@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
-import ReactCardFlip from "react-card-flip";
+import ReactCardFlip from 'react-card-flip';
 
 const BoxStyled = styled(Box)({
   position: "relative",
@@ -15,17 +15,17 @@ const BoxStyled = styled(Box)({
   backgroundColor: "var(--secondary-text)",
   cursor: "pointer",
   transition: "all .5s ease",
-  "&:hover": {
+  '&:hover': {
     backgroundColor: "var(--secondary-bg)",
-  },
+  }
 });
 
-const TitleStyled = styled("p")(({ theme }) => ({
-  // fontSize: "var(--medium-text-3)",
+const TitleStyled = styled("h1")(({ theme }) => ({
+  fontSize: "var(--medium-text-3)",
   fontWeight: "bold",
   cursor: "pointer",
   [theme.breakpoints.down("md")]: {
-    // fontSize: "var(--normal-text)",
+    fontSize: "var(--normal-text)",
     padding: "0",
   },
 }));
@@ -42,30 +42,38 @@ const BoxDetail = styled(Box)({
   color: "var(--secondary-text)",
   cursor: "pointer",
 });
-const Detail = {
+const Detail = styled("p")(({ theme }) => ({
   fontSize: "18px",
   lineHeight: "18px",
   marginBottom: "0",
-  textAlign: "justify",
-};
+  textAlign: "left",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+    lineHeight: "16px",
+  },
+}));
 
-const BoxContent2 = ({ index, isActive, handleClickShowBox, content }) => {
+const BoxContent2 = ({ content }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
     setIsFlipped(!isFlipped);
-  };
+  }
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div>
         <BoxStyled onClick={handleClick}>
-          <TitleStyled>{content.title}</TitleStyled>
+          <TitleStyled>
+            {content.title}
+          </TitleStyled>
         </BoxStyled>
       </div>
 
       <div>
         <BoxDetail onClick={handleClick}>
-          <p style={Detail}>{content.description}</p>
+          <Detail>
+            {content.description}
+          </Detail>
         </BoxDetail>
       </div>
     </ReactCardFlip>
