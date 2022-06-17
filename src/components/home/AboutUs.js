@@ -13,15 +13,15 @@ const AboutUs = () => {
       id="aboutus"
       className="section-scroll"
       style={{
-        height: "90vh",
+        height: "100vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
       <Row>
-        {/* <Col xs={12} lg={7} style={Video}>
-          <CardMedia
+        <Col xs={12} lg={7} style={Video}>
+          {/* <CardMedia
             component="video"
             width="100%"
             style={{
@@ -33,14 +33,17 @@ const AboutUs = () => {
             autoPlay
             muted
             loop
-            playsIn
-          />
-        </Col> */}
-        <Col
-          xs={12}
-          lg={5}
-          style={{ color: "var(--primary-text)", width: "100%" }}
-        >
+          /> */}
+          <img
+              src="/images/about-us.jpg"
+              alt="Services"
+              style={{
+                width: "100%",
+                padding: "5px",
+              }}
+            />
+        </Col>
+        <Col xs={12} lg={5} style={{ color: "var(--primary-text)", justifyContent: "center", display: "flex", flexDirection: "column" }}>
           <h5 className="title-content">About Us</h5>
           <div style={{ textAlign: "justify" }}>
             Wow AI is

@@ -10,7 +10,7 @@ const BoxStyled = styled(Box)({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  padding: "5%",
+  padding: "15px",
   color: "var(--primary-text)",
   backgroundColor: "var(--secondary-text)",
   cursor: "pointer",
@@ -25,6 +25,8 @@ const TitleStyled = styled("h1")(({ theme }) => ({
   fontWeight: "bold",
   padding: "1vh 0",
   cursor: "pointer",
+  textAlign: "center",
+  overflowWrap: 'break-word',
   [theme.breakpoints.down("md")]: {
     fontSize: "var(--small-text)",
     padding: "0",
@@ -43,12 +45,10 @@ const BoxDetail = styled(Box)({
 });
 const Detail = styled("p")(({ theme }) => ({
   fontSize: "18px",
-  lineHeight: "18px",
   marginBottom: "0",
   textAlign: "left",
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
-    lineHeight: "16px",
   },
 }));
 
