@@ -72,25 +72,29 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <TitleStyled>+ Data collection</TitleStyled>
-            <UlStyled>
-              <li>Text data collection</li>
-              <li>Image data collection</li>
-              <li>Speech data collection</li>
-              <li>Audio data collection</li>
-            </UlStyled>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <TitleStyled>+ Data collection</TitleStyled>
+              <UlStyled>
+                <li>Text data collection</li>
+                <li>Image data collection</li>
+                <li>Speech data collection</li>
+                <li>Audio data collection</li>
+              </UlStyled>
+            </div>
             <LinkStyled>
               Discover now &nbsp;
               <img src="/images/Vector9.png" alt="..." />
             </LinkStyled>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <TitleStyled>+ Transcription</TitleStyled>
-            <UlStyled>
-              <li>Image Transcription</li>
-              <li>Audio Transcription</li>
-              <li>Tailor-made solution</li>
-            </UlStyled>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <TitleStyled>+ Transcription</TitleStyled>
+              <UlStyled>
+                <li>Image Transcription</li>
+                <li>Audio Transcription</li>
+                <li>Tailor-made solution</li>
+              </UlStyled>
+            </div>
             <LinkStyled>
               Learn more &nbsp;
               <img src="/images/Vector9.png" alt="..." />
@@ -99,13 +103,15 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <TitleStyled>+ Data annotation</TitleStyled>
-            <UlStyled>
-              <li>Text data annotation</li>
-              <li>Image data annotation</li>
-              <li>Speech data annotation</li>
-              <li>Audio data annotation</li>
-            </UlStyled>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <TitleStyled>+ Data annotation</TitleStyled>
+              <UlStyled>
+                <li>Text data annotation</li>
+                <li>Image data annotation</li>
+                <li>Speech data annotation</li>
+                <li>Audio data annotation</li>
+              </UlStyled>
+            </div>
             <div style={{ display: "flex" }}>
               <LinkStyled>
                 Free <br /> Consultation &nbsp;
