@@ -27,7 +27,7 @@ const AboutUs = () => {
             style={{
               borderRadius: "15px",
               border: "2px solid var(--secondary-bg)",
-              padding: "8px",
+              
               aspectRatio: "16/9",
             }}
             image="/videos/aboutHome.mp4"

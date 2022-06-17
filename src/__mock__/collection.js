@@ -78,8 +78,7 @@ export default [
     description:
       "When it comes to video data collection services, Wow AI can provide you with the necessary skills, knowledge, resources, and scalability. Our videos are of the greatest quality and are specially designed to fit your needs. Each dataset is created specifically for you.",
       video1: "/images/collection/video/Traffic Video Dataset Collection.mp4",
-      video2: "/images/collection/video/Traffic Video Dataset Collection.mp4",
-      video3: "/images/collection/video/Traffic Video Dataset Collection.mp4",
+       
 
     boxst: [
       {
