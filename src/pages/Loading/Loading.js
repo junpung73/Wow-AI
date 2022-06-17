@@ -7,13 +7,11 @@ import { Container } from "./style";
 const Loading = () => {
   return (
     <>
-      <Header />
       <Container>
         <div>
           <img src="Frame.png" alt="logo" />
         </div>
       </Container>
-      <Footer />
     </>
   );
 };

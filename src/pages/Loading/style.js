@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 200px;
+  height: 100vh;
 
   font-size: 48px;
 

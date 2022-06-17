@@ -25,7 +25,7 @@ export const LogoCol = styled(Col)`
   padding-right: 10px;
 
   img {
-    width: 170px;
+    width: 150px;
     margin-bottom: 20px;
   }
 
