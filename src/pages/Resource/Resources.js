@@ -83,7 +83,9 @@ const Resources = () => {
               <p>Surge of this virus is unpredictable in this era. Thoughts?</p>
             </Item>
           </Grid>
-          <LoadMoreButton>Load More</LoadMoreButton>
+          <LoadMoreButton>
+            <h3>Load More</h3>
+          </LoadMoreButton>
         </Column>
       </Container>
       <Footer />

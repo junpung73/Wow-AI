@@ -50,6 +50,7 @@ const SlideHome = () => {
               autoPlay
               muted
               loop
+              playsInline
             >
               <source src="/videos/Final4.mp4" type="video/mp4" />
               Your browser does not support the video tag.

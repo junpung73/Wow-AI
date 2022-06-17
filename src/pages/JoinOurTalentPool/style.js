@@ -37,6 +37,11 @@ export const Title = styled.div`
     height: 55px;
     white-space: nowrap;
 
+    h3 {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
     &:hover {
       color: var(--secondary-text);
       background-color: white;
@@ -117,7 +122,8 @@ export const JoinButton = styled.button`
   margin-bottom: 30px;
   margin-top: 20px;
 
-  p {
+  h3 {
+    font-weight: normal;
     margin: 0;
   }
 
@@ -404,7 +410,11 @@ export const TalentButton = styled.button`
   width: fit-content;
   padding: 5px 80px;
   margin: 50px auto;
-  font-size: var(--medium-text-3);
+
+  h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 
   &:hover {
     background-color: var(--secondary-text);

@@ -55,7 +55,7 @@ const TextAudioSection = ({ content }) => {
                     src={content.img1}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
+                    style={{ aspectRatio: "24/19", objectFit: "contain" }}
                   />
                 </>
                 <>
@@ -63,7 +63,7 @@ const TextAudioSection = ({ content }) => {
                     src={content.img2}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
+                    style={{ aspectRatio: "24/19", objectFit: "contain" }}
                   />
                 </>
                 <>
@@ -71,7 +71,7 @@ const TextAudioSection = ({ content }) => {
                     src={content.img3}
                     class="img-slide-content d-block w-100"
                     alt="slide1"
-                    style={{ aspectRatio: "24/19", objectFit: 'contain' }}
+                    style={{ aspectRatio: "24/19", objectFit: "contain" }}
                   />
                 </>
               </Slider>

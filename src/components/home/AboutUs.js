@@ -20,7 +20,7 @@ const AboutUs = () => {
       }}
     >
       <Row>
-        <Col xs={12} lg={7} style={Video}>
+        {/* <Col xs={12} lg={7} style={Video}>
           <CardMedia
             component="video"
             width="100%"
@@ -33,9 +33,14 @@ const AboutUs = () => {
             autoPlay
             muted
             loop
+            playsIn
           />
-        </Col>
-        <Col xs={12} lg={5} style={{ color: "var(--primary-text)" }}>
+        </Col> */}
+        <Col
+          xs={12}
+          lg={5}
+          style={{ color: "var(--primary-text)", width: "100%" }}
+        >
           <h5 className="title-content">About Us</h5>
           <div style={{ textAlign: "justify" }}>
             Wow AI is

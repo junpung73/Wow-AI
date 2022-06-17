@@ -86,7 +86,12 @@ export const LoadMoreButton = styled.button`
   padding: 5px 50px;
   margin: 20px auto;
   margin-bottom: 50px;
-  font-size: var(--medium-text-3);
+  /* font-size: var(--medium-text-3); */
+
+  h3 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
 
   &:hover {
     background-color: var(--secondary-bg);

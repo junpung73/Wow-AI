@@ -39,7 +39,7 @@ const JoinOurTalentPool = () => {
         <Title>
           <h1>JOIN OUR TALENT POOL</h1>
           <button>
-            <p style={{ margin: 0 }}>SIGN UP NOW</p>
+            <h3 style={{ margin: 0 }}>SIGN UP NOW</h3>
           </button>
         </Title>
         <Picture>
@@ -65,7 +65,7 @@ const JoinOurTalentPool = () => {
                 anywhere.
               </p>
               <JoinButton>
-                <p>Join our crowdsourcing projects now!</p>
+                <h3>Join our crowdsourcing projects now!</h3>
               </JoinButton>
             </ConCol>
             <ConCol style={{ borderLeft: 0 }}>
@@ -333,7 +333,9 @@ const JoinOurTalentPool = () => {
           </div>
         </Swiper>
         <Column>
-          <TalentButton>Join our talent</TalentButton>
+          <TalentButton>
+            <h3>Join our talent</h3>
+          </TalentButton>
         </Column>
       </Container>
       {/* Blogs */}

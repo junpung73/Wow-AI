@@ -356,7 +356,8 @@
   .slide-image {
     height: 90vh;
   }
-  .carousel-control-next, .carousel-control-prev {
+  .carousel-control-next,
+  .carousel-control-prev {
     display: none;
   }
 }

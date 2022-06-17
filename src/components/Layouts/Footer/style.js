@@ -93,6 +93,11 @@ export const Reserved = styled.div`
     color: #b8b8b8;
     font-weight: 200;
     letter-spacing: 5px;
+    white-space: nowrap;
+
+    @media (max-width: 769px) {
+      letter-spacing: 2px;
+    }
   }
 `;
 
