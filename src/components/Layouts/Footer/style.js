@@ -104,7 +104,7 @@ export const SocialRow = styled.div`
   margin-top: 20px;
 `;
 
-export const Social = styled.div`
+export const Social = styled.a`
   aspect-ratio: 1;
   background-color: white;
   width: fit-content;
@@ -115,6 +115,7 @@ export const Social = styled.div`
   margin-right: 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   svg {
     color: var(--primary-bg);
