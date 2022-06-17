@@ -15,7 +15,7 @@ const BoxStyled = styled(Box)(({ theme }) => ({
     backgroundColor: "var(--secondary-text)",
   },
   [theme.breakpoints.down("sm")]: {
-    aspectRatio: "1/1.7",
+    aspectRatio: "1/2",
   },
 }));
 
