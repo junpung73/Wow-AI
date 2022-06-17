@@ -26,8 +26,6 @@ const TitleStyled = styled("h1")(({ theme }) => ({
   padding: "1vh",
   textAlign: "center",
   [theme.breakpoints.down("md")]: {
-    fontSize: "var(--normal-text)",
-    fontWeight: "bold",
     padding: "0",
   },
 }));

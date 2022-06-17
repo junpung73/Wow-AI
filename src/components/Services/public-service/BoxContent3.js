@@ -21,14 +21,13 @@ const BoxStyled = styled(Box)({
 });
 
 const TitleStyled = styled("h1")(({ theme }) => ({
-  fontSize: "var(--medium-text-3)",
+  fontSize: "14px",
   fontWeight: "bold",
   padding: "1vh 0",
   cursor: "pointer",
   textAlign: "center",
   overflowWrap: 'break-word',
   [theme.breakpoints.down("md")]: {
-    fontSize: "var(--small-text)",
     padding: "0",
   },
 }));
