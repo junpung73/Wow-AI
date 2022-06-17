@@ -9,7 +9,11 @@ const BoxStyled = styled(Box)({
   width: "98%",
   display: "flex",
   flexWrap: "wrap",
-  marginBottom: "1rem",
+  marginBottom: "1.5rem",
+  transition: "all .3s ease",
+  "&:hover": {
+    backgroundColor: "var(--secondary-text)",
+  }
 });
 
 const BoxContent = {
@@ -37,6 +41,15 @@ const UlStyled = styled("ul")(({ theme }) => ({
     display: "none",
   },
 }));
+const TitleStyled = styled("h1")(({ theme }) => ({
+  fontSize: 'var(--medium-text-3)',
+  fontWeight: 'bold',
+  padding: '2vh 0 1.5vh 0',
+  color: 'var(--primary-text)',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 'var(--normal-text)',
+  },
+}));
 
 const Services = () => {
   return (
@@ -46,20 +59,20 @@ const Services = () => {
       </div>
       <Grid container spacing={2}>
         <Grid item lg={6} xs={12}>
-          <BoxStyled>
             <img
               src="/images/Rectangle112.png"
               alt="Services"
               style={{
                 width: "100%",
                 borderRadius: "15px",
+                border: "2px solid var(--secondary-bg)",
+                padding: "5px",
               }}
             />
-          </BoxStyled>
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <h1 className="title-description">+ Data collection</h1>
+            <TitleStyled>+ Data collection</TitleStyled>
             <UlStyled>
               <li>Text data collection</li>
               <li>Image data collection</li>
@@ -72,7 +85,7 @@ const Services = () => {
             </LinkStyled>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <h1 className="title-description">+ Transcription</h1>
+            <TitleStyled>+ Transcription</TitleStyled>
             <UlStyled>
               <li>Image Transcription</li>
               <li>Audio Transcription</li>
@@ -86,7 +99,7 @@ const Services = () => {
         </Grid>
         <Grid item lg={3} xs={6}>
           <BoxStyled style={BoxContent}>
-            <h1 className="title-description">+ Data annotation</h1>
+            <TitleStyled>+ Data annotation</TitleStyled>
             <UlStyled>
               <li>Text data annotation</li>
               <li>Image data annotation</li>
@@ -101,7 +114,7 @@ const Services = () => {
             </div>
           </BoxStyled>
           <BoxStyled style={BoxContent}>
-            <h1 className="title-description">+ Tailor-made solution ?</h1>
+            <TitleStyled>+ Tailor-made solution ?</TitleStyled>
             <LinkStyled>
               Share with us &nbsp;
               <img src="/images/Vector9.png" alt="..." />
