@@ -256,6 +256,7 @@ export const SelectButton = styled.button`
   }
   @media (max-width: 769px) {
     padding: 0 5px;
+    width: 120px;
   }
 `;
 
