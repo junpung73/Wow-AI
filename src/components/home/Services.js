@@ -6,7 +6,7 @@ const BoxStyled = styled(Box)({
   borderRadius: "15px",
   padding: "10px",
   aspectRatio: "1/1",
-  width: "98%",
+  width: "100%",
   display: "flex",
   flexWrap: "wrap",
   marginBottom: "1.5rem",
@@ -37,9 +37,9 @@ const LinkStyled = styled(Link)(({ theme }) => ({
 }));
 const UlStyled = styled("ul")(({ theme }) => ({
   display: "block",
-  [theme.breakpoints.down("sm")]: {
-    display: "none",
-  },
+  // [theme.breakpoints.down("sm")]: {
+  //   display: "none",
+  // },
 }));
 const TitleStyled = styled("h1")(({ theme }) => ({
   fontSize: 'var(--medium-text-3)',
