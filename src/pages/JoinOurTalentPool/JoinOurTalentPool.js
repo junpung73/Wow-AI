@@ -35,7 +35,7 @@ const JoinOurTalentPool = () => {
     <>
       <Header />
       {/* Join our talent pool */}
-      <Container>
+      <Container style={{ scrollSnapAlign: "none" }}>
         <Title>
           <h1>JOIN OUR TALENT POOL</h1>
           <button>

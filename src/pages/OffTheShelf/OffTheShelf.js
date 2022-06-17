@@ -31,7 +31,7 @@ const OffTheShelf = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Container style={{ scrollSnapAlign: "none" }}>
         <SubContainer>
           <h1>Off-the-Shelf (OTS) AI Training Datasets</h1>
           <p>

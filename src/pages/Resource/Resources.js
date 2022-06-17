@@ -14,6 +14,7 @@ const Resources = () => {
           margin: 0,
           padding: 0,
           maxWidth: "100%",
+          scrollSnapAlign: "none",
         }}
       >
         <img
