@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const Topic = styled.div`
   height: 45vw;
-  background-image: url(images/1.jpg);
+  background-image: url("images/1.webp");
   background-size: cover;
   display: flex;
   justify-content: center;
