@@ -16,7 +16,7 @@ const BoxStyled = styled(Box)({
     top: "-20px",
     backgroundColor: "var(--primary-text)",
     color: "var(--secondary-text)",
-  }
+  },
 });
 const TitleStyled = styled("p")(({ theme }) => ({
   fontSize: "var(--medium-text-3)",
@@ -47,22 +47,18 @@ const ProjectAI = () => {
         </Grid>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
-            <TitleStyled>
-              120+ Languages
-            </TitleStyled>
+            <TitleStyled>120+ Languages</TitleStyled>
+          </BoxStyled>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <BoxStyled>
+            <TitleStyled>247+ Support</TitleStyled>
           </BoxStyled>
         </Grid>
         <Grid item xs={6} sm={3}>
           <BoxStyled>
             <TitleStyled>
-              247+ Support
-            </TitleStyled>
-          </BoxStyled>
-        </Grid>
-        <Grid item xs={6} sm={3}>
-          <BoxStyled>
-            <TitleStyled>
-              100% Customer <br /> Satisfation
+              98% Customer <br /> Satisfation
             </TitleStyled>
           </BoxStyled>
         </Grid>
