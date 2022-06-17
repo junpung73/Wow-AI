@@ -35,7 +35,7 @@ const ScrollDown = styled("div")(({ theme }) => ({
 
 const SlideHome = () => {
   return (
-    <div className="slide-container section-scroll">
+    <div className="slide-container">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"

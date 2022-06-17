@@ -26,6 +26,8 @@ body {
   overflow-y: scroll;
   height: 100vh;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* scroll-padding: 100px; */
 }
 
 code {

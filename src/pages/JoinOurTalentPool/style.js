@@ -286,6 +286,11 @@ export const Card = styled.a`
 
   @media (max-width: 769px) {
     width: 100%;
+    :hover {
+      color: inherit;
+      background-color: var(--secondary-text);
+      top: 0;
+    }
   }
 
   /* &:first-of-type {
@@ -362,12 +367,6 @@ export const Quote = styled(Card)`
   color: var(--secondary-text);
   aspect-ratio: 1;
 
-  @media (max-width: 769px) {
-    aspect-ratio: 2;
-    flex: 1 0 100%;
-    width: 100%;
-  }
-
   &:hover {
     background-color: var(--secondary-text);
     color: white;
@@ -376,6 +375,17 @@ export const Quote = styled(Card)`
 
   h3 {
     padding-left: 10px;
+  }
+
+  @media (max-width: 769px) {
+    aspect-ratio: 2;
+    flex: 1 0 100%;
+    width: 100%;
+
+    &:hover {
+      background-color: white;
+      color: var(--secondary-text);
+    }
   }
 `;
 

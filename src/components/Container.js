@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding-bottom: 0;
   margin: auto;
   margin-top: 64px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   display: flex;
   position: relative;
   justify-content: center;
