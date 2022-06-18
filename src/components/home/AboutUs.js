@@ -21,27 +21,27 @@ const AboutUs = () => {
     >
       <Row>
         <Col xs={12} lg={7} style={Video}>
-          {/* <CardMedia
+          <CardMedia
             component="video"
             width="100%"
             style={{
-              borderRadius: "15px",
-              border: "2px solid var(--secondary-bg)",
+              // borderRadius: "15px",
+              // border: "2px solid var(--secondary-bg)",
               aspectRatio: "16/9",
             }}
-            image="/videos/aboutHome.mp4"
+            image="/videos/Comp3.mp4"
             autoPlay
             muted
             loop
+          />
+          {/* <img
+            src="/images/about-us.jpg"
+            alt="Services"
+            style={{
+              width: "100%",
+              padding: "5px",
+            }}
           /> */}
-          <img
-              src="/images/about-us.jpg"
-              alt="Services"
-              style={{
-                width: "100%",
-                padding: "5px",
-              }}
-            />
         </Col>
         <Col xs={12} lg={5} style={{ color: "var(--primary-text)", justifyContent: "center", display: "flex", flexDirection: "column" }}>
           <h5 className="title-content">About Us</h5>
