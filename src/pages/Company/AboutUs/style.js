@@ -75,8 +75,8 @@ export const LastInContent = styled(InContent)`
 
 export const Img = styled.div`
   width: 100%;
+  height: 100%;
   padding: 30px;
-  aspect-ratio: 1;
 
   @media (max-width: 769px) {
     max-width: 300px;
@@ -102,7 +102,7 @@ export const Row = styled.div`
 export const Circle = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid white;
   justify-content: center;
