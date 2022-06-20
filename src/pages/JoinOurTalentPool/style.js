@@ -117,10 +117,11 @@ export const JoinButton = styled.button`
   border: 2px solid;
   border-radius: 50px;
   border-color: var(--secondary-bg);
-  width: 400px;
+  width: fit-content;
   height: 40px;
   margin-bottom: 30px;
   margin-top: 20px;
+  padding: 0 30px;
 
   h3 {
     font-weight: normal;
@@ -131,10 +132,14 @@ export const JoinButton = styled.button`
     background-color: var(--secondary-bg);
   }
 
+  @media (max-width: 1024px) {
+    padding: 0;
+    width: 100%;
+  }
+
   @media (max-width: 769px) {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
   }
 `;
 
